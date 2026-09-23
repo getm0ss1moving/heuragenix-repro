@@ -1,0 +1,25 @@
+%%{init: {'theme':'base', 'themeVariables': {'primaryTextColor':'#000000','secondaryTextColor':'#000000','tertiaryTextColor':'#000000','textColor':'#000000','lineColor':'#333333','fontFamily':'trebuchet ms,verdana,arial,sans-serif'}}}%%
+flowchart TD
+    classDef default color:#000000,fill:#ffffff,stroke:#333333;
+    A[种子启发式 H_seed<br/>LLM 生成 / 人工给出 / 从文献迁移] --> B[阶段一：启发式演化 Heuristic Evolution]
+    B --> C[演化后的启发式池 H]
+    C --> D[阶段二：问题求解 Problem Solving]
+    D --> E{选择器 π}
+    E -->|GPT-4o / DeepSeek-R1 / o3| F[LLM 过滤候选集 H' ⊂ H]
+    E -->|微调 Qwen2.5-7B LoRA| F
+    F --> G[Monte-Carlo TTS<br/>对每个候选估计 Q_H]
+    G --> H[选 argmin Q_H；连续执行 M=5 步]
+    H --> I{解完整且无进一步提升?}
+    I -- 否 --> E
+    I -- 是 --> J[输出解与 gap]
+    style B fill:#eef,stroke:#55a,color:#000000;
+    style D fill:#efe,stroke:#5a5,color:#000000;
+    style A color:#000000;
+    style C color:#000000;
+    style E color:#000000;
+    style F color:#000000;
+    style G color:#000000;
+    style H color:#000000;
+    style I color:#000000;
+    style J color:#000000;
+

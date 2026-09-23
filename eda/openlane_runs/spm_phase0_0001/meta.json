@@ -1,0 +1,34 @@
+{
+  "run_id": "spm_phase0_0001_src",
+  "source": "openlane1",
+  "design": "spm",
+  "run_dir": "/Users/duanzeyu/Desktop/文献/heura_repro/eda/openlane_runs/spm_phase0_0001_src",
+  "openlane_commit": "OpenLane",
+  "pdk_sources": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af",
+  "artifacts": {
+    "reports/metrics.csv": {
+      "size": 1891,
+      "sha256": "a1842b4d1c8f75b09b6f3fb8617698aa56f72f7fd4a97b0705e0c05c6c2f47a9"
+    },
+    "results/placement/spm.def": {
+      "size": 129475,
+      "sha256": "81f4e0d6b5f5f9e8f9cd3142a3fad95059e97c4e439ddbe702422df0c9df43b2"
+    },
+    "results/cts/spm.def": {
+      "size": 131837,
+      "sha256": "5285fcdb7945137893bf33391c4e851ac52ea0c650a0a20c0d522d16ea96a7a5"
+    },
+    "results/routing/spm.def": {
+      "size": 355658,
+      "sha256": "125366e6d7df03fbdffe2a398c9c8ee73e1d682b29cbdafc8a479b3b2c4db683"
+    },
+    "results/final/def/spm.def": {
+      "size": 355658,
+      "sha256": "125366e6d7df03fbdffe2a398c9c8ee73e1d682b29cbdafc8a479b3b2c4db683"
+    },
+    "openlane.log": {
+      "size": 7716,
+      "sha256": "63512f62dbd458a1f51a01356de99c6d9edd9679e57c173b6d6f9ea0266737ae"
+    }
+  }
+}

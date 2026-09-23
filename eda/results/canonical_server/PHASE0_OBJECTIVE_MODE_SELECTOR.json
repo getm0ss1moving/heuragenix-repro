@@ -1,0 +1,400 @@
+{
+  "seed": 0,
+  "modes": [
+    "balanced",
+    "timing_first",
+    "HPWL_first",
+    "power_first"
+  ],
+  "weights": {
+    "balanced": [
+      0.5,
+      0.4,
+      0.1
+    ],
+    "timing_first": [
+      0.1,
+      0.8,
+      0.1
+    ],
+    "HPWL_first": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "power_first": [
+      0.1,
+      0.1,
+      0.8
+    ]
+  },
+  "designs": [
+    {
+      "design": "aes",
+      "mode": "balanced",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "density_040",
+        "grt_200",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040_pad_2"
+      ],
+      "mode_scores": {
+        "density_040": 0.11689654539629424,
+        "pad_2": 0.15819665782322792,
+        "grt_200": 0.0
+      },
+      "weights": [
+        0.5,
+        0.4,
+        0.1
+      ]
+    },
+    {
+      "design": "aes",
+      "mode": "timing_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "density_040",
+        "grt_200",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040_pad_2"
+      ],
+      "mode_scores": {
+        "density_040": 0.14636769743856384,
+        "pad_2": 0.2209432293630975,
+        "grt_200": 0.0
+      },
+      "weights": [
+        0.1,
+        0.8,
+        0.1
+      ]
+    },
+    {
+      "design": "aes",
+      "mode": "HPWL_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "density_040",
+        "grt_200",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040_pad_2"
+      ],
+      "mode_scores": {
+        "density_040": 0.09479318136459204,
+        "pad_2": 0.11113672916832575,
+        "grt_200": 0.0
+      },
+      "weights": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "design": "aes",
+      "mode": "power_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "density_040",
+        "grt_200",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040_pad_2"
+      ],
+      "mode_scores": {
+        "density_040": 0.0744895735357804,
+        "pad_2": 0.08092293040286253,
+        "grt_200": 0.0
+      },
+      "weights": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    {
+      "design": "gcd",
+      "mode": "balanced",
+      "oracle": "density_025",
+      "safe_candidates": [
+        "density_025",
+        "density_035",
+        "density_040",
+        "grt_200",
+        "layeradj",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "pad_6"
+      ],
+      "mode_scores": {
+        "density_025": 0.10606334569075965,
+        "density_035": 0.0498306127767185,
+        "density_040": 0.0433255415386633,
+        "pad_2": 0.04901181306651147,
+        "grt_200": 0.0,
+        "layeradj": 0.006616953557732164
+      },
+      "weights": [
+        0.5,
+        0.4,
+        0.1
+      ]
+    },
+    {
+      "design": "gcd",
+      "mode": "timing_first",
+      "oracle": "density_025",
+      "safe_candidates": [
+        "density_025",
+        "density_035",
+        "density_040",
+        "grt_200",
+        "layeradj",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "pad_6"
+      ],
+      "mode_scores": {
+        "density_025": 0.24777752404358408,
+        "density_035": 0.054385857772971176,
+        "density_040": 0.03940780600304123,
+        "pad_2": 0.04280401883072059,
+        "grt_200": 0.0,
+        "layeradj": 0.013440732348142722
+      },
+      "weights": [
+        0.1,
+        0.8,
+        0.1
+      ]
+    },
+    {
+      "design": "gcd",
+      "mode": "HPWL_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "density_025",
+        "density_035",
+        "density_040",
+        "grt_200",
+        "layeradj",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "pad_6"
+      ],
+      "mode_scores": {
+        "density_025": -0.00022228807385867326,
+        "density_035": 0.04641417902952899,
+        "density_040": 0.04626384319037985,
+        "pad_2": 0.053667658743354635,
+        "grt_200": 0.0,
+        "layeradj": 0.0014991194649242473
+      },
+      "weights": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "design": "gcd",
+      "mode": "power_first",
+      "oracle": "density_035",
+      "safe_candidates": [
+        "density_025",
+        "density_035",
+        "density_040",
+        "grt_200",
+        "layeradj",
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "pad_6"
+      ],
+      "mode_scores": {
+        "density_025": 0.0065938082480437275,
+        "density_035": 0.031308012821787586,
+        "density_040": 0.010323392481907197,
+        "pad_2": 0.013936356683227699,
+        "grt_200": 0.0,
+        "layeradj": 5.13428361755045e-05
+      },
+      "weights": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    {
+      "design": "ibex",
+      "mode": "balanced",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040"
+      ],
+      "mode_scores": {
+        "pad_2": 0.14106699256321353
+      },
+      "weights": [
+        0.5,
+        0.4,
+        0.1
+      ]
+    },
+    {
+      "design": "ibex",
+      "mode": "timing_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040"
+      ],
+      "mode_scores": {
+        "pad_2": 0.1939205947742096
+      },
+      "weights": [
+        0.1,
+        0.8,
+        0.1
+      ]
+    },
+    {
+      "design": "ibex",
+      "mode": "HPWL_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040"
+      ],
+      "mode_scores": {
+        "pad_2": 0.1014267909049665
+      },
+      "weights": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "design": "ibex",
+      "mode": "power_first",
+      "oracle": "pad_2",
+      "safe_candidates": [
+        "pad_2"
+      ],
+      "unsafe_candidates": [
+        "density_040"
+      ],
+      "mode_scores": {
+        "pad_2": 0.07341466678486569
+      },
+      "weights": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    {
+      "design": "jpeg",
+      "mode": "balanced",
+      "oracle": "layeradj",
+      "safe_candidates": [
+        "layeradj"
+      ],
+      "unsafe_candidates": [
+        "density_040",
+        "pad_2"
+      ],
+      "mode_scores": {
+        "layeradj": 0.0039403620174236565
+      },
+      "weights": [
+        0.5,
+        0.4,
+        0.1
+      ]
+    },
+    {
+      "design": "jpeg",
+      "mode": "timing_first",
+      "oracle": "layeradj",
+      "safe_candidates": [
+        "layeradj"
+      ],
+      "unsafe_candidates": [
+        "density_040",
+        "pad_2"
+      ],
+      "mode_scores": {
+        "layeradj": 0.007880724034847313
+      },
+      "weights": [
+        0.1,
+        0.8,
+        0.1
+      ]
+    },
+    {
+      "design": "jpeg",
+      "mode": "HPWL_first",
+      "oracle": "layeradj",
+      "safe_candidates": [
+        "layeradj"
+      ],
+      "unsafe_candidates": [
+        "density_040",
+        "pad_2"
+      ],
+      "mode_scores": {
+        "layeradj": 0.0009850905043559141
+      },
+      "weights": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "design": "jpeg",
+      "mode": "power_first",
+      "oracle": "layeradj",
+      "safe_candidates": [
+        "layeradj"
+      ],
+      "unsafe_candidates": [
+        "density_040",
+        "pad_2"
+      ],
+      "mode_scores": {
+        "layeradj": 0.0009850905043559141
+      },
+      "weights": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  ],
+  "key_found": false,
+  "timing_convention": "setup_hold_v1_2026-09-22",
+  "note": "No single oracle: objective mode conditions the oracle. Regret is relative to the mode-conditioned oracle."
+}

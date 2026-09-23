@@ -1,0 +1,57 @@
+=== 17:53:46 --run-id gcd_baseline_pinoffset_0001 --design gcd
+RUN gcd_baseline_pinoffset_0001 RC 0 DUR 14.01
+METRICS {"setup_wns_ns": -0.6332932135728321, "hold_wns_ns": 0.4841882587472532, "setup_tns_ns": -15.580383646458793, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 13117.7, "power_w": 0.000967}
+RC=0 --run-id gcd_baseline_pinoffset_0001 --design gcd
+=== 17:54:00 --run-id phase0_sweep_0002_base --design gcd
+RUN phase0_sweep_0002_base RC 0 DUR 13.84
+METRICS {"setup_wns_ns": -0.6332932135728321, "hold_wns_ns": 0.4841882587472532, "setup_tns_ns": -15.580383646458793, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 13117.7, "power_w": 0.000967}
+RC=0 --run-id phase0_sweep_0002_base --design gcd
+=== 17:54:15 --run-id phase0_sweep_0002_density_025 --design gcd --density 0.25
+RUN phase0_sweep_0002_density_025 RC 0 DUR 12.02
+METRICS {"setup_wns_ns": -0.5940255122596936, "hold_wns_ns": 0.4927729475056563, "setup_tns_ns": -10.63110518597402, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 13598.13, "power_w": 0.000993}
+RC=0 --run-id phase0_sweep_0002_density_025 --design gcd --density 0.25
+=== 17:54:27 --run-id phase0_sweep_0002_density_035 --design gcd --density 0.35
+RUN phase0_sweep_0002_density_035 RC 0 DUR 14.86
+METRICS {"setup_wns_ns": -0.5530867032026271, "hold_wns_ns": 0.48795779908937287, "setup_tns_ns": -14.663922047242433, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 12495.483, "power_w": 0.000942}
+RC=0 --run-id phase0_sweep_0002_density_035 --design gcd --density 0.35
+=== 17:54:42 --run-id phase0_sweep_0002_density_040 --design gcd --density 0.40
+RUN phase0_sweep_0002_density_040 RC 0 DUR 16.65
+METRICS {"setup_wns_ns": -0.5864728868541708, "hold_wns_ns": 0.4940435977932762, "setup_tns_ns": -14.916919677249275, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 12430.626, "power_w": 0.000966}
+RC=0 --run-id phase0_sweep_0002_density_040 --design gcd --density 0.40
+=== 17:55:00 --run-id phase0_sweep_0002_pad_2 --design gcd --pad 2
+RUN phase0_sweep_0002_pad_2 RC 0 DUR 15.45
+METRICS {"setup_wns_ns": -0.6088949516936397, "hold_wns_ns": 0.4988633536352422, "setup_tns_ns": -14.873407815237567, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 12318.891, "power_w": 0.000963}
+RC=0 --run-id phase0_sweep_0002_pad_2 --design gcd --pad 2
+=== 17:55:16 --run-id phase0_sweep_0002_pad_6 --design gcd --pad 6
+RUN phase0_sweep_0002_pad_6 RC 0 DUR 10.96
+METRICS {"setup_wns_ns": -0.6565193019494739, "hold_wns_ns": 0.503403888378618, "setup_tns_ns": -13.44633420445135, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 12945.38, "power_w": 0.000946}
+RC=0 --run-id phase0_sweep_0002_pad_6 --design gcd --pad 6
+=== 17:55:27 --run-id phase0_sweep_0002_grt_50 --design gcd --grt-iters 50
+RUN phase0_sweep_0002_grt_50 RC 0 DUR 13.88
+METRICS {"setup_wns_ns": -0.6332932135728321, "hold_wns_ns": 0.4841882587472532, "setup_tns_ns": -15.580383646458793, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 13117.7, "power_w": 0.000967}
+RC=0 --run-id phase0_sweep_0002_grt_50 --design gcd --grt-iters 50
+=== 17:55:41 --run-id phase0_sweep_0002_grt_200 --design gcd --grt-iters 200
+RUN phase0_sweep_0002_grt_200 RC 0 DUR 13.81
+METRICS {"setup_wns_ns": -0.6332932135728321, "hold_wns_ns": 0.4841882587472532, "setup_tns_ns": -15.580383646458793, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 13117.7, "power_w": 0.000967}
+RC=0 --run-id phase0_sweep_0002_grt_200 --design gcd --grt-iters 200
+=== 17:55:56 --run-id aes_baseline_0001 --design aes
+RUN aes_baseline_0001 RC 0 DUR 306.23
+METRICS {"setup_wns_ns": -1.8613235923842695, "hold_wns_ns": -0.14628387804022094, "setup_tns_ns": -289.19323221347724, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 1227554.093, "power_w": 0.0424}
+RC=0 --run-id aes_baseline_0001 --design aes
+=== 18:01:11 --run-id aes_density_040 --design aes --density 0.40
+RUN aes_density_040 RC 0 DUR 365.62
+METRICS {"setup_wns_ns": -1.7307777922970282, "hold_wns_ns": -0.07451550698502386, "setup_tns_ns": -241.76444641669403, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 1116674.154, "power_w": 0.0398}
+RC=0 --run-id aes_density_040 --design aes --density 0.40
+=== 18:07:25 --run-id aes_pad_2 --design aes --pad 2
+RUN aes_pad_2 RC 0 DUR 386.02
+METRICS {"setup_wns_ns": -1.650548189287258, "hold_wns_ns": -0.06006617595547739, "setup_tns_ns": -214.97677135811034, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 1105085.51, "power_w": 0.04}
+RC=0 --run-id aes_pad_2 --design aes --pad 2
+=== 18:13:59 --run-id aes_grt_200 --design aes --grt-iters 200
+RUN aes_grt_200 RC 0 DUR 304.39
+METRICS {"setup_wns_ns": -1.8613235923842695, "hold_wns_ns": -0.14628387804022094, "setup_tns_ns": -289.19323221347724, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 1227554.093, "power_w": 0.0424}
+RC=0 --run-id aes_grt_200 --design aes --grt-iters 200
+=== 18:19:12 --run-id aes_density_040_pad_2 --design aes --density 0.40 --pad 2
+RUN aes_density_040_pad_2 RC 0 DUR 412.44
+METRICS {"setup_wns_ns": -1.463846418847857, "hold_wns_ns": -0.18159985140774618, "setup_tns_ns": -199.04988443133098, "hold_tns_ns": null, "drc": "0", "antenna": "0", "hpwl_route": 1133910.467, "power_w": 0.0408}
+RC=0 --run-id aes_density_040_pad_2 --design aes --density 0.40 --pad 2
+ALL_DONE

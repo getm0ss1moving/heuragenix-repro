@@ -1,0 +1,30 @@
+{
+  "def": "/data/dzy/heura_repr/eda/runs/jpeg_layeradj_0001/results/jpeg_sky130hd_route.def",
+  "design": "jpeg",
+  "verdict": true,
+  "checks": {
+    "components": 1201220,
+    "nets": 57788,
+    "overlap_pairs": 0,
+    "overlap_examples": [],
+    "overlap_status": "ok",
+    "row_violations": 0,
+    "die_boundary_violations": 0,
+    "core_boundary_violations": 0,
+    "net_violations": 0,
+    "die_area_um": [
+      0.0,
+      0.0,
+      3000.04,
+      2999.8
+    ],
+    "core_area_um": [
+      10.07,
+      9.8,
+      2989.97,
+      2990.0
+    ],
+    "fixed_changed": null,
+    "netlist_sha256": "f1964e41b8d8255c730d564b8b0fad9861da4df74f31733fb1e8449282660e32"
+  }
+}

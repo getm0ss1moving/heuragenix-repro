@@ -1,0 +1,62 @@
+{
+  "seed": 0,
+  "designs": [
+    {
+      "design": "aes",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2",
+        "grt_200",
+        "density_040_pad_2"
+      ],
+      "random_mean_regret": 0.12450695808422352,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (-1.322) with the lowest HPWL (879568.988) and best TNS (-214.98) among candidates, while keeping vias and power near baseline; density_040_pad_2 has slightly better TNS but worse HPWL, vias, power, and score.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "gcd",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_025",
+        "density_035",
+        "density_040",
+        "pad_2",
+        "pad_6",
+        "grt_50",
+        "grt_200"
+      ],
+      "random_mean_regret": 0.11264481999974893,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (-1.4166) with the lowest HPWL (6233.7) and reduced vias (1877) while keeping TNS (-14.87) and power (0.000963) competitive, offering the strongest PPA trade-off among gate-passing candidates.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "jpeg",
+      "oracle": "density_040",
+      "candidates": [
+        "base",
+        "layeradj",
+        "pad_2",
+        "density_040"
+      ],
+      "random_mean_regret": 0.1974719174469497,
+      "rule": "pad_2",
+      "llm": "density_040",
+      "llm_reason": "Lowest TNS (-65.03 ns) and best score (-1.2288) among candidates, with reduced HPWL, vias, and power versus baseline; layeradj offers only marginal improvement, while pad_2 is dominated by density_040.",
+      "rule_regret": 0.0524943958959363,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    }
+  ],
+  "key_found": true
+}

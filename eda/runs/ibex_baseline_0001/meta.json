@@ -1,0 +1,60 @@
+{
+  "run_id": "ibex_baseline_0001",
+  "design": "ibex",
+  "overrides": {},
+  "threads": 16,
+  "returncode": 0,
+  "duration_s": 276.8,
+  "openroad_sha256": "9f55a2374783f0323b43f8aa9794de71318cd9f2607eb07991ce786b278f3353",
+  "flow_param_sha256": "d6f4a19cb00e10de91d6076c3371e90dd1d2ef2b574cfdd6f514cf9898c454f4",
+  "artifacts": {
+    "flow.log": {
+      "size": 69135,
+      "sha256": "83c33d0558ce1c032b4ad698feaf2549465cf3b07947ad283210b89b5ee62c6b"
+    },
+    "metrics_raw.json": {
+      "size": 997,
+      "sha256": "593dd48866c2791413702f0cb6d247952e80507f26ca217546b4bd8e9f078918"
+    },
+    "metrics.json": {
+      "size": 2867,
+      "sha256": "2a56c86cc5c15399ef9f4bf1a2f3293979c50f9e32fd1ffe535ad423b35f9dd5"
+    },
+    "results/ibex_sky130hd.route_guide": {
+      "size": 5883696,
+      "sha256": "9a1dc1d32dfac020fff0fa9c3781d4323777460abc96f80d83e107d320ac2f5f"
+    },
+    "results/ibex_sky130hd.spef": {
+      "size": 46607605,
+      "sha256": "e48f582b1e1c05dad53c17f8fdf639f6423b347684dc20c7e32c56ce3c9f4730"
+    },
+    "results/ibex_sky130hd.v": {
+      "size": 54936940,
+      "sha256": "dd5344db1b7155653b6b1246169df641748de38d40ee1e47d48b6cfc9949bd6e"
+    },
+    "results/ibex_sky130hd_ant.log": {
+      "size": 200,
+      "sha256": "5f5212cca06bd3dfecd6693aef2a65db5aaa781843ed1133bc9ca3416f39902d"
+    },
+    "results/ibex_sky130hd_cts.def": {
+      "size": 61559606,
+      "sha256": "a0d101fedca18f179b549e53b9477973efd503d60cf083d779405a779e41b71c"
+    },
+    "results/ibex_sky130hd_global_place.def": {
+      "size": 61408802,
+      "sha256": "aa5d978ef8dfb8bde00770d426d7665e35cc4c26154385f9888d4264b9e0feec"
+    },
+    "results/ibex_sky130hd_output_guide.mod": {
+      "size": 5120916,
+      "sha256": "a5be1977474006ff063f2ffe41363ab124b77272e0e8f4376b7497b92a8c5d9d"
+    },
+    "results/ibex_sky130hd_route.def": {
+      "size": 173278395,
+      "sha256": "2c494cdb5b5a544c15088d1467da7ac472cdd0ed728633b3c55cfa4b2eeef2e0"
+    },
+    "results/ibex_sky130hd_route_drc.rpt": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

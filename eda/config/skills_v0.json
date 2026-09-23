@@ -1,0 +1,150 @@
+{
+  "version": "v0.1",
+  "note": "Phase 0 L1 parameter-level skills. implemented 字段表示当前 harness 是否可直接参数化。",
+  "skills": [
+    {
+      "id": "place.gp.density_weight",
+      "stage": "global_placement",
+      "param": "global_place_density",
+      "range": [
+        0.2,
+        0.5
+      ],
+      "implemented": true,
+      "contract": {
+        "pre": [
+          "floorplan 完成",
+          "网表已 link"
+        ],
+        "post": [
+          "density overflow 不明显上升",
+          "HPWL 恶化 <= 20%",
+          "无重叠由 legalize 阶段处理"
+        ],
+        "invariants": [
+          "netlist hash 不变",
+          "fixed 对象未动"
+        ],
+        "fallback": "global_place_density = 0.3"
+      }
+    },
+    {
+      "id": "place.gp.pad",
+      "stage": "global_placement",
+      "param": "global_place_pad",
+      "range": [
+        0,
+        10
+      ],
+      "implemented": true,
+      "contract": {
+        "pre": [
+          "floorplan 完成"
+        ],
+        "post": [
+          "HPWL 与 legalize 位移不显著恶化"
+        ],
+        "invariants": [
+          "netlist hash 不变"
+        ],
+        "fallback": "global_place_pad = 4"
+      }
+    },
+    {
+      "id": "place.legalize.order",
+      "stage": "legalization",
+      "param": "order",
+      "range": [
+        "wns_first",
+        "density_first",
+        "left_to_right"
+      ],
+      "implemented": false,
+      "contract": {
+        "pre": [
+          "global placement 完成"
+        ],
+        "post": [
+          "overlap = 0",
+          "row-legal = true"
+        ],
+        "invariants": [
+          "fixed 对象未动",
+          "HPWL 恶化 <= guard"
+        ],
+        "fallback": "baseline legalizer"
+      }
+    },
+    {
+      "id": "route.grt.congestion_iters",
+      "stage": "global_route",
+      "param": "global_route_congestion_iterations",
+      "range": [
+        10,
+        300
+      ],
+      "implemented": true,
+      "contract": {
+        "pre": [
+          "detailed placement 完成",
+          "pin access 完成"
+        ],
+        "post": [
+          "100% 连通",
+          "overflow 相比默认不上升"
+        ],
+        "invariants": [
+          "connectivity = 100%",
+          "层方向合法"
+        ],
+        "fallback": "congestion_iterations = 100"
+      }
+    },
+    {
+      "id": "route.grt.layer_adjust",
+      "stage": "global_route",
+      "param": "global_routing_layer_adjustments",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "implemented": false,
+      "contract": {
+        "pre": [
+          "GRT 数据存在"
+        ],
+        "post": [
+          "overflow 下降",
+          "无新增 DRC"
+        ],
+        "invariants": [
+          "层规则合法"
+        ],
+        "fallback": "default layer adjustments"
+      }
+    },
+    {
+      "id": "route.drt.threads",
+      "stage": "detailed_route",
+      "param": "EDA_THREADS",
+      "range": [
+        1,
+        64
+      ],
+      "implemented": true,
+      "contract": {
+        "pre": [
+          "GRT guide 存在"
+        ],
+        "post": [
+          "DRC = 0",
+          "无 short/open"
+        ],
+        "invariants": [
+          "connectivity = 100%"
+        ],
+        "fallback": "EDA_THREADS = 16"
+      }
+    }
+  ]
+}

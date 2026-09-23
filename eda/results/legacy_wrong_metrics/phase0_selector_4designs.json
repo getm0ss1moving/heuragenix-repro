@@ -1,0 +1,78 @@
+{
+  "seed": 0,
+  "designs": [
+    {
+      "design": "aes",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2",
+        "grt_200",
+        "density_040_pad_2"
+      ],
+      "random_mean_regret": 0.14668172319472383,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (0.258) with the lowest HPWL (879568.988), best TNS (-214.98), and reduced power (0.04) versus baseline, while keeping vias near baseline; density_040_pad_2 has worse HPWL/vias/power despite slightly better TNS, so pad_2 is the strongest PPA trade-off.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "gcd",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_025",
+        "density_035",
+        "density_040",
+        "pad_2",
+        "pad_6",
+        "grt_50",
+        "grt_200"
+      ],
+      "random_mean_regret": 0.045297287424932484,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (0.084216) with the lowest HPWL (6233.698), improved TNS (-14.873 vs baseline -15.580), and slightly lower via count and power, giving the strongest PPA trade-off while remaining gate-passing.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "ibex",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2"
+      ],
+      "random_mean_regret": 0.09831253897621639,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (0.1767) with the lowest HPWL (793708.95) and power (0.0345), while improving TNS (-231.96) versus baseline (-299.05); density_040 has slightly better TNS but worse HPWL, power, and score, so pad_2 offers the strongest PPA trade-off.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "jpeg",
+      "oracle": "layeradj",
+      "candidates": [
+        "base",
+        "layeradj",
+        "pad_2",
+        "density_040"
+      ],
+      "random_mean_regret": 0.22330521902285577,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the largest overall score improvement (-0.7058) with substantial HPWL reduction (1.875M -> 1.643M), TNS improvement (-129.9 -> -80.4), lower power (0.159 -> 0.152), and slightly fewer vias, giving the best PPA trade-off while remaining gate-passing.",
+      "rule_regret": 0.7264042399461953,
+      "llm_regret": 0.7264042399461953,
+      "oracle_regret": 0.0
+    }
+  ],
+  "key_found": true
+}

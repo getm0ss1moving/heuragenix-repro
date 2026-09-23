@@ -1,0 +1,45 @@
+{
+  "seed": 0,
+  "designs": [
+    {
+      "design": "aes",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2",
+        "grt_200",
+        "density_040_pad_2"
+      ],
+      "random_mean_regret": 0.12450695808422352,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (-1.322) with the lowest HPWL (879568.988) and best TNS (-214.98) among candidates, while keeping vias and power near baseline; density_040_pad_2 has slightly better TNS but worse HPWL, vias, power, and score.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "gcd",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_025",
+        "density_035",
+        "density_040",
+        "pad_2",
+        "pad_6",
+        "grt_50",
+        "grt_200"
+      ],
+      "random_mean_regret": 0.11264481999974893,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 achieves the best overall score (-1.4166) with the lowest HPWL (6233.7), reduced vias (1877), and improved TNS (-14.87) versus baseline, while maintaining comparable power and timing; it offers the strongest PPA trade-off among gate-passing candidates.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    }
+  ],
+  "key_found": true
+}

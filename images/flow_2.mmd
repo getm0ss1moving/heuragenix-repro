@@ -1,0 +1,20 @@
+%%{init: {'theme':'base', 'themeVariables': {'primaryTextColor':'#000000','secondaryTextColor':'#000000','tertiaryTextColor':'#000000','textColor':'#000000','lineColor':'#333333','fontFamily':'trebuchet ms,verdana,arial,sans-serif'}}}%%
+flowchart TD
+    classDef default color:#000000,fill:#ffffff,stroke:#333333;
+    S1[Step 1 基本解生成<br/>在 D_evo 上运行 H_seed 得 S 和 C S] --> S2[Step 2 对比解生成<br/>最多 P 次扰动：随机选操作子集 K，&#124;K&#124;/N=0.1<br/>把 O_k 替换为 O'_k 后 rollout]
+    S2 --> S2b{C S' < C S ?}
+    S2b -- 是 --> S3[把改动集合 M = &#123; z_k,O_k,O'_k &#125; 作为对比候选]
+    S2b -- 否 / 达到 P 次仍无更优 --> S1
+    S3 --> S4[Step 3 关键操作定位<br/>对每个改动单独替换，算 Δ_k = C S − C S^k<br/>k* = argmax Δ_k]
+    S4 --> S5[Step 4 LLM 提取演化策略<br/>E = LLM_evolve H_seed, z_k*, O_k*, O'_k*<br/>LLM 解释 O'_k* 为什么更好]
+    S5 --> S6[Step 5 迭代精炼<br/>H0=H_seed；最多 T_max=5 轮<br/>p_i = evaluate_performance H_i, D_val<br/>H_&#123;i+1&#125;=LLM_refine H_i,E,p_i；无提升则早停]
+    S6 --> S7[输出 Hevolved]
+    style S1 color:#000000;
+    style S2 color:#000000;
+    style S2b color:#000000;
+    style S3 color:#000000;
+    style S4 color:#000000;
+    style S5 color:#000000;
+    style S6 color:#000000;
+    style S7 color:#000000;
+

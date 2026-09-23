@@ -1,0 +1,62 @@
+{
+  "run_id": "ibex_density_040",
+  "design": "ibex",
+  "overrides": {
+    "global_place_density": 0.4
+  },
+  "threads": 16,
+  "returncode": 0,
+  "duration_s": 291.52,
+  "openroad_sha256": "9f55a2374783f0323b43f8aa9794de71318cd9f2607eb07991ce786b278f3353",
+  "flow_param_sha256": "d6f4a19cb00e10de91d6076c3371e90dd1d2ef2b574cfdd6f514cf9898c454f4",
+  "artifacts": {
+    "flow.log": {
+      "size": 70148,
+      "sha256": "93a3f7241d25f0f4f04f761d38f0a8cc9ae00c0713afbfe06c3a895db3345527"
+    },
+    "metrics_raw.json": {
+      "size": 994,
+      "sha256": "a4b33c7082fdeda89c03e240c9f00a5d09ae672369228c17303c398e9cac226c"
+    },
+    "metrics.json": {
+      "size": 2864,
+      "sha256": "ff71362421cba0aac346aa8c03888256afe958b57c7802883638666c55d0f63f"
+    },
+    "results/ibex_sky130hd.route_guide": {
+      "size": 5824024,
+      "sha256": "1ee37a6932d37a5a1965f75054e099531165f3477a0bdebbe8a29ab5a32c4e36"
+    },
+    "results/ibex_sky130hd.spef": {
+      "size": 46847213,
+      "sha256": "f23aa1fa332e073bdf8bee35427d3e752593a74c6a02a55f4e267ff726431923"
+    },
+    "results/ibex_sky130hd.v": {
+      "size": 54933685,
+      "sha256": "43073d0c00712439a04d1e067fae2f82e0f5723a66f1171cd38e8632432549e7"
+    },
+    "results/ibex_sky130hd_ant.log": {
+      "size": 200,
+      "sha256": "1d4ac29ce8a69ab54f39ab77f31c4abfd363093c8aa1efe4c6f4b8ff445547c8"
+    },
+    "results/ibex_sky130hd_cts.def": {
+      "size": 61539923,
+      "sha256": "382143f96335677a7cf09df5a24636901dec8c02da86e47fe3bebcdda69acc8c"
+    },
+    "results/ibex_sky130hd_global_place.def": {
+      "size": 61408891,
+      "sha256": "f3669c357f116a74d4be052520d30eb7432006c5cbd97b0e23f5b396954a5ca3"
+    },
+    "results/ibex_sky130hd_output_guide.mod": {
+      "size": 5043272,
+      "sha256": "f4244fd2b2f937be47a802fa8072a8f32c9af97e1354dcfabd56bae269ff05d8"
+    },
+    "results/ibex_sky130hd_route.def": {
+      "size": 173122800,
+      "sha256": "157d9aa288eca2b58b612b9615cd604677b47af550eb4d06f52eb76cb9052344"
+    },
+    "results/ibex_sky130hd_route_drc.rpt": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

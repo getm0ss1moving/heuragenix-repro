@@ -1,0 +1,78 @@
+{
+  "seed": 0,
+  "designs": [
+    {
+      "design": "aes",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2",
+        "grt_200",
+        "density_040_pad_2"
+      ],
+      "random_mean_regret": 0.14668172319472383,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "pad_2 is timing-safe (WNS -0.0601 ns, better than baseline -0.1463 ns) and gives the best overall PPA trade-off: lowest HPWL (879568.988), best TNS (-214.98), reduced vias (153096), and lower power (0.04 W) compared with baseline. density_040 is also safe but has worse HPWL, TNS, vias, and power than pad_2, while density_040_pad_2 violates the timing gate.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "gcd",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_025",
+        "density_035",
+        "density_040",
+        "pad_2",
+        "pad_6",
+        "grt_50",
+        "grt_200"
+      ],
+      "random_mean_regret": 0.045297287424932484,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "All candidates are timing-safe (WNS >= baseline and positive). pad_2 gives the best overall PPA trade-off: lowest HPWL (6233.7 vs 7423.9 baseline), improved WNS (0.4989), improved TNS (-14.87 vs -15.58), fewer vias (1877), and slightly lower power (0.000963), with the highest normalized score (0.0842).",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "ibex",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2"
+      ],
+      "random_mean_regret": 0.09831253897621639,
+      "rule": "pad_2",
+      "llm": "pad_2",
+      "llm_reason": "Only pad_2 is timing-safe: its WNS (-0.0972 ns) is above the hard gate (base WNS - 0.02 = -0.1459 ns), while density_040 fails with WNS -0.1870 ns. pad_2 also improves HPWL (793708.95 vs 929652.175), TNS (-231.96 vs -299.05), vias (137469 vs 137339), and power (0.0345 vs 0.0364), giving the best PPA trade-off among timing-safe candidates.",
+      "rule_regret": 0.0,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "jpeg",
+      "oracle": "layeradj",
+      "candidates": [
+        "base",
+        "layeradj",
+        "pad_2",
+        "density_040"
+      ],
+      "random_mean_regret": 0.22330521902285577,
+      "rule": "pad_2",
+      "llm": "layeradj",
+      "llm_reason": "Only layeradj is timing-safe (WNS 0.0446 >= baseline 0.0402, nonnegative) while improving HPWL slightly, TNS (-128.62 vs -129.90), and vias (312764 vs 315106) at equal power. pad_2 and density_040 violate the hard timing gate with negative WNS.",
+      "rule_regret": 0.7264042399461953,
+      "llm_regret": 0.0,
+      "oracle_regret": 0.0
+    }
+  ],
+  "key_found": true
+}

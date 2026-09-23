@@ -1,0 +1,23 @@
+{
+  "version": "replay_actions_v1_2026-09-22",
+  "note": "checkpoint_replay.py 支持的下游动作目录：空动作是每个 checkpoint 的 control，动作效果只能与同一 checkpoint 的 control 配对比较。",
+  "stages": ["post_global_place", "post_cts"],
+  "design_defaults": {
+    "gcd": {"slew_margin": 0, "cap_margin": 0},
+    "aes": {"slew_margin": 20, "cap_margin": 0},
+    "jpeg": {"slew_margin": 20, "cap_margin": 20},
+    "ibex": {"slew_margin": 30, "cap_margin": 25}
+  },
+  "actions": [
+    {"id": "control", "role": "control", "action": {}, "desc": "同 checkpoint replay baseline；所有动作 delta 的配对基准"},
+    {"id": "layeradj_std", "role": "action", "action": {"global_routing_layer_adjustments": [["met1", 0.4], ["met2", 0.4], ["met3", 0.3], ["met4", 0.3], ["met5", 0.2]]}, "desc": "v1 原型使用的标准 layer adjustment"},
+    {"id": "layeradj_mild", "role": "action", "action": {"global_routing_layer_adjustments": [["met1", 0.2], ["met2", 0.2], ["met3", 0.15], ["met4", 0.15], ["met5", 0.1]]}, "desc": "轻度 layer adjustment"},
+    {"id": "layeradj_aggr", "role": "action", "action": {"global_routing_layer_adjustments": [["met1", 0.6], ["met2", 0.6], ["met3", 0.5], ["met4", 0.5], ["met5", 0.4]]}, "desc": "激进 layer adjustment"},
+    {"id": "grt50", "role": "action", "action": {"global_route_congestion_iterations": 50}, "desc": "减少 GRT 拥塞迭代"},
+    {"id": "grt200", "role": "action", "action": {"global_route_congestion_iterations": 200}, "desc": "增加 GRT 拥塞迭代；对无拥塞设计预期无变化"},
+    {"id": "slew0", "role": "action", "action": {"slew_margin": 0}, "desc": "取消 slew margin（弱于设计默认时跳过）"},
+    {"id": "slew40", "role": "action", "action": {"slew_margin": 40}, "desc": "加大 slew margin"},
+    {"id": "cap0", "role": "action", "action": {"cap_margin": 0}, "desc": "取消 cap margin（弱于设计默认时跳过）"},
+    {"id": "cap40", "role": "action", "action": {"cap_margin": 40}, "desc": "加大 cap margin"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "n_designs": 4,
+  "oracles": {
+    "gcd": "density_025",
+    "aes": "pad_2",
+    "jpeg": "layeradj",
+    "ibex": "pad_2"
+  },
+  "n_candidates": {
+    "gcd": 7,
+    "aes": 4,
+    "jpeg": 3,
+    "ibex": 2
+  },
+  "n_sft": 4,
+  "utility_spec": "timing_gate_first: setup_wns_ns >= base_setup_wns_ns - 0.02 ns and hold_wns_ns >= base_hold_wns_ns - 0.02 ns; if base is nonnegative, candidate must stay nonnegative; then U = 0.5*d_HPWL + 0.4*d_abs_TNS + 0.1*d_power"
+}

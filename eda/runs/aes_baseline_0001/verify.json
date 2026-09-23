@@ -1,0 +1,30 @@
+{
+  "def": "/data/dzy/heura_repr/eda/runs/aes_baseline_0001/results/aes_sky130hd_route.def",
+  "design": "aes",
+  "verdict": true,
+  "checks": {
+    "components": 409989,
+    "nets": 16431,
+    "overlap_pairs": 0,
+    "overlap_examples": [],
+    "overlap_status": "ok",
+    "row_violations": 0,
+    "die_boundary_violations": 0,
+    "core_boundary_violations": 0,
+    "net_violations": 0,
+    "die_area_um": [
+      0.0,
+      0.0,
+      2000.0,
+      2000.0
+    ],
+    "core_area_um": [
+      30.0,
+      30.0,
+      1770.0,
+      1770.0
+    ],
+    "fixed_changed": 0,
+    "netlist_sha256": "be350b9b1e50213194c15fb42e82d77362cf780fc0c363b02b0ee609b2b80742"
+  }
+}

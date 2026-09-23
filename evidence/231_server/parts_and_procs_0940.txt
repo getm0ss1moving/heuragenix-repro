@@ -1,0 +1,13 @@
+total 12
+-rw-rw-r-- 1 shiliangliang shiliangliang 2463 9月  23 09:38 raw__kroA100.tsp.json
+-rw-rw-r-- 1 shiliangliang shiliangliang 2403 9月  23 09:46 raw__kroB100.tsp.json
+-rw-rw-r-- 1 shiliangliang shiliangliang 2464 9月  23 09:31 raw__kroC100.tsp.json
+
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/sda1                               440G  412G  5.0G  99% /
+/dev/sda1                               440G  412G  5.0G  99% /
+172.17.20.51:/volume1/thinklab-nas-new   84T   68T   16T  82% /mnt/nas-new
+
+24707 Ss         25:41  0.0 bash /tmp/dzy_p1a/run_p1a_231_v2.sh
+25025 Ss         24:48  0.0 bash /tmp/dzy_p1a/watch_p1a_231.sh
+33181 RNl        04:45 30.5 /data/dzy/heura_repr/envs/heura/bin/python /data/dzy/heura_repr/repo/eval_selector_tsp_par2.py --mode raw --adapter  --instances bier127.tsp --tts-budget 10 --rollout-stop completion --tts-workers 4 --improvement-window 20 --time-limit 0 --stale-limit 10 --max-new-tokens 768 --fallback-complete 0 --out /data/dzy/heura_repr/results/paper_table4_231/parts/raw__bier127.tsp.json

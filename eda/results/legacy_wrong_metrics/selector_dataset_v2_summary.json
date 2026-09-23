@@ -1,0 +1,17 @@
+{
+  "n_designs": 4,
+  "oracles": {
+    "gcd": "pad_2",
+    "aes": "pad_2",
+    "jpeg": "layeradj",
+    "ibex": "pad_2"
+  },
+  "n_candidates": {
+    "gcd": 7,
+    "aes": 4,
+    "jpeg": 3,
+    "ibex": 2
+  },
+  "n_sft": 4,
+  "utility_spec": "0.4*d_hpwl + 0.3*d_abs_tns + 0.2*d_wns + 0.1*d_power (归一化四项); gate first"
+}

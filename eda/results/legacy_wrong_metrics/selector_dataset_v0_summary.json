@@ -1,0 +1,15 @@
+{
+  "n_designs": 3,
+  "oracles": {
+    "gcd": "pad_2",
+    "aes": "pad_2",
+    "jpeg": "density_040"
+  },
+  "n_candidates": {
+    "gcd": 7,
+    "aes": 4,
+    "jpeg": 3
+  },
+  "n_sft": 3,
+  "utility_spec": "-(hpwl/base_hpwl) - 0.5*abs(tns)/max(abs(base_tns),eps) - 0.1*power/base_power; gate first"
+}

@@ -1,0 +1,9 @@
+{
+  "reasoning_nearest_avg": 4.1342775951401824,
+  "reasoning_nearest_n": 12,
+  "released_evolved_nearest_avg": 8.747138630051127,
+  "released_n": 12,
+  "deepseek_chat_nearest_avg": 16.28840709581083,
+  "chat_n": 12,
+  "verdict": "reasoning_better_than_released"
+}

@@ -1,0 +1,40 @@
+{
+  "designs": {
+    "gcd": {
+      "base": "gcd_baseline_pinoffset_0001",
+      "candidates": {
+        "density_025": "phase0_sweep_0002_density_025",
+        "density_035": "phase0_sweep_0002_density_035",
+        "density_040": "phase0_sweep_0002_density_040",
+        "pad_2": "phase0_sweep_0002_pad_2",
+        "pad_6": "phase0_sweep_0002_pad_6",
+        "grt_200": "phase0_sweep_0002_grt_200",
+        "layeradj": "gcd_layeradj_test_0001"
+      }
+    },
+    "aes": {
+      "base": "aes_baseline_0001",
+      "candidates": {
+        "density_040": "aes_density_040",
+        "pad_2": "aes_pad_2",
+        "grt_200": "aes_grt_200",
+        "density_040_pad_2": "aes_density_040_pad_2"
+      }
+    },
+    "jpeg": {
+      "base": "jpeg_baseline_0001",
+      "candidates": {
+        "layeradj": "jpeg_layeradj_0001",
+        "pad_2": "jpeg_pad_2",
+        "density_040": "jpeg_density_040"
+      }
+    },
+    "ibex": {
+      "base": "ibex_baseline_0001",
+      "candidates": {
+        "density_040": "ibex_density_040",
+        "pad_2": "ibex_pad_2"
+      }
+    }
+  }
+}

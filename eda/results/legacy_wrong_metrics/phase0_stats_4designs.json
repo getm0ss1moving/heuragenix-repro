@@ -1,0 +1,1001 @@
+{
+  "designs": [
+    "aes",
+    "gcd",
+    "ibex",
+    "jpeg"
+  ],
+  "candidates": {
+    "density_025": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 709.6419999999998,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 8133.545,
+          "wirelength_um_delta": 569.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 16019.0,
+          "vias_delta": 44.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1930.0,
+          "wns_min_ns_delta": 0.008584688758403125,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.4927729475056563,
+          "wns_max_ns_delta": 0.0392677013131385,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.5940255122596936,
+          "tns_ns_delta": 4.9492784604847735,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -10.63110518597402,
+          "total_power_w_delta": 2.599999999999998e-05,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000993,
+          "duration_s_delta": -1.6400000000000006,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 12.11
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": 709.6419999999998,
+          "ci95_low": 709.6419999999998,
+          "ci95_high": 709.6419999999998,
+          "mean_pct": 9.558880281706264
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": 569.0,
+          "ci95_low": 569.0,
+          "ci95_high": 569.0,
+          "mean_pct": 3.6828478964401294
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 44.0,
+          "ci95_low": 44.0,
+          "ci95_high": 44.0,
+          "mean_pct": 2.3329798515376456
+        },
+        "wns_min_ns": {
+          "n": 1,
+          "mean_delta": 0.008584688758403125,
+          "ci95_low": 0.008584688758403125,
+          "ci95_high": 0.008584688758403125,
+          "mean_pct": 1.773006388179343
+        },
+        "wns_max_ns": {
+          "n": 1,
+          "mean_delta": 0.0392677013131385,
+          "ci95_low": 0.0392677013131385,
+          "ci95_high": 0.0392677013131385,
+          "mean_pct": -6.200556151802582
+        },
+        "tns_ns": {
+          "n": 1,
+          "mean_delta": 4.9492784604847735,
+          "ci95_low": 4.9492784604847735,
+          "ci95_high": 4.9492784604847735,
+          "mean_pct": -31.766088517401023
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": 2.599999999999998e-05,
+          "ci95_low": 2.599999999999998e-05,
+          "ci95_high": 2.599999999999998e-05,
+          "mean_pct": 2.688728024819026
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": -1.6400000000000006,
+          "ci95_low": -1.6400000000000006,
+          "ci95_high": -1.6400000000000006,
+          "mean_pct": -11.927272727272731
+        }
+      }
+    },
+    "density_035": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -657.8150000000005,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 6766.088,
+          "wirelength_um_delta": -534.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 14916.0,
+          "vias_delta": 13.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1899.0,
+          "wns_min_ns_delta": 0.0037695403421196816,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.48795779908937287,
+          "wns_max_ns_delta": 0.08020651037020499,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.5530867032026271,
+          "tns_ns_delta": 0.9164615992163601,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -14.663922047242433,
+          "total_power_w_delta": -2.4999999999999957e-05,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000942,
+          "duration_s_delta": 1.3100000000000005,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 15.06
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": -657.8150000000005,
+          "ci95_low": -657.8150000000005,
+          "ci95_high": -657.8150000000005,
+          "mean_pct": -8.860770406078858
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": -534.0,
+          "ci95_low": -534.0,
+          "ci95_high": -534.0,
+          "mean_pct": -3.4563106796116503
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 13.0,
+          "ci95_low": 13.0,
+          "ci95_high": 13.0,
+          "mean_pct": 0.689289501590668
+        },
+        "wns_min_ns": {
+          "n": 1,
+          "mean_delta": 0.0037695403421196816,
+          "ci95_low": 0.0037695403421196816,
+          "ci95_high": 0.0037695403421196816,
+          "mean_pct": 0.7785278296240937
+        },
+        "wns_max_ns": {
+          "n": 1,
+          "mean_delta": 0.08020651037020499,
+          "ci95_low": 0.08020651037020499,
+          "ci95_high": 0.08020651037020499,
+          "mean_pct": -12.664988136807315
+        },
+        "tns_ns": {
+          "n": 1,
+          "mean_delta": 0.9164615992163601,
+          "ci95_low": 0.9164615992163601,
+          "ci95_high": 0.9164615992163601,
+          "mean_pct": -5.882150401506058
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": -2.4999999999999957e-05,
+          "ci95_low": -2.4999999999999957e-05,
+          "ci95_high": -2.4999999999999957e-05,
+          "mean_pct": -2.58531540847983
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": 1.3100000000000005,
+          "ci95_low": 1.3100000000000005,
+          "ci95_high": 1.3100000000000005,
+          "mean_pct": 9.527272727272731
+        }
+      }
+    },
+    "density_040": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": -133664.60699999996,
+          "hpwl_route_um_base": 1027437.882,
+          "hpwl_route_um_cand": 893773.275,
+          "wirelength_um_delta": -108465.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1429488.0,
+          "vias_delta": -1881.0,
+          "vias_base": 153258.0,
+          "vias_cand": 151377.0,
+          "wns_min_ns_delta": 0.07176837105519708,
+          "wns_min_ns_base": -0.14628387804022094,
+          "wns_min_ns_cand": -0.07451550698502386,
+          "wns_max_ns_delta": 0.13054580008724126,
+          "wns_max_ns_base": -1.8613235923842695,
+          "wns_max_ns_cand": -1.7307777922970282,
+          "tns_ns_delta": 47.42878579678322,
+          "tns_ns_base": -289.19323221347724,
+          "tns_ns_cand": -241.76444641669403,
+          "total_power_w_delta": -0.002599999999999998,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.0398,
+          "duration_s_delta": 75.78999999999999,
+          "duration_s_base": 230.66,
+          "duration_s_cand": 306.45
+        },
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -998.5910000000003,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 6425.312,
+          "wirelength_um_delta": -849.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 14601.0,
+          "vias_delta": 32.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1918.0,
+          "wns_min_ns_delta": 0.009855339046023037,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.4940435977932762,
+          "wns_max_ns_delta": 0.04682032671866132,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.5864728868541708,
+          "tns_ns_delta": 0.6634639692095181,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -14.916919677249275,
+          "total_power_w_delta": -1.0000000000000243e-06,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000966,
+          "duration_s_delta": 3.460000000000001,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 17.21
+        },
+        {
+          "design": "ibex",
+          "hpwl_route_um_delta": -124141.82700000005,
+          "hpwl_route_um_base": 929652.175,
+          "hpwl_route_um_cand": 805510.348,
+          "wirelength_um_delta": -111254.0,
+          "wirelength_um_base": 1455717.0,
+          "wirelength_um_cand": 1344463.0,
+          "vias_delta": -607.0,
+          "vias_base": 137339.0,
+          "vias_cand": 136732.0,
+          "wns_min_ns_delta": -0.061066708973566586,
+          "wns_min_ns_base": -0.12591217314061787,
+          "wns_min_ns_cand": -0.18697888211418445,
+          "wns_max_ns_delta": 0.7246665694851426,
+          "wns_max_ns_base": -5.2052124084301905,
+          "wns_max_ns_cand": -4.480545838945048,
+          "tns_ns_delta": 97.06775746822069,
+          "tns_ns_base": -299.0477212727286,
+          "tns_ns_cand": -201.97996380450792,
+          "total_power_w_delta": -0.0017000000000000001,
+          "total_power_w_base": 0.0364,
+          "total_power_w_cand": 0.0347,
+          "duration_s_delta": 14.71999999999997,
+          "duration_s_base": 276.8,
+          "duration_s_cand": 291.52
+        },
+        {
+          "design": "jpeg",
+          "hpwl_route_um_delta": -219517.0149999999,
+          "hpwl_route_um_base": 1875375.403,
+          "hpwl_route_um_cand": 1655858.388,
+          "wirelength_um_delta": -239977.0,
+          "wirelength_um_base": 2222810.0,
+          "wirelength_um_cand": 1982833.0,
+          "vias_delta": -1899.0,
+          "vias_base": 315106.0,
+          "vias_cand": 313207.0,
+          "wns_min_ns_delta": -0.08166489937659865,
+          "wns_min_ns_base": 0.0401718669699648,
+          "wns_min_ns_cand": -0.04149303240663385,
+          "wns_max_ns_delta": 0.3239062443274542,
+          "wns_max_ns_base": -1.0944188087772904,
+          "wns_max_ns_cand": -0.7705125644498362,
+          "tns_ns_delta": 64.87314336010562,
+          "tns_ns_base": -129.8998065880414,
+          "tns_ns_cand": -65.02666322793579,
+          "total_power_w_delta": -0.007000000000000006,
+          "total_power_w_base": 0.159,
+          "total_power_w_cand": 0.152,
+          "duration_s_delta": 27.930000000000007,
+          "duration_s_base": 305.14,
+          "duration_s_cand": 333.07
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 4,
+          "mean_delta": -119580.50999999998,
+          "ci95_low": -195673.21799999994,
+          "ci95_high": -34165.09499999999,
+          "mean_pct": -12.879835037038674
+        },
+        "wirelength_um": {
+          "n": 4,
+          "mean_delta": -115136.25,
+          "ci95_low": -207099.0,
+          "ci95_high": -28450.25,
+          "mean_pct": -7.746592045165428
+        },
+        "vias": {
+          "n": 4,
+          "mean_delta": -1088.75,
+          "ci95_low": -1890.0,
+          "ci95_high": -287.5,
+          "mean_pct": -0.14381397727429218
+        },
+        "wns_min_ns": {
+          "n": 4,
+          "mean_delta": -0.01527697456223628,
+          "ci95_low": -0.07136580417508262,
+          "ci95_high": 0.04081185505061006,
+          "mean_pct": -50.45373127723575
+        },
+        "wns_max_ns": {
+          "n": 4,
+          "mean_delta": 0.3064847351546248,
+          "ci95_low": 0.08868306340295129,
+          "ci95_high": 0.5761363771356673,
+          "mean_pct": -14.481220004671172
+        },
+        "tns_ns": {
+          "n": 4,
+          "mean_delta": 52.50828764857976,
+          "ci95_low": 16.71588381693354,
+          "ci95_high": 84.65801455036132,
+          "mean_pct": -25.764642115739488
+        },
+        "total_power_w": {
+          "n": 4,
+          "mean_delta": -0.0028252500000000014,
+          "ci95_low": -0.005675000000000005,
+          "ci95_high": -0.0006507499999999996,
+          "mean_pct": -3.8270833704093548
+        },
+        "duration_s": {
+          "n": 4,
+          "mean_delta": 30.474999999999994,
+          "ci95_low": 9.089999999999986,
+          "ci95_high": 60.52249999999999,
+          "mean_pct": 18.123154274095974
+        }
+      }
+    },
+    "density_040_pad_2": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": -114247.625,
+          "hpwl_route_um_base": 1027437.882,
+          "hpwl_route_um_cand": 913190.257,
+          "wirelength_um_delta": -94309.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1443644.0,
+          "vias_delta": 3967.0,
+          "vias_base": 153258.0,
+          "vias_cand": 157225.0,
+          "wns_min_ns_delta": -0.03531597336752523,
+          "wns_min_ns_base": -0.14628387804022094,
+          "wns_min_ns_cand": -0.18159985140774618,
+          "wns_max_ns_delta": 0.39747717353641243,
+          "wns_max_ns_base": -1.8613235923842695,
+          "wns_max_ns_cand": -1.463846418847857,
+          "tns_ns_delta": 90.14334778214626,
+          "tns_ns_base": -289.19323221347724,
+          "tns_ns_cand": -199.04988443133098,
+          "total_power_w_delta": -0.0015999999999999973,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.0408,
+          "duration_s_delta": 117.9,
+          "duration_s_base": 230.66,
+          "duration_s_cand": 348.56
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": -114247.625,
+          "ci95_low": -114247.625,
+          "ci95_high": -114247.625,
+          "mean_pct": -11.119662512112825
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": -94309.0,
+          "ci95_low": -94309.0,
+          "ci95_high": -94309.0,
+          "mean_pct": -6.132111969611555
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 3967.0,
+          "ci95_low": 3967.0,
+          "ci95_high": 3967.0,
+          "mean_pct": 2.5884456276344463
+        },
+        "wns_min_ns": {
+          "n": 1,
+          "mean_delta": -0.03531597336752523,
+          "ci95_low": -0.03531597336752523,
+          "ci95_high": -0.03531597336752523,
+          "mean_pct": 24.142081711707874
+        },
+        "wns_max_ns": {
+          "n": 1,
+          "mean_delta": 0.39747717353641243,
+          "ci95_low": 0.39747717353641243,
+          "ci95_high": 0.39747717353641243,
+          "mean_pct": -21.354544430786618
+        },
+        "tns_ns": {
+          "n": 1,
+          "mean_delta": 90.14334778214626,
+          "ci95_low": 90.14334778214626,
+          "ci95_high": 90.14334778214626,
+          "mean_pct": -31.170628403780924
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": -0.0015999999999999973,
+          "ci95_low": -0.0015999999999999973,
+          "ci95_high": -0.0015999999999999973,
+          "mean_pct": -3.7735849056603707
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": 117.9,
+          "ci95_low": 117.9,
+          "ci95_high": 117.9,
+          "mean_pct": 51.11419405185121
+        }
+      }
+    },
+    "grt_200": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 1027437.882,
+          "hpwl_route_um_cand": 1027437.882,
+          "wirelength_um_delta": 0.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1537953.0,
+          "vias_delta": 0.0,
+          "vias_base": 153258.0,
+          "vias_cand": 153258.0,
+          "wns_min_ns_delta": 0.0,
+          "wns_min_ns_base": -0.14628387804022094,
+          "wns_min_ns_cand": -0.14628387804022094,
+          "wns_max_ns_delta": 0.0,
+          "wns_max_ns_base": -1.8613235923842695,
+          "wns_max_ns_cand": -1.8613235923842695,
+          "tns_ns_delta": 0.0,
+          "tns_ns_base": -289.19323221347724,
+          "tns_ns_cand": -289.19323221347724,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.0424,
+          "duration_s_delta": 27.330000000000013,
+          "duration_s_base": 230.66,
+          "duration_s_cand": 257.99
+        },
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 7423.903,
+          "wirelength_um_delta": 0.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 15450.0,
+          "vias_delta": 0.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1886.0,
+          "wns_min_ns_delta": 0.0,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.4841882587472532,
+          "wns_max_ns_delta": 0.0,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.6332932135728321,
+          "tns_ns_delta": 0.0,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -15.580383646458793,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000967,
+          "duration_s_delta": 0.6600000000000001,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 14.41
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wirelength_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "vias": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wns_min_ns": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wns_max_ns": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "tns_ns": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "total_power_w": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "duration_s": {
+          "n": 2,
+          "mean_delta": 13.995000000000006,
+          "ci95_low": 0.6600000000000001,
+          "ci95_high": 27.330000000000013,
+          "mean_pct": 8.324304170640772
+        }
+      }
+    },
+    "grt_50": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 7423.903,
+          "wirelength_um_delta": 0.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 15450.0,
+          "vias_delta": 0.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1886.0,
+          "wns_min_ns_delta": 0.0,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.4841882587472532,
+          "wns_max_ns_delta": 0.0,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.6332932135728321,
+          "tns_ns_delta": 0.0,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -15.580383646458793,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000967,
+          "duration_s_delta": 0.4900000000000002,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 14.24
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wns_min_ns": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wns_max_ns": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "tns_ns": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": 0.4900000000000002,
+          "ci95_low": 0.4900000000000002,
+          "ci95_high": 0.4900000000000002,
+          "mean_pct": 3.5636363636363653
+        }
+      }
+    },
+    "layeradj": {
+      "pairs": [
+        {
+          "design": "jpeg",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 1875375.403,
+          "hpwl_route_um_cand": 1875375.403,
+          "wirelength_um_delta": 633.0,
+          "wirelength_um_base": 2222810.0,
+          "wirelength_um_cand": 2223443.0,
+          "vias_delta": -2342.0,
+          "vias_base": 315106.0,
+          "vias_cand": 312764.0,
+          "wns_min_ns_delta": 0.004411582335418593,
+          "wns_min_ns_base": 0.0401718669699648,
+          "wns_min_ns_cand": 0.044583449305383396,
+          "wns_max_ns_delta": -0.01279953956829405,
+          "wns_max_ns_base": -1.0944188087772904,
+          "wns_max_ns_cand": -1.1072183483455844,
+          "tns_ns_delta": 1.2796306598754938,
+          "tns_ns_base": -129.8998065880414,
+          "tns_ns_cand": -128.6201759281659,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.159,
+          "total_power_w_cand": 0.159,
+          "duration_s_delta": 3.0600000000000023,
+          "duration_s_base": 305.14,
+          "duration_s_cand": 308.2
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": 633.0,
+          "ci95_low": 633.0,
+          "ci95_high": 633.0,
+          "mean_pct": 0.02847746770979076
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": -2342.0,
+          "ci95_low": -2342.0,
+          "ci95_high": -2342.0,
+          "mean_pct": -0.7432419566748967
+        },
+        "wns_min_ns": {
+          "n": 1,
+          "mean_delta": 0.004411582335418593,
+          "ci95_low": 0.004411582335418593,
+          "ci95_high": 0.004411582335418593,
+          "mean_pct": 10.981770746968243
+        },
+        "wns_max_ns": {
+          "n": 1,
+          "mean_delta": -0.01279953956829405,
+          "ci95_low": -0.01279953956829405,
+          "ci95_high": -0.01279953956829405,
+          "mean_pct": 1.1695284717003345
+        },
+        "tns_ns": {
+          "n": 1,
+          "mean_delta": 1.2796306598754938,
+          "ci95_low": 1.2796306598754938,
+          "ci95_high": 1.2796306598754938,
+          "mean_pct": -0.985090504355914
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": 3.0600000000000023,
+          "ci95_low": 3.0600000000000023,
+          "ci95_high": 3.0600000000000023,
+          "mean_pct": 1.0028183784492373
+        }
+      }
+    },
+    "pad_2": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": -147868.89399999997,
+          "hpwl_route_um_base": 1027437.882,
+          "hpwl_route_um_cand": 879568.988,
+          "wirelength_um_delta": -128141.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1409812.0,
+          "vias_delta": -162.0,
+          "vias_base": 153258.0,
+          "vias_cand": 153096.0,
+          "wns_min_ns_delta": 0.08621770208474355,
+          "wns_min_ns_base": -0.14628387804022094,
+          "wns_min_ns_cand": -0.06006617595547739,
+          "wns_max_ns_delta": 0.21077540309701148,
+          "wns_max_ns_base": -1.8613235923842695,
+          "wns_max_ns_cand": -1.650548189287258,
+          "tns_ns_delta": 74.2164608553669,
+          "tns_ns_base": -289.19323221347724,
+          "tns_ns_cand": -214.97677135811034,
+          "total_power_w_delta": -0.0023999999999999994,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.04,
+          "duration_s_delta": 94.86999999999998,
+          "duration_s_base": 230.66,
+          "duration_s_cand": 325.53
+        },
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -1190.205,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 6233.698,
+          "wirelength_um_delta": -929.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 14521.0,
+          "vias_delta": -9.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1877.0,
+          "wns_min_ns_delta": 0.014675094887989015,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.4988633536352422,
+          "wns_max_ns_delta": 0.024398261879192362,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.6088949516936397,
+          "tns_ns_delta": 0.7069758312212269,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -14.873407815237567,
+          "total_power_w_delta": -3.999999999999989e-06,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000963,
+          "duration_s_delta": 1.9399999999999995,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 15.69
+        },
+        {
+          "design": "ibex",
+          "hpwl_route_um_delta": -135943.2250000001,
+          "hpwl_route_um_base": 929652.175,
+          "hpwl_route_um_cand": 793708.95,
+          "wirelength_um_delta": -120711.0,
+          "wirelength_um_base": 1455717.0,
+          "wirelength_um_cand": 1335006.0,
+          "vias_delta": 130.0,
+          "vias_base": 137339.0,
+          "vias_cand": 137469.0,
+          "wns_min_ns_delta": 0.028760550310923533,
+          "wns_min_ns_base": -0.12591217314061787,
+          "wns_min_ns_cand": -0.09715162282969433,
+          "wns_max_ns_delta": 0.6854144112947882,
+          "wns_max_ns_base": -5.2052124084301905,
+          "wns_max_ns_cand": -4.519797997135402,
+          "tns_ns_delta": 67.09109546708137,
+          "tns_ns_base": -299.0477212727286,
+          "tns_ns_cand": -231.95662580564723,
+          "total_power_w_delta": -0.001899999999999999,
+          "total_power_w_base": 0.0364,
+          "total_power_w_cand": 0.0345,
+          "duration_s_delta": 49.31,
+          "duration_s_base": 276.8,
+          "duration_s_cand": 326.11
+        },
+        {
+          "design": "jpeg",
+          "hpwl_route_um_delta": -231966.99,
+          "hpwl_route_um_base": 1875375.403,
+          "hpwl_route_um_cand": 1643408.413,
+          "wirelength_um_delta": -247393.0,
+          "wirelength_um_base": 2222810.0,
+          "wirelength_um_cand": 1975417.0,
+          "vias_delta": -1510.0,
+          "vias_base": 315106.0,
+          "vias_cand": 313596.0,
+          "wns_min_ns_delta": -0.21850610828072078,
+          "wns_min_ns_base": 0.0401718669699648,
+          "wns_min_ns_cand": -0.17833424131075598,
+          "wns_max_ns_delta": 0.2082973852359653,
+          "wns_max_ns_base": -1.0944188087772904,
+          "wns_max_ns_cand": -0.8861214235413251,
+          "tns_ns_delta": 49.510398959765396,
+          "tns_ns_base": -129.8998065880414,
+          "tns_ns_cand": -80.389407628276,
+          "total_power_w_delta": -0.007000000000000006,
+          "total_power_w_base": 0.159,
+          "total_power_w_cand": 0.152,
+          "duration_s_delta": 23.00999999999999,
+          "duration_s_base": 305.14,
+          "duration_s_cand": 328.15
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 4,
+          "mean_delta": -129242.3285,
+          "ci95_low": -207961.04875000002,
+          "ci95_high": -37859.87724999998,
+          "mean_pct": -14.35404635248932
+        },
+        "wirelength_um": {
+          "n": 4,
+          "mean_delta": -124293.5,
+          "ci95_low": -215722.5,
+          "ci95_high": -32732.0,
+          "mean_pct": -8.44170192059239
+        },
+        "vias": {
+          "n": 4,
+          "mean_delta": -387.75,
+          "ci95_low": -1134.75,
+          "ci95_high": 60.5,
+          "mean_pct": -0.24186301649990255
+        },
+        "wns_min_ns": {
+          "n": 4,
+          "mean_delta": -0.02221319024926617,
+          "ci95_low": -0.1566894436328097,
+          "ci95_high": 0.06833205028555492,
+          "mean_pct": -155.66942505872416
+        },
+        "wns_max_ns": {
+          "n": 4,
+          "mean_delta": 0.28222136537673936,
+          "ci95_low": 0.07099254718364714,
+          "ci95_high": 0.5661351547800825,
+          "mean_pct": -11.844273798791955
+        },
+        "tns_ns": {
+          "n": 4,
+          "mean_delta": 47.88123277835872,
+          "ci95_low": 17.303005740186265,
+          "ci95_high": 70.65377816122414,
+          "mean_pct": -22.68752246836651
+        },
+        "total_power_w": {
+          "n": 4,
+          "mean_delta": -0.0028260000000000013,
+          "ci95_low": -0.005725000000000004,
+          "ci95_high": -0.0006029999999999999,
+          "mean_pct": -3.9240809417244993
+        },
+        "duration_s": {
+          "n": 4,
+          "mean_delta": 42.28249999999999,
+          "ci95_low": 12.474999999999994,
+          "ci95_high": 76.90499999999997,
+          "mean_pct": 20.148499912662352
+        }
+      }
+    },
+    "pad_6": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 185.01199999999972,
+          "hpwl_route_um_base": 7423.903,
+          "hpwl_route_um_cand": 7608.915,
+          "wirelength_um_delta": -65.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 15385.0,
+          "vias_delta": 16.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1902.0,
+          "wns_min_ns_delta": 0.01921562963136486,
+          "wns_min_ns_base": 0.4841882587472532,
+          "wns_min_ns_cand": 0.503403888378618,
+          "wns_max_ns_delta": -0.023226088376641862,
+          "wns_max_ns_base": -0.6332932135728321,
+          "wns_max_ns_cand": -0.6565193019494739,
+          "tns_ns_delta": 2.134049442007443,
+          "tns_ns_base": -15.580383646458793,
+          "tns_ns_cand": -13.44633420445135,
+          "total_power_w_delta": -2.099999999999997e-05,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000946,
+          "duration_s_delta": -2.7200000000000006,
+          "duration_s_base": 13.75,
+          "duration_s_cand": 11.03
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": 185.01199999999972,
+          "ci95_low": 185.01199999999972,
+          "ci95_high": 185.01199999999972,
+          "mean_pct": 2.4921123026526573
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": -65.0,
+          "ci95_low": -65.0,
+          "ci95_high": -65.0,
+          "mean_pct": -0.42071197411003236
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 16.0,
+          "ci95_low": 16.0,
+          "ci95_high": 16.0,
+          "mean_pct": 0.848356309650053
+        },
+        "wns_min_ns": {
+          "n": 1,
+          "mean_delta": 0.01921562963136486,
+          "ci95_low": 0.01921562963136486,
+          "ci95_high": 0.01921562963136486,
+          "mean_pct": 3.9686277567080457
+        },
+        "wns_max_ns": {
+          "n": 1,
+          "mean_delta": -0.023226088376641862,
+          "ci95_low": -0.023226088376641862,
+          "ci95_high": -0.023226088376641862,
+          "mean_pct": 3.6675094377859994
+        },
+        "tns_ns": {
+          "n": 1,
+          "mean_delta": 2.134049442007443,
+          "ci95_low": 2.134049442007443,
+          "ci95_high": 2.134049442007443,
+          "mean_pct": -13.697027559988763
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": -2.099999999999997e-05,
+          "ci95_low": -2.099999999999997e-05,
+          "ci95_high": -2.099999999999997e-05,
+          "mean_pct": -2.1716649431230577
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": -2.7200000000000006,
+          "ci95_low": -2.7200000000000006,
+          "ci95_high": -2.7200000000000006,
+          "mean_pct": -19.781818181818185
+        }
+      }
+    }
+  },
+  "bootstrap_n": 5000
+}

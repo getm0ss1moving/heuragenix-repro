@@ -1,0 +1,14 @@
+group,path,instance,value,gap,seconds,error
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,kroA100.tsp,21825.0,2.551451931209473,1.23,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,kroA150.tsp,28212.0,6.364047654954004,3.46,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,kroB100.tsp,22269.0,0.5781130030260603,0.79,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,kroB200.tsp,30809.0,4.660801032713931,17.99,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,kroC100.tsp,22325.0,7.595546773338474,1.25,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,bier127.tsp,120384.0,1.7771089430344431,2.13,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,tsp225.tsp,4014.0,2.424087777494259,25.37,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,a280.tsp,2730.0,5.854982551376502,47.98,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,pcb442.tsp,52455.0,3.2822714026935498,118.88,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,gr666.tsp,314534.0,6.854238716121186,180.0,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,pr152.tsp,75135.0,1.9719877310605032,2.6,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,pr1002.tsp,273802.0,5.696693624659808,180.0,
+reason_nearest_neighbor,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/nearest_neighbor_f91d.evolution/train_case_0.tsp/nearest_neighbor_aac7.py,pr2392.tsp,,,180.05,INCOMPLETE steps=1181

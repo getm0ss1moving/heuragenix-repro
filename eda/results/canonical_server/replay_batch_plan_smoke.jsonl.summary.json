@@ -1,0 +1,10 @@
+{
+  "states_total": 69,
+  "states_replayable": 46,
+  "existing_output_records": 0,
+  "skipped_design_default": 0,
+  "planned": 6,
+  "skip_done": 0,
+  "action_catalog": "replay_actions_v1_2026-09-22",
+  "out_jsonl": "/data/dzy/heura_repr/eda/results/canonical_server/checkpoint_replay_v2.jsonl"
+}

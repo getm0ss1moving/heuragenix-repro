@@ -1,0 +1,30 @@
+{
+  "def": "/data/dzy/heura_repr/eda/runs/gcd_baseline_pinoffset_0001/results/gcd_sky130hd_route.def",
+  "design": "gcd",
+  "verdict": true,
+  "checks": {
+    "components": 10593,
+    "nets": 288,
+    "overlap_pairs": 0,
+    "overlap_examples": [],
+    "overlap_status": "ok",
+    "row_violations": 0,
+    "die_boundary_violations": 0,
+    "core_boundary_violations": 0,
+    "net_violations": 0,
+    "die_area_um": [
+      0.0,
+      0.0,
+      299.96,
+      300.13
+    ],
+    "core_area_um": [
+      9.996,
+      10.08,
+      289.964,
+      290.048
+    ],
+    "fixed_changed": 0,
+    "netlist_sha256": "2d9509a0fd79565607e67b904cd2ae444fe7c033315d81e06ab11bebfe6e2efa"
+  }
+}

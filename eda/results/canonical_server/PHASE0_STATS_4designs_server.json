@@ -1,0 +1,1179 @@
+{
+  "designs": [
+    "aes",
+    "gcd",
+    "ibex",
+    "jpeg"
+  ],
+  "candidates": {
+    "density_025": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 480.4299999999985,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 13598.13,
+          "hpwl_no_ports_um_delta": 702.965000000001,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 8283.95,
+          "wirelength_um_delta": 569.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 16019.0,
+          "vias_delta": 44.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1930.0,
+          "setup_wns_ns_delta": 0.0392677013131385,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.5940255122596936,
+          "hold_wns_ns_delta": 0.008584688758403125,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.4927729475056563,
+          "setup_tns_ns_delta": 4.9492784604847735,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -10.63110518597402,
+          "total_power_w_delta": 2.599999999999998e-05,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000993,
+          "duration_s_delta": -1.9900000000000002,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 12.02
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": 480.4299999999985,
+          "ci95_low": 480.4299999999985,
+          "ci95_high": 480.4299999999985,
+          "mean_pct": 3.6624560708050837,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 1,
+          "mean_delta": 702.965000000001,
+          "ci95_low": 702.965000000001,
+          "ci95_high": 702.965000000001,
+          "mean_pct": 9.27273962420452,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": 569.0,
+          "ci95_low": 569.0,
+          "ci95_high": 569.0,
+          "mean_pct": 3.6828478964401294,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 44.0,
+          "ci95_low": 44.0,
+          "ci95_high": 44.0,
+          "mean_pct": 2.3329798515376456,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 1,
+          "mean_delta": 0.0392677013131385,
+          "ci95_low": 0.0392677013131385,
+          "ci95_high": 0.0392677013131385,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 1,
+          "mean_delta": 0.008584688758403125,
+          "ci95_low": 0.008584688758403125,
+          "ci95_high": 0.008584688758403125,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 1,
+          "mean_delta": 4.9492784604847735,
+          "ci95_low": 4.9492784604847735,
+          "ci95_high": 4.9492784604847735,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": 2.599999999999998e-05,
+          "ci95_low": 2.599999999999998e-05,
+          "ci95_high": 2.599999999999998e-05,
+          "mean_pct": 2.688728024819026,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": -1.9900000000000002,
+          "ci95_low": -1.9900000000000002,
+          "ci95_high": -1.9900000000000002,
+          "mean_pct": -14.20413990007138,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "density_035": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -622.2170000000006,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 12495.483,
+          "hpwl_no_ports_um_delta": -657.8199999999997,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 6923.165,
+          "wirelength_um_delta": -534.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 14916.0,
+          "vias_delta": 13.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1899.0,
+          "setup_wns_ns_delta": 0.08020651037020499,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.5530867032026271,
+          "hold_wns_ns_delta": 0.0037695403421196816,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.48795779908937287,
+          "setup_tns_ns_delta": 0.9164615992163601,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -14.663922047242433,
+          "total_power_w_delta": -2.4999999999999957e-05,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000942,
+          "duration_s_delta": 0.8499999999999996,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 14.86
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": -622.2170000000006,
+          "ci95_low": -622.2170000000006,
+          "ci95_high": -622.2170000000006,
+          "mean_pct": -4.7433391524428865,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 1,
+          "mean_delta": -657.8199999999997,
+          "ci95_low": -657.8199999999997,
+          "ci95_high": -657.8199999999997,
+          "mean_pct": -8.677236533247326,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": -534.0,
+          "ci95_low": -534.0,
+          "ci95_high": -534.0,
+          "mean_pct": -3.4563106796116503,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 13.0,
+          "ci95_low": 13.0,
+          "ci95_high": 13.0,
+          "mean_pct": 0.689289501590668,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 1,
+          "mean_delta": 0.08020651037020499,
+          "ci95_low": 0.08020651037020499,
+          "ci95_high": 0.08020651037020499,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 1,
+          "mean_delta": 0.0037695403421196816,
+          "ci95_low": 0.0037695403421196816,
+          "ci95_high": 0.0037695403421196816,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 1,
+          "mean_delta": 0.9164615992163601,
+          "ci95_low": 0.9164615992163601,
+          "ci95_high": 0.9164615992163601,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": -2.4999999999999957e-05,
+          "ci95_low": -2.4999999999999957e-05,
+          "ci95_high": -2.4999999999999957e-05,
+          "mean_pct": -2.58531540847983,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": 0.8499999999999996,
+          "ci95_low": 0.8499999999999996,
+          "ci95_high": 0.8499999999999996,
+          "mean_pct": 6.06709493219129,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "density_040": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": -110879.93900000001,
+          "hpwl_route_um_base": 1227554.093,
+          "hpwl_route_um_cand": 1116674.154,
+          "hpwl_no_ports_um_delta": -139434.25199999998,
+          "hpwl_no_ports_um_base": 1087118.892,
+          "hpwl_no_ports_um_cand": 947684.64,
+          "wirelength_um_delta": -108465.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1429488.0,
+          "vias_delta": -1881.0,
+          "vias_base": 153258.0,
+          "vias_cand": 151377.0,
+          "setup_wns_ns_delta": 0.13054580008724126,
+          "setup_wns_ns_base": -1.8613235923842695,
+          "setup_wns_ns_cand": -1.7307777922970282,
+          "hold_wns_ns_delta": 0.07176837105519708,
+          "hold_wns_ns_base": -0.14628387804022094,
+          "hold_wns_ns_cand": -0.07451550698502386,
+          "setup_tns_ns_delta": 47.42878579678322,
+          "setup_tns_ns_base": -289.19323221347724,
+          "setup_tns_ns_cand": -241.76444641669403,
+          "total_power_w_delta": -0.002599999999999998,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.0398,
+          "duration_s_delta": 59.389999999999986,
+          "duration_s_base": 306.23,
+          "duration_s_cand": 365.62
+        },
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -687.0740000000005,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 12430.626,
+          "hpwl_no_ports_um_delta": -962.1219999999994,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 6618.863,
+          "wirelength_um_delta": -849.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 14601.0,
+          "vias_delta": 32.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1918.0,
+          "setup_wns_ns_delta": 0.04682032671866132,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.5864728868541708,
+          "hold_wns_ns_delta": 0.009855339046023037,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.4940435977932762,
+          "setup_tns_ns_delta": 0.6634639692095181,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -14.916919677249275,
+          "total_power_w_delta": -1.0000000000000243e-06,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000966,
+          "duration_s_delta": 2.639999999999999,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 16.65
+        },
+        {
+          "design": "ibex",
+          "hpwl_route_um_delta": -103211.50800000015,
+          "hpwl_route_um_base": 1217880.171,
+          "hpwl_route_um_cand": 1114668.663,
+          "hpwl_no_ports_um_delta": -124239.52400000009,
+          "hpwl_no_ports_um_base": 1001887.942,
+          "hpwl_no_ports_um_cand": 877648.418,
+          "wirelength_um_delta": -111254.0,
+          "wirelength_um_base": 1455717.0,
+          "wirelength_um_cand": 1344463.0,
+          "vias_delta": -607.0,
+          "vias_base": 137339.0,
+          "vias_cand": 136732.0,
+          "setup_wns_ns_delta": 0.7246665694851426,
+          "setup_wns_ns_base": -5.2052124084301905,
+          "setup_wns_ns_cand": -4.480545838945048,
+          "hold_wns_ns_delta": -0.061066708973566586,
+          "hold_wns_ns_base": -0.12591217314061787,
+          "hold_wns_ns_cand": -0.18697888211418445,
+          "setup_tns_ns_delta": 97.06775746822069,
+          "setup_tns_ns_base": -299.0477212727286,
+          "setup_tns_ns_cand": -201.97996380450792,
+          "total_power_w_delta": -0.0017000000000000001,
+          "total_power_w_base": 0.0364,
+          "total_power_w_cand": 0.0347,
+          "duration_s_delta": 14.71999999999997,
+          "duration_s_base": 276.8,
+          "duration_s_cand": 291.52
+        },
+        {
+          "design": "jpeg",
+          "hpwl_route_um_delta": -217776.79499999993,
+          "hpwl_route_um_base": 1996141.315,
+          "hpwl_route_um_cand": 1778364.52,
+          "hpwl_no_ports_um_delta": -222811.74,
+          "hpwl_no_ports_um_base": 1975930.475,
+          "hpwl_no_ports_um_cand": 1753118.735,
+          "wirelength_um_delta": -239977.0,
+          "wirelength_um_base": 2222810.0,
+          "wirelength_um_cand": 1982833.0,
+          "vias_delta": -1899.0,
+          "vias_base": 315106.0,
+          "vias_cand": 313207.0,
+          "setup_wns_ns_delta": 0.3239062443274542,
+          "setup_wns_ns_base": -1.0944188087772904,
+          "setup_wns_ns_cand": -0.7705125644498362,
+          "hold_wns_ns_delta": -0.08166489937659865,
+          "hold_wns_ns_base": 0.0401718669699648,
+          "hold_wns_ns_cand": -0.04149303240663385,
+          "setup_tns_ns_delta": 64.87314336010562,
+          "setup_tns_ns_base": -129.8998065880414,
+          "setup_tns_ns_cand": -65.02666322793579,
+          "total_power_w_delta": -0.007000000000000006,
+          "total_power_w_base": 0.159,
+          "total_power_w_cand": 0.152,
+          "duration_s_delta": 27.930000000000007,
+          "duration_s_base": 305.14,
+          "duration_s_cand": 333.07
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 4,
+          "mean_delta": -108138.82900000003,
+          "ci95_low": -189135.47324999998,
+          "ci95_high": -28235.29025,
+          "mean_pct": -8.413731810323567,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 4,
+          "mean_delta": -121861.90950000001,
+          "ci95_low": -198168.68600000002,
+          "ci95_high": -35580.1545,
+          "mean_pct": -12.29853095716299,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 4,
+          "mean_delta": -115136.25,
+          "ci95_low": -207099.0,
+          "ci95_high": -28450.25,
+          "mean_pct": -7.746592045165428,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 4,
+          "mean_delta": -1088.75,
+          "ci95_low": -1890.0,
+          "ci95_high": -287.5,
+          "mean_pct": -0.14381397727429218,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 4,
+          "mean_delta": 0.3064847351546248,
+          "ci95_low": 0.08868306340295129,
+          "ci95_high": 0.5761363771356673,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 4,
+          "mean_delta": -0.01527697456223628,
+          "ci95_low": -0.07136580417508262,
+          "ci95_high": 0.04081185505061006,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 4,
+          "mean_delta": 52.50828764857976,
+          "ci95_low": 16.71588381693354,
+          "ci95_high": 84.65801455036132,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 4,
+          "mean_delta": -0.0028252500000000014,
+          "ci95_low": -0.005675000000000005,
+          "ci95_high": -0.0006507499999999996,
+          "mean_pct": -3.8270833704093548,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 4,
+          "mean_delta": 26.16999999999999,
+          "ci95_low": 8.679999999999986,
+          "ci95_high": 48.22249999999998,
+          "mean_pct": 13.177174338275215,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "density_040_pad_2": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": -93643.62600000016,
+          "hpwl_route_um_base": 1227554.093,
+          "hpwl_route_um_cand": 1133910.467,
+          "hpwl_no_ports_um_delta": -114625.86699999997,
+          "hpwl_no_ports_um_base": 1087118.892,
+          "hpwl_no_ports_um_cand": 972493.025,
+          "wirelength_um_delta": -94309.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1443644.0,
+          "vias_delta": 3967.0,
+          "vias_base": 153258.0,
+          "vias_cand": 157225.0,
+          "setup_wns_ns_delta": 0.39747717353641243,
+          "setup_wns_ns_base": -1.8613235923842695,
+          "setup_wns_ns_cand": -1.463846418847857,
+          "hold_wns_ns_delta": -0.03531597336752523,
+          "hold_wns_ns_base": -0.14628387804022094,
+          "hold_wns_ns_cand": -0.18159985140774618,
+          "setup_tns_ns_delta": 90.14334778214626,
+          "setup_tns_ns_base": -289.19323221347724,
+          "setup_tns_ns_cand": -199.04988443133098,
+          "total_power_w_delta": -0.0015999999999999973,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.0408,
+          "duration_s_delta": 106.20999999999998,
+          "duration_s_base": 306.23,
+          "duration_s_cand": 412.44
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": -93643.62600000016,
+          "ci95_low": -93643.62600000016,
+          "ci95_high": -93643.62600000016,
+          "mean_pct": -7.628472466834108,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 1,
+          "mean_delta": -114625.86699999997,
+          "ci95_low": -114625.86699999997,
+          "ci95_high": -114625.86699999997,
+          "mean_pct": -10.54400469383067,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": -94309.0,
+          "ci95_low": -94309.0,
+          "ci95_high": -94309.0,
+          "mean_pct": -6.132111969611555,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 3967.0,
+          "ci95_low": 3967.0,
+          "ci95_high": 3967.0,
+          "mean_pct": 2.5884456276344463,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 1,
+          "mean_delta": 0.39747717353641243,
+          "ci95_low": 0.39747717353641243,
+          "ci95_high": 0.39747717353641243,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 1,
+          "mean_delta": -0.03531597336752523,
+          "ci95_low": -0.03531597336752523,
+          "ci95_high": -0.03531597336752523,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 1,
+          "mean_delta": 90.14334778214626,
+          "ci95_low": 90.14334778214626,
+          "ci95_high": 90.14334778214626,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": -0.0015999999999999973,
+          "ci95_low": -0.0015999999999999973,
+          "ci95_high": -0.0015999999999999973,
+          "mean_pct": -3.7735849056603707,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": 106.20999999999998,
+          "ci95_low": 106.20999999999998,
+          "ci95_high": 106.20999999999998,
+          "mean_pct": 34.68308134408777,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "grt_200": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 1227554.093,
+          "hpwl_route_um_cand": 1227554.093,
+          "hpwl_no_ports_um_delta": 0.0,
+          "hpwl_no_ports_um_base": 1087118.892,
+          "hpwl_no_ports_um_cand": 1087118.892,
+          "wirelength_um_delta": 0.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1537953.0,
+          "vias_delta": 0.0,
+          "vias_base": 153258.0,
+          "vias_cand": 153258.0,
+          "setup_wns_ns_delta": 0.0,
+          "setup_wns_ns_base": -1.8613235923842695,
+          "setup_wns_ns_cand": -1.8613235923842695,
+          "hold_wns_ns_delta": 0.0,
+          "hold_wns_ns_base": -0.14628387804022094,
+          "hold_wns_ns_cand": -0.14628387804022094,
+          "setup_tns_ns_delta": 0.0,
+          "setup_tns_ns_base": -289.19323221347724,
+          "setup_tns_ns_cand": -289.19323221347724,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.0424,
+          "duration_s_delta": -1.8400000000000318,
+          "duration_s_base": 306.23,
+          "duration_s_cand": 304.39
+        },
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 13117.7,
+          "hpwl_no_ports_um_delta": 0.0,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 7580.985,
+          "wirelength_um_delta": 0.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 15450.0,
+          "vias_delta": 0.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1886.0,
+          "setup_wns_ns_delta": 0.0,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.6332932135728321,
+          "hold_wns_ns_delta": 0.0,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.4841882587472532,
+          "setup_tns_ns_delta": 0.0,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -15.580383646458793,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000967,
+          "duration_s_delta": -0.1999999999999993,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 13.81
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 2,
+          "mean_delta": -1.0200000000000156,
+          "ci95_low": -1.8400000000000318,
+          "ci95_high": -0.1999999999999993,
+          "mean_pct": -1.014203657414341,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "layeradj": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 13117.7,
+          "hpwl_no_ports_um_delta": 0.0,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 7580.985,
+          "wirelength_um_delta": 54.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 15504.0,
+          "vias_delta": 35.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1921.0,
+          "setup_wns_ns_delta": -0.006738609860845846,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.6400318234336779,
+          "hold_wns_ns_delta": 0.0016952550953964751,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.48588351384264966,
+          "setup_tns_ns_delta": 0.2657927286829125,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -15.314590917775881,
+          "total_power_w_delta": 2.0000000000000486e-06,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000969,
+          "duration_s_delta": 7.6899999999999995,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 21.7
+        },
+        {
+          "design": "jpeg",
+          "hpwl_route_um_delta": 0.0,
+          "hpwl_route_um_base": 1996141.315,
+          "hpwl_route_um_cand": 1996141.315,
+          "hpwl_no_ports_um_delta": 0.0,
+          "hpwl_no_ports_um_base": 1975930.475,
+          "hpwl_no_ports_um_cand": 1975930.475,
+          "wirelength_um_delta": 633.0,
+          "wirelength_um_base": 2222810.0,
+          "wirelength_um_cand": 2223443.0,
+          "vias_delta": -2342.0,
+          "vias_base": 315106.0,
+          "vias_cand": 312764.0,
+          "setup_wns_ns_delta": -0.01279953956829405,
+          "setup_wns_ns_base": -1.0944188087772904,
+          "setup_wns_ns_cand": -1.1072183483455844,
+          "hold_wns_ns_delta": 0.004411582335418593,
+          "hold_wns_ns_base": 0.0401718669699648,
+          "hold_wns_ns_cand": 0.044583449305383396,
+          "setup_tns_ns_delta": 1.2796306598754938,
+          "setup_tns_ns_base": -129.8998065880414,
+          "setup_tns_ns_cand": -128.6201759281659,
+          "total_power_w_delta": 0.0,
+          "total_power_w_base": 0.159,
+          "total_power_w_cand": 0.159,
+          "duration_s_delta": 3.0600000000000023,
+          "duration_s_base": 305.14,
+          "duration_s_cand": 308.2
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 2,
+          "mean_delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "mean_pct": 0.0,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 2,
+          "mean_delta": 343.5,
+          "ci95_low": 54.0,
+          "ci95_high": 633.0,
+          "mean_pct": 0.18899601540829344,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 2,
+          "mean_delta": -1153.5,
+          "ci95_low": -2342.0,
+          "ci95_high": 35.0,
+          "mean_pct": 0.5562687353422971,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 2,
+          "mean_delta": -0.009769074714569947,
+          "ci95_low": -0.01279953956829405,
+          "ci95_high": -0.006738609860845846,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 2,
+          "mean_delta": 0.003053418715407534,
+          "ci95_low": 0.0016952550953964751,
+          "ci95_high": 0.004411582335418593,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 2,
+          "mean_delta": 0.7727116942792032,
+          "ci95_low": 0.2657927286829125,
+          "ci95_high": 1.2796306598754938,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 2,
+          "mean_delta": 1.0000000000000243e-06,
+          "ci95_low": 0.0,
+          "ci95_high": 2.0000000000000486e-06,
+          "mean_pct": 0.10341261633919589,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 2,
+          "mean_delta": 5.375000000000001,
+          "ci95_low": 3.0600000000000023,
+          "ci95_high": 7.6899999999999995,
+          "mean_pct": 27.94609155896052,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "pad_2": {
+      "pairs": [
+        {
+          "design": "aes",
+          "hpwl_route_um_delta": -122468.5830000001,
+          "hpwl_route_um_base": 1227554.093,
+          "hpwl_route_um_cand": 1105085.51,
+          "hpwl_no_ports_um_delta": -152955.664,
+          "hpwl_no_ports_um_base": 1087118.892,
+          "hpwl_no_ports_um_cand": 934163.228,
+          "wirelength_um_delta": -128141.0,
+          "wirelength_um_base": 1537953.0,
+          "wirelength_um_cand": 1409812.0,
+          "vias_delta": -162.0,
+          "vias_base": 153258.0,
+          "vias_cand": 153096.0,
+          "setup_wns_ns_delta": 0.21077540309701148,
+          "setup_wns_ns_base": -1.8613235923842695,
+          "setup_wns_ns_cand": -1.650548189287258,
+          "hold_wns_ns_delta": 0.08621770208474355,
+          "hold_wns_ns_base": -0.14628387804022094,
+          "hold_wns_ns_cand": -0.06006617595547739,
+          "setup_tns_ns_delta": 74.2164608553669,
+          "setup_tns_ns_base": -289.19323221347724,
+          "setup_tns_ns_cand": -214.97677135811034,
+          "total_power_w_delta": -0.0023999999999999994,
+          "total_power_w_base": 0.0424,
+          "total_power_w_cand": 0.04,
+          "duration_s_delta": 79.78999999999996,
+          "duration_s_base": 306.23,
+          "duration_s_cand": 386.02
+        },
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -798.8090000000011,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 12318.891,
+          "hpwl_no_ports_um_delta": -1134.6049999999996,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 6446.38,
+          "wirelength_um_delta": -929.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 14521.0,
+          "vias_delta": -9.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1877.0,
+          "setup_wns_ns_delta": 0.024398261879192362,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.6088949516936397,
+          "hold_wns_ns_delta": 0.014675094887989015,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.4988633536352422,
+          "setup_tns_ns_delta": 0.7069758312212269,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -14.873407815237567,
+          "total_power_w_delta": -3.999999999999989e-06,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000963,
+          "duration_s_delta": 1.4399999999999995,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 15.45
+        },
+        {
+          "design": "ibex",
+          "hpwl_route_um_delta": -112306.96900000004,
+          "hpwl_route_um_base": 1217880.171,
+          "hpwl_route_um_cand": 1105573.202,
+          "hpwl_no_ports_um_delta": -135062.98900000006,
+          "hpwl_no_ports_um_base": 1001887.942,
+          "hpwl_no_ports_um_cand": 866824.953,
+          "wirelength_um_delta": -120711.0,
+          "wirelength_um_base": 1455717.0,
+          "wirelength_um_cand": 1335006.0,
+          "vias_delta": 130.0,
+          "vias_base": 137339.0,
+          "vias_cand": 137469.0,
+          "setup_wns_ns_delta": 0.6854144112947882,
+          "setup_wns_ns_base": -5.2052124084301905,
+          "setup_wns_ns_cand": -4.519797997135402,
+          "hold_wns_ns_delta": 0.028760550310923533,
+          "hold_wns_ns_base": -0.12591217314061787,
+          "hold_wns_ns_cand": -0.09715162282969433,
+          "setup_tns_ns_delta": 67.09109546708137,
+          "setup_tns_ns_base": -299.0477212727286,
+          "setup_tns_ns_cand": -231.95662580564723,
+          "total_power_w_delta": -0.001899999999999999,
+          "total_power_w_base": 0.0364,
+          "total_power_w_cand": 0.0345,
+          "duration_s_delta": 49.31,
+          "duration_s_base": 276.8,
+          "duration_s_cand": 326.11
+        },
+        {
+          "design": "jpeg",
+          "hpwl_route_um_delta": -226256.11999999988,
+          "hpwl_route_um_base": 1996141.315,
+          "hpwl_route_um_cand": 1769885.195,
+          "hpwl_no_ports_um_delta": -231685.588,
+          "hpwl_no_ports_um_base": 1975930.475,
+          "hpwl_no_ports_um_cand": 1744244.887,
+          "wirelength_um_delta": -247393.0,
+          "wirelength_um_base": 2222810.0,
+          "wirelength_um_cand": 1975417.0,
+          "vias_delta": -1510.0,
+          "vias_base": 315106.0,
+          "vias_cand": 313596.0,
+          "setup_wns_ns_delta": 0.2082973852359653,
+          "setup_wns_ns_base": -1.0944188087772904,
+          "setup_wns_ns_cand": -0.8861214235413251,
+          "hold_wns_ns_delta": -0.21850610828072078,
+          "hold_wns_ns_base": 0.0401718669699648,
+          "hold_wns_ns_cand": -0.17833424131075598,
+          "setup_tns_ns_delta": 49.510398959765396,
+          "setup_tns_ns_base": -129.8998065880414,
+          "setup_tns_ns_cand": -80.389407628276,
+          "total_power_w_delta": -0.007000000000000006,
+          "total_power_w_base": 0.159,
+          "total_power_w_cand": 0.152,
+          "duration_s_delta": 23.00999999999999,
+          "duration_s_base": 305.14,
+          "duration_s_cand": 328.15
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 4,
+          "mean_delta": -115457.62025,
+          "ci95_low": -197768.83224999992,
+          "ci95_high": -31216.252500000024,
+          "mean_pct": -9.155592947690112,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 4,
+          "mean_delta": -130209.7115,
+          "ci95_low": -207529.93825,
+          "ci95_high": -39089.86975,
+          "mean_pct": -13.560629429749765,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 4,
+          "mean_delta": -124293.5,
+          "ci95_low": -215722.5,
+          "ci95_high": -32732.0,
+          "mean_pct": -8.44170192059239,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 4,
+          "mean_delta": -387.75,
+          "ci95_low": -1134.75,
+          "ci95_high": 60.5,
+          "mean_pct": -0.24186301649990255,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 4,
+          "mean_delta": 0.28222136537673936,
+          "ci95_low": 0.07099254718364714,
+          "ci95_high": 0.5661351547800825,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 4,
+          "mean_delta": -0.02221319024926617,
+          "ci95_low": -0.1566894436328097,
+          "ci95_high": 0.06833205028555492,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 4,
+          "mean_delta": 47.88123277835872,
+          "ci95_low": 17.303005740186265,
+          "ci95_high": 70.65377816122414,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 4,
+          "mean_delta": -0.0028260000000000013,
+          "ci95_low": -0.005725000000000004,
+          "ci95_high": -0.0006029999999999999,
+          "mean_pct": -3.9240809417244993,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 4,
+          "mean_delta": 38.38749999999999,
+          "ci95_low": 12.224999999999994,
+          "ci95_high": 65.59499999999997,
+          "mean_pct": 15.422264758269792,
+          "signed_ns_no_pct": false
+        }
+      }
+    },
+    "pad_6": {
+      "pairs": [
+        {
+          "design": "gcd",
+          "hpwl_route_um_delta": -172.32000000000153,
+          "hpwl_route_um_base": 13117.7,
+          "hpwl_route_um_cand": 12945.38,
+          "hpwl_no_ports_um_delta": 210.73800000000028,
+          "hpwl_no_ports_um_base": 7580.985,
+          "hpwl_no_ports_um_cand": 7791.723,
+          "wirelength_um_delta": -65.0,
+          "wirelength_um_base": 15450.0,
+          "wirelength_um_cand": 15385.0,
+          "vias_delta": 16.0,
+          "vias_base": 1886.0,
+          "vias_cand": 1902.0,
+          "setup_wns_ns_delta": -0.023226088376641862,
+          "setup_wns_ns_base": -0.6332932135728321,
+          "setup_wns_ns_cand": -0.6565193019494739,
+          "hold_wns_ns_delta": 0.01921562963136486,
+          "hold_wns_ns_base": 0.4841882587472532,
+          "hold_wns_ns_cand": 0.503403888378618,
+          "setup_tns_ns_delta": 2.134049442007443,
+          "setup_tns_ns_base": -15.580383646458793,
+          "setup_tns_ns_cand": -13.44633420445135,
+          "total_power_w_delta": -2.099999999999997e-05,
+          "total_power_w_base": 0.000967,
+          "total_power_w_cand": 0.000946,
+          "duration_s_delta": -3.049999999999999,
+          "duration_s_base": 14.01,
+          "duration_s_cand": 10.96
+        }
+      ],
+      "fields": {
+        "hpwl_route_um": {
+          "n": 1,
+          "mean_delta": -172.32000000000153,
+          "ci95_low": -172.32000000000153,
+          "ci95_high": -172.32000000000153,
+          "mean_pct": -1.313644922509293,
+          "signed_ns_no_pct": false
+        },
+        "hpwl_no_ports_um": {
+          "n": 1,
+          "mean_delta": 210.73800000000028,
+          "ci95_low": 210.73800000000028,
+          "ci95_high": 210.73800000000028,
+          "mean_pct": 2.779823466211848,
+          "signed_ns_no_pct": false
+        },
+        "wirelength_um": {
+          "n": 1,
+          "mean_delta": -65.0,
+          "ci95_low": -65.0,
+          "ci95_high": -65.0,
+          "mean_pct": -0.42071197411003236,
+          "signed_ns_no_pct": false
+        },
+        "vias": {
+          "n": 1,
+          "mean_delta": 16.0,
+          "ci95_low": 16.0,
+          "ci95_high": 16.0,
+          "mean_pct": 0.848356309650053,
+          "signed_ns_no_pct": false
+        },
+        "setup_wns_ns": {
+          "n": 1,
+          "mean_delta": -0.023226088376641862,
+          "ci95_low": -0.023226088376641862,
+          "ci95_high": -0.023226088376641862,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_wns_ns": {
+          "n": 1,
+          "mean_delta": 0.01921562963136486,
+          "ci95_low": 0.01921562963136486,
+          "ci95_high": 0.01921562963136486,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "setup_tns_ns": {
+          "n": 1,
+          "mean_delta": 2.134049442007443,
+          "ci95_low": 2.134049442007443,
+          "ci95_high": 2.134049442007443,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "hold_tns_ns": {
+          "n": 0,
+          "mean_delta": null,
+          "ci95_low": null,
+          "ci95_high": null,
+          "mean_pct": null,
+          "signed_ns_no_pct": true
+        },
+        "total_power_w": {
+          "n": 1,
+          "mean_delta": -2.099999999999997e-05,
+          "ci95_low": -2.099999999999997e-05,
+          "ci95_high": -2.099999999999997e-05,
+          "mean_pct": -2.1716649431230577,
+          "signed_ns_no_pct": false
+        },
+        "duration_s": {
+          "n": 1,
+          "mean_delta": -3.049999999999999,
+          "ci95_low": -3.049999999999999,
+          "ci95_high": -3.049999999999999,
+          "mean_pct": -21.7701641684511,
+          "signed_ns_no_pct": false
+        }
+      }
+    }
+  },
+  "bootstrap_n": 5000
+}

@@ -1,0 +1,81 @@
+{
+  "source": "openlane1",
+  "design": "spm",
+  "flow_status": "flow completed",
+  "runtime_s": 24.0,
+  "instance_count": 1108.0,
+  "area_um2": 8134.051200000001,
+  "utilization_pct": 51.8997,
+  "wns_ns": 0.0,
+  "tns_ns": 0.0,
+  "hold_wns_ns": null,
+  "power_w": 0.001139188,
+  "wirelength_um": 6559.0,
+  "vias": 2205.0,
+  "drc_violations": 0.0,
+  "lvs_errors": 0.0,
+  "hpwl_metric_csv_db": 4514213.0,
+  "hpwl_metric_csv_um": 4514.213,
+  "fidelity": {
+    "stage_defs": {
+      "floorplan": "/Users/duanzeyu/Desktop/文献/eda-101/tools/OpenLane/designs/spm/runs/phase0_0001/results/floorplan/spm.def",
+      "placement": "/Users/duanzeyu/Desktop/文献/eda-101/tools/OpenLane/designs/spm/runs/phase0_0001/results/placement/spm.def",
+      "cts": "/Users/duanzeyu/Desktop/文献/eda-101/tools/OpenLane/designs/spm/runs/phase0_0001/results/cts/spm.def",
+      "routing": "/Users/duanzeyu/Desktop/文献/eda-101/tools/OpenLane/designs/spm/runs/phase0_0001/results/routing/spm.def",
+      "final": "/Users/duanzeyu/Desktop/文献/eda-101/tools/OpenLane/designs/spm/runs/phase0_0001/results/final/def/spm.def"
+    },
+    "hpwl_by_stage": {
+      "floorplan": {
+        "components": 171,
+        "nets": 336,
+        "hpwl_um": 0.0,
+        "hpwl_origin_um": 0.0,
+        "pin_hits": 0,
+        "pin_misses": 0,
+        "cell_area_um2": 379.114,
+        "utilization_pct_of_die": 0.0379
+      },
+      "placement": {
+        "components": 505,
+        "nets": 369,
+        "hpwl_um": 4661.723,
+        "hpwl_origin_um": 4993.1,
+        "pin_hits": 904,
+        "pin_misses": 0,
+        "cell_area_um2": 3585.939,
+        "utilization_pct_of_die": 0.3586
+      },
+      "cts": {
+        "components": 521,
+        "nets": 378,
+        "hpwl_um": 5131.562,
+        "hpwl_origin_um": 5448.06,
+        "pin_hits": 962,
+        "pin_misses": 0,
+        "cell_area_um2": 3868.71,
+        "utilization_pct_of_die": 0.3869
+      },
+      "routing": {
+        "components": 1108,
+        "nets": 438,
+        "hpwl_um": 5547.37,
+        "hpwl_origin_um": 5903.64,
+        "pin_hits": 1082,
+        "pin_misses": 0,
+        "cell_area_um2": 6062.064,
+        "utilization_pct_of_die": 0.6062
+      },
+      "final": {
+        "components": 1108,
+        "nets": 438,
+        "hpwl_um": 5547.37,
+        "hpwl_origin_um": 5903.64,
+        "pin_hits": 1082,
+        "pin_misses": 0,
+        "cell_area_um2": 6062.064,
+        "utilization_pct_of_die": 0.6062
+      }
+    },
+    "pdk_lef": "/Users/duanzeyu/Desktop/文献/eda-101/tools/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
+  }
+}

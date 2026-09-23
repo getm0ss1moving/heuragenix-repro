@@ -1,0 +1,666 @@
+Failed to load tclreadline
+############################################################################
+##
+## Copyright (c) 2019, The Regents of the University of California
+## All rights reserved.
+##
+## BSD 3-Clause License
+##
+## Redistribution and use in source and binary forms, with or without
+## modification, are permitted provided that the following conditions are met:
+##
+## * Redistributions of source code must retain the above copyright notice, this
+##   list of conditions and the following disclaimer.
+##
+## * Redistributions in binary form must reproduce the above copyright notice,
+##   this list of conditions and the following disclaimer in the documentation
+##   and/or other materials provided with the distribution.
+##
+## * Neither the name of the copyright holder nor the names of its
+##   contributors may be used to endorse or promote products derived from
+##   this software without specific prior written permission.
+##
+## THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+## AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+## IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+## ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+## LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+## CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+## SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+## INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+## CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+## ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+## POSSIBILITY OF SUCH DAMAGE.
+##
+############################################################################
+# Assumes flow_helpers.tcl has been read.
+read_libraries
+[INFO ODB-0222] Reading LEF file: sky130hd/sky130hd.tlef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  sky130hd/sky130hd.tlef
+[INFO ODB-0222] Reading LEF file: sky130hd/sky130hd_std_cell.lef
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  sky130hd/sky130hd_std_cell.lef
+read_verilog $synth_verilog
+link_design $top_module
+read_sdc $sdc_file
+[WARNING STA-0354] set_input_delay relative to a clock defined on the same port/pin not allowed.
+utl::metric "IFP::ord_version" [ord::openroad_git_describe]
+# Note that sta::network_instance_count is not valid after tapcells are added.
+utl::metric "IFP::instance_count" [sta::network_instance_count]
+initialize_floorplan -site $site \
+  -die_area $die_area \
+  -core_area $core_area
+[WARNING IFP-0028] Core area lower left (9.996, 10.080) snapped to (10.120, 10.880).
+[INFO IFP-0001] Added 102 rows of 608 sites.
+source $tracks_file
+# remove buffers inserted by synthesis 
+remove_buffers
+[INFO RSZ-0026] Removed 12 buffers.
+################################################################
+# IO Placement (random)
+place_pins -random -hor_layers $io_placer_hor_layer -ver_layers $io_placer_ver_layer
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0007] Random pin placement.
+################################################################
+# Macro Placement
+if { [have_macros] } {
+  global_placement -density $global_place_density
+  macro_placement -halo $macro_place_halo -channel $macro_place_channel
+}
+################################################################
+# Tapcell insertion
+eval tapcell $tapcell_args
+[INFO TAP-0005] Inserted 1040 tapcells.
+################################################################
+# Power distribution network insertion
+source $pdn_cfg
+pdngen
+[INFO PDN-0001] Inserting grid: grid
+################################################################
+# Global placement
+foreach layer_adjustment $global_routing_layer_adjustments {
+  lassign $layer_adjustment layer adjustment
+  set_global_routing_layer_adjustment $layer $adjustment
+}
+set_routing_layers -signal $global_routing_layers \
+  -clock $global_routing_clock_layers
+set_macro_extension 2
+global_placement -routability_driven -density $global_place_density \
+  -pad_left $global_place_pad -pad_right $global_place_pad
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 10120 10880
+[INFO GPL-0005] CoreAreaUxUy: 289800 288320
+[INFO GPL-0006] NumInstances: 1277
+[INFO GPL-0007] NumPlaceInstances: 237
+[INFO GPL-0008] NumFixedInstances: 1040
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 273
+[INFO GPL-0011] NumPins: 907
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 299960 300130
+[INFO GPL-0014] CoreAreaLxLy: 10120 10880
+[INFO GPL-0015] CoreAreaUxUy: 289800 288320
+[INFO GPL-0016] CoreArea: 77594419200
+[INFO GPL-0017] NonPlaceInstsArea: 1301248000
+[INFO GPL-0018] PlaceInstsArea: 4392963200
+[INFO GPL-0019] Util(%): 5.76
+[INFO GPL-0020] StdInstsArea: 4392963200
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000012 HPWL: 17910850
+[InitialPlace]  Iter: 2 CG residual: 0.00000011 HPWL: 14048516
+[InitialPlace]  Iter: 3 CG residual: 0.00000007 HPWL: 14059186
+[InitialPlace]  Iter: 4 CG residual: 0.00000005 HPWL: 14074464
+[InitialPlace]  Iter: 5 CG residual: 0.00000010 HPWL: 14075121
+[INFO GPL-0031] FillerInit: NumGCells: 1258
+[INFO GPL-0032] FillerInit: NumGNets: 273
+[INFO GPL-0033] FillerInit: NumGPins: 907
+[INFO GPL-0023] TargetDensity: 0.30
+[INFO GPL-0024] AveragePlaceInstArea: 18535709
+[INFO GPL-0025] IdealBinArea: 61785692
+[INFO GPL-0026] IdealBinCnt: 1255
+[INFO GPL-0027] TotalBinArea: 77594419200
+[INFO GPL-0028] BinCnt: 32 32
+[INFO GPL-0029] BinSize: 8740 8670
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter: 1 overflow: 0.716479 HPWL: 15521672
+[NesterovSolve] Snapshot saved at iter = 2
+[NesterovSolve] Iter: 10 overflow: 0.479057 HPWL: 15026524
+[NesterovSolve] Iter: 20 overflow: 0.495722 HPWL: 15021983
+[NesterovSolve] Iter: 30 overflow: 0.49621 HPWL: 15003342
+[NesterovSolve] Iter: 40 overflow: 0.497653 HPWL: 14982143
+[NesterovSolve] Iter: 50 overflow: 0.496765 HPWL: 14985572
+[NesterovSolve] Iter: 60 overflow: 0.497366 HPWL: 14988201
+[NesterovSolve] Iter: 70 overflow: 0.497649 HPWL: 14997437
+[NesterovSolve] Iter: 80 overflow: 0.49795 HPWL: 15002641
+[NesterovSolve] Iter: 90 overflow: 0.497833 HPWL: 15001367
+[NesterovSolve] Iter: 100 overflow: 0.497578 HPWL: 14998481
+[NesterovSolve] Iter: 110 overflow: 0.497284 HPWL: 14996843
+[NesterovSolve] Iter: 120 overflow: 0.496951 HPWL: 14996156
+[NesterovSolve] Iter: 130 overflow: 0.49656 HPWL: 14996940
+[NesterovSolve] Iter: 140 overflow: 0.496158 HPWL: 15000963
+[NesterovSolve] Iter: 150 overflow: 0.495633 HPWL: 15005752
+[NesterovSolve] Iter: 160 overflow: 0.494784 HPWL: 15009580
+[NesterovSolve] Iter: 170 overflow: 0.49344 HPWL: 15001016
+[NesterovSolve] Iter: 180 overflow: 0.491191 HPWL: 14981871
+[NesterovSolve] Iter: 190 overflow: 0.487004 HPWL: 14969401
+[NesterovSolve] Iter: 200 overflow: 0.481021 HPWL: 14944433
+[NesterovSolve] Iter: 210 overflow: 0.472349 HPWL: 14918362
+[NesterovSolve] Iter: 220 overflow: 0.460298 HPWL: 14876226
+[NesterovSolve] Iter: 230 overflow: 0.442704 HPWL: 14833243
+[NesterovSolve] Iter: 240 overflow: 0.416963 HPWL: 14757652
+[NesterovSolve] Iter: 250 overflow: 0.387376 HPWL: 14703650
+[NesterovSolve] Iter: 260 overflow: 0.353558 HPWL: 14721753
+[NesterovSolve] Iter: 270 overflow: 0.323392 HPWL: 14695350
+[NesterovSolve] Iter: 280 overflow: 0.298546 HPWL: 14735329
+[NesterovSolve] Iter: 290 overflow: 0.274594 HPWL: 14747170
+[NesterovSolve] Iter: 300 overflow: 0.249772 HPWL: 14756849
+[NesterovSolve] Iter: 310 overflow: 0.222069 HPWL: 14768079
+[NesterovSolve] Iter: 320 overflow: 0.201615 HPWL: 14808373
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 43 43
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 1849
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.9259259126804493
+[INFO GPL-0067] 1.0%RC: 0.8882882949468252
+[INFO GPL-0068] 2.0%RC: 0.8456621096558767
+[INFO GPL-0069] 5.0%RC: 0.7720073800719245
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.9071071
+[NesterovSolve] Iter: 330 overflow: 0.184299 HPWL: 14846733
+[NesterovSolve] Iter: 340 overflow: 0.167088 HPWL: 14897221
+[NesterovSolve] Iter: 350 overflow: 0.144648 HPWL: 14893547
+[NesterovSolve] Iter: 360 overflow: 0.122574 HPWL: 14902216
+[NesterovSolve] Iter: 370 overflow: 0.104234 HPWL: 14952176
+[NesterovSolve] Finished with Overflow: 0.098914
+# IO Placement
+place_pins -hor_layers $io_placer_hor_layer -ver_layers $io_placer_ver_layer
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0010] Tentative 0 to set up sections.
+[INFO PPL-0001] Number of slots          1094
+[INFO PPL-0002] Number of I/O            54
+[INFO PPL-0003] Number of I/O w/sink     54
+[INFO PPL-0004] Number of I/O w/o sink   0
+[INFO PPL-0005] Slots per section        200
+[INFO PPL-0006] Slots increase factor    0.01
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 6232.47 um.
+# checkpoint
+set global_place_def [make_result_file ${design}_${platform}_global_place.def]
+write_def $global_place_def
+################################################################
+# Repair max slew/cap/fanout violations and normalize slews
+source $layer_rc_file
+set_wire_rc -signal -layer $wire_rc_layer
+set_wire_rc -clock  -layer $wire_rc_layer_clk
+set_dont_use $dont_use
+estimate_parasitics -placement
+repair_design -slew_margin $slew_margin -cap_margin $cap_margin
+[INFO RSZ-0058] Using max wire length 2393um.
+[INFO RSZ-0039] Resized 63 instances.
+repair_tie_fanout -separation $tie_separation $tielo_port
+repair_tie_fanout -separation $tie_separation $tiehi_port
+set_placement_padding -global -left $detail_place_pad -right $detail_place_pad
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement        505.0 u
+average displacement        0.4 u
+max displacement            7.5 u
+original HPWL           12001.9 u
+legalized HPWL          12385.3 u
+delta HPWL                    3 %
+
+# post resize timing report (ideal clocks)
+report_worst_slack -min -digits 3
+worst slack 0.459
+report_worst_slack -max -digits 3
+worst slack -1.004
+report_tns -digits 3
+tns -28.064
+# Check slew repair
+report_check_types -max_slew -max_capacitance -max_fanout -violators
+utl::metric "RSZ::repair_design_buffer_count" [rsz::repair_design_buffer_count]
+utl::metric "RSZ::max_slew_slack" [expr [sta::max_slew_check_slack_limit] * 100]
+utl::metric "RSZ::max_fanout_slack" [expr [sta::max_fanout_check_slack_limit] * 100]
+utl::metric "RSZ::max_capacitance_slack" [expr [sta::max_capacitance_check_slack_limit] * 100]
+################################################################
+# Clock Tree Synthesis
+# Clone clock tree inverters next to register loads
+# so cts does not try to buffer the inverted clocks.
+repair_clock_inverters
+clock_tree_synthesis -root_buf $cts_buffer -buf_list $cts_buffer \
+  -sink_clustering_enable \
+  -sink_clustering_max_diameter $cts_cluster_diameter
+[INFO CTS-0049] Characterization buffer is: sky130_fd_sc_hd__clkbuf_4.
+[INFO CTS-0039] Number of created patterns = 11880.
+[INFO CTS-0084] Compiling LUT.
+Min. len    Max. len    Min. cap    Max. cap    Min. slew   Max. slew
+2           8           1           36          1           86          
+[WARNING CTS-0043] 1584 wires are pure wire and no slew degradation.
+TritonCTS forced slew degradation on these wires.
+[INFO CTS-0046]     Number of wire segments: 11880.
+[INFO CTS-0047]     Number of keys in characterization LUT: 1895.
+[INFO CTS-0048]     Actual min input cap: 1.
+[INFO CTS-0007] Net "clk" found for clock "core_clock".
+[INFO CTS-0010]  Clock net "clk" has 35 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 1 buffer(s) types.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 35.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 20 and with maximum cluster diameter of 100.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13000  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(89965, 93780), (207725, 210860)].
+[INFO CTS-0024]  Normalized sink region: [(6.92038, 7.21385), (15.9788, 16.22)].
+[INFO CTS-0025]     Width:  9.0585.
+[INFO CTS-0026]     Height: 9.0062.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 18
+    Sub-region size: 4.5292 X 9.0062
+[INFO CTS-0034]     Segment length (rounded): 2.
+    Key: 0 outSlew: 2 load: 1 length: 2 isBuffered: false
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 9
+    Sub-region size: 4.5292 X 4.5031
+[INFO CTS-0034]     Segment length (rounded): 2.
+    Key: 0 outSlew: 2 load: 1 length: 2 isBuffered: false
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 35.
+[INFO CTS-0036]  Average source sink dist: 37335.86 dbu.
+[INFO CTS-0037]  Number of outlier sinks: 0.
+[INFO CTS-0018]     Created 5 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 5 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 8:1, 9:3..
+[INFO CTS-0017]     Max level of the clock tree: 2.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 35
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 290.25 um
+[INFO CTS-0102]  Path depth 2 - 2
+# CTS leaves a long wire from the pad to the clock tree root.
+repair_clock_nets
+[INFO RSZ-0058] Using max wire length 2393um.
+# place clock buffers
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement          6.9 u
+average displacement        0.0 u
+max displacement            3.1 u
+original HPWL           12804.2 u
+legalized HPWL          12803.2 u
+delta HPWL                    0 %
+
+# checkpoint
+set cts_def [make_result_file ${design}_${platform}_cts.def]
+write_def $cts_def
+################################################################
+# Setup/hold timing repair
+set_propagated_clock [all_clocks]
+# Global routing is fast enough for the flow regressions.
+# It is NOT FAST ENOUGH FOR PRODUCTION USE (this means you, openlane).
+set repair_timing_use_grt_parasitics 0
+if { $repair_timing_use_grt_parasitics } {
+  # Global route for parasitics - no guide file requied
+  global_route -congestion_iterations $global_route_congestion_iterations
+  estimate_parasitics -global_routing
+} else {
+  estimate_parasitics -placement
+}
+repair_timing
+[INFO RSZ-0040] Inserted 10 buffers.
+[INFO RSZ-0041] Resized 7 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+# Post timing repair.
+report_worst_slack -min -digits 3
+worst slack 0.485
+report_worst_slack -max -digits 3
+worst slack -0.625
+report_tns -digits 3
+tns -15.511
+report_check_types -max_slew -max_capacitance -max_fanout -violators -digits 3
+utl::metric "RSZ::worst_slack_min" [sta::worst_slack -min]
+utl::metric "RSZ::worst_slack_max" [sta::worst_slack -max]
+utl::metric "RSZ::tns_max" [sta::total_negative_slack -max]
+utl::metric "RSZ::hold_buffer_count" [rsz::hold_buffer_count]
+################################################################
+# Detailed Placement (final)
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement         72.2 u
+average displacement        0.1 u
+max displacement            9.1 u
+original HPWL           13038.2 u
+legalized HPWL          13075.7 u
+delta HPWL                    0 %
+
+# Capture utilization before fillers make it 100%
+utl::metric "DPL::utilization" [format %.1f [expr [rsz::utilization] * 100]]
+utl::metric "DPL::design_area" [sta::format_area [rsz::design_area] 0]
+filler_placement $filler_cells
+[INFO DPL-0001] Placed 9301 filler instances.
+check_placement -verbose
+################################################################
+# Global routing
+pin_access
+[INFO DRT-0149] Reading tech and libs.
+
+Units:                1000
+Number of layers:     13
+Number of macros:     437
+Number of vias:       25
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   gcd
+Die area:                 ( 0 0 ) ( 299960 300130 )
+Number of track patterns: 12
+Number of DEF vias:       4
+Number of components:     10593
+Number of terminals:      54
+Number of snets:          2
+Number of nets:           288
+
+[INFO DRT-0167] List of default vias:
+  Layer mcon
+    default via: L1M1_PR
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+  Complete 10000 instances.
+[INFO DRT-0164] Number of unique instances = 91.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0018]   Complete 10000 insts.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete FR_VIA.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] FR_VIA shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 30238.
+[INFO DRT-0033] mcon shape region query size = 248.
+[INFO DRT-0033] met1 shape region query size = 22914.
+[INFO DRT-0033] via shape region query size = 5150.
+[INFO DRT-0033] met2 shape region query size = 3117.
+[INFO DRT-0033] via2 shape region query size = 4120.
+[INFO DRT-0033] met3 shape region query size = 3117.
+[INFO DRT-0033] via3 shape region query size = 4120.
+[INFO DRT-0033] met4 shape region query size = 1250.
+[INFO DRT-0033] via4 shape region query size = 200.
+[INFO DRT-0033] met5 shape region query size = 220.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 100 pins.
+[INFO DRT-0076]   Complete 200 pins.
+[INFO DRT-0076]   Complete 300 pins.
+[INFO DRT-0078]   Complete 300 pins.
+[INFO DRT-0081]   Complete 81 unique inst patterns.
+[INFO DRT-0084]   Complete 252 groups.
+#scanned instances     = 10593
+#unique  instances     = 91
+#stdCellGenAp          = 2431
+#stdCellValidPlanarAp  = 9
+#stdCellValidViaAp     = 1804
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 883
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:01, elapsed time = 00:00:01, memory = 170.76 (MB), peak = 173.08 (MB)
+set route_guide [make_result_file ${design}_${platform}.route_guide]
+global_route -guide_file $route_guide \
+  -congestion_iterations $global_route_congestion_iterations
+set antenna_report [make_result_file ${design}_${platform}_ant.log]
+set antenna_errors [check_antennas -report_violating_nets -report_file $antenna_report]
+[INFO ANT-0001] Found 0 pin violations.
+[INFO ANT-0002] Found 0 net violations in 288 nets.
+utl::metric "GRT::ANT::errors" $antenna_errors
+if { $antenna_errors > 0 } {
+  utl::error FLW 1 "found $antenna_errors antenna violations"
+}
+set verilog_file [make_result_file ${design}_${platform}.v]
+write_verilog -remove_cells $filler_cells $verilog_file
+[WARNING STA-0305] object 'sky130_fd_sc_hd__fill_*' not found.
+################################################################
+# Detailed routing
+set num_threads 16
+if { [info exists env(EDA_THREADS)] } { set num_threads $env(EDA_THREADS) }
+set_thread_count $num_threads
+[INFO ORD-0030] Using 8 thread(s).
+detailed_route -guide $route_guide \
+               -output_guide [make_result_file "${design}_${platform}_output_guide.mod"] \
+               -output_drc [make_result_file "${design}_${platform}_route_drc.rpt"] \
+               -output_maze [make_result_file "${design}_${platform}_maze.log"] \
+               -no_pin_access \
+               -verbose 0
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0036] FR_MASTERSLICE guide region query size = 0.
+[INFO DRT-0036] FR_VIA guide region query size = 0.
+[INFO DRT-0036] li1 guide region query size = 758.
+[INFO DRT-0036] mcon guide region query size = 0.
+[INFO DRT-0036] met1 guide region query size = 622.
+[INFO DRT-0036] via guide region query size = 0.
+[INFO DRT-0036] met2 guide region query size = 363.
+[INFO DRT-0036] via2 guide region query size = 0.
+[INFO DRT-0036] met3 guide region query size = 35.
+[INFO DRT-0036] via3 guide region query size = 0.
+[INFO DRT-0036] met4 guide region query size = 4.
+[INFO DRT-0036] via4 guide region query size = 0.
+[INFO DRT-0036] met5 guide region query size = 0.
+[INFO DRT-0179] Init gr pin query.
+set drv_count [detailed_route_num_drvs]
+utl::metric "DRT::drv" $drv_count
+set routed_def [make_result_file ${design}_${platform}_route.def]
+write_def $routed_def
+################################################################
+# Extraction
+if { $rcx_rules_file != "" } {
+  define_process_corner -ext_model_index 0 X
+  extract_parasitics -ext_model_file $rcx_rules_file
+  set spef_file [make_result_file ${design}_${platform}.spef]
+  write_spef $spef_file
+  read_spef $spef_file
+} else {
+  # Use global routing based parasitics inlieu of rc extraction
+  estimate_parasitics -global_routing
+}
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of gcd ...
+Notice 0: Split top of 85 T shapes.
+[INFO RCX-0435] Reading extraction model file sky130hd/sky130hd.rcx_rules ...
+[INFO RCX-0436] RC segment generation gcd (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 1184 rc segments
+[INFO RCX-0439] Coupling Cap extraction gcd ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 4033 wires to be extracted
+[INFO RCX-0442] 76% completion -- 3095 wires have been extracted
+[INFO RCX-0442] 100% completion -- 4033 wires have been extracted
+[INFO RCX-0045] Extract 288 nets, 1472 rsegs, 1472 caps, 1547 ccs
+[INFO RCX-0015] Finished extracting gcd.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 288 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+################################################################
+# Final Report
+report_checks -path_delay min_max -format full_clock_expanded \
+  -fields {input_pin slew capacitance} -digits 3
+Startpoint: _412_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _412_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock source latency
+   0.028    0.000    0.000    0.000 ^ clk (in)
+            0.002    0.001    0.001 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_4)
+   0.036    0.116    0.171    0.172 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_4)
+            0.116    0.001    0.173 ^ clkbuf_2_3__f_clk/A (sky130_fd_sc_hd__clkbuf_4)
+   0.040    0.129    0.222    0.395 ^ clkbuf_2_3__f_clk/X (sky130_fd_sc_hd__clkbuf_4)
+            0.129    0.003    0.398 ^ _412_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.005    0.061    0.347    0.745 ^ _412_/Q (sky130_fd_sc_hd__dfxtp_1)
+            0.061    0.000    0.745 ^ _290_/B2 (sky130_fd_sc_hd__a32o_1)
+   0.002    0.046    0.117    0.862 ^ _290_/X (sky130_fd_sc_hd__a32o_1)
+            0.046    0.000    0.862 ^ _412_/D (sky130_fd_sc_hd__dfxtp_1)
+                              0.862   data arrival time
+
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock source latency
+   0.028    0.000    0.000    0.000 ^ clk (in)
+            0.002    0.001    0.001 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_4)
+   0.036    0.116    0.171    0.172 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_4)
+            0.116    0.001    0.173 ^ clkbuf_2_3__f_clk/A (sky130_fd_sc_hd__clkbuf_4)
+   0.040    0.129    0.222    0.395 ^ clkbuf_2_3__f_clk/X (sky130_fd_sc_hd__clkbuf_4)
+            0.129    0.003    0.398 ^ _412_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                     0.000    0.398   clock reconvergence pessimism
+                    -0.020    0.378   library hold time
+                              0.378   data required time
+---------------------------------------------------------------------------
+                              0.378   data required time
+                             -0.862   data arrival time
+---------------------------------------------------------------------------
+                              0.484   slack (MET)
+
+
+Startpoint: _414_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: resp_msg[15] (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock source latency
+   0.028    0.000    0.000    0.000 ^ clk (in)
+            0.002    0.001    0.001 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_4)
+   0.036    0.116    0.171    0.172 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_4)
+            0.116    0.001    0.173 ^ clkbuf_2_0__f_clk/A (sky130_fd_sc_hd__clkbuf_4)
+   0.040    0.127    0.222    0.395 ^ clkbuf_2_0__f_clk/X (sky130_fd_sc_hd__clkbuf_4)
+            0.127    0.001    0.396 ^ _414_/CLK (sky130_fd_sc_hd__dfxtp_4)
+   0.011    0.039    0.371    0.766 v _414_/Q (sky130_fd_sc_hd__dfxtp_4)
+            0.039    0.000    0.767 v _214_/B_N (sky130_fd_sc_hd__nor2b_4)
+   0.007    0.041    0.123    0.890 v _214_/Y (sky130_fd_sc_hd__nor2b_4)
+            0.041    0.000    0.890 v _215_/C (sky130_fd_sc_hd__maj3_2)
+   0.009    0.069    0.323    1.213 v _215_/X (sky130_fd_sc_hd__maj3_2)
+            0.069    0.000    1.213 v _216_/C (sky130_fd_sc_hd__maj3_2)
+   0.007    0.064    0.325    1.538 v _216_/X (sky130_fd_sc_hd__maj3_2)
+            0.064    0.000    1.538 v _217_/C (sky130_fd_sc_hd__maj3_2)
+   0.016    0.088    0.355    1.893 v _217_/X (sky130_fd_sc_hd__maj3_2)
+            0.088    0.001    1.894 v _218_/C (sky130_fd_sc_hd__maj3_2)
+   0.019    0.096    0.371    2.265 v _218_/X (sky130_fd_sc_hd__maj3_2)
+            0.096    0.002    2.267 v _219_/C (sky130_fd_sc_hd__maj3_2)
+   0.026    0.115    0.394    2.661 v _219_/X (sky130_fd_sc_hd__maj3_2)
+            0.115    0.001    2.662 v _222_/A2 (sky130_fd_sc_hd__o211ai_4)
+   0.020    0.228    0.248    2.910 ^ _222_/Y (sky130_fd_sc_hd__o211ai_4)
+            0.228    0.001    2.911 ^ _225_/A3 (sky130_fd_sc_hd__a311oi_4)
+   0.018    0.141    0.156    3.067 v _225_/Y (sky130_fd_sc_hd__a311oi_4)
+            0.141    0.001    3.068 v _228_/A3 (sky130_fd_sc_hd__o311ai_4)
+   0.018    0.325    0.334    3.402 ^ _228_/Y (sky130_fd_sc_hd__o311ai_4)
+            0.325    0.001    3.403 ^ _231_/A3 (sky130_fd_sc_hd__a311oi_4)
+   0.015    0.133    0.161    3.564 v _231_/Y (sky130_fd_sc_hd__a311oi_4)
+            0.133    0.001    3.565 v _232_/B (sky130_fd_sc_hd__nor2_2)
+   0.016    0.190    0.201    3.766 ^ _232_/Y (sky130_fd_sc_hd__nor2_2)
+            0.190    0.000    3.767 ^ _234_/A2 (sky130_fd_sc_hd__a21boi_2)
+   0.016    0.107    0.120    3.886 v _234_/Y (sky130_fd_sc_hd__a21boi_2)
+            0.107    0.001    3.887 v _238_/A (sky130_fd_sc_hd__xnor2_2)
+   0.012    0.196    0.233    4.120 ^ _238_/Y (sky130_fd_sc_hd__xnor2_2)
+            0.196    0.001    4.121 ^ resp_msg[15] (out)
+                              4.121   data arrival time
+
+                     4.360    4.360   clock core_clock (rise edge)
+                     0.000    4.360   clock network delay (propagated)
+                     0.000    4.360   clock reconvergence pessimism
+                    -0.872    3.488   output external delay
+                              3.488   data required time
+---------------------------------------------------------------------------
+                              3.488   data required time
+                             -4.121   data arrival time
+---------------------------------------------------------------------------
+                             -0.633   slack (VIOLATED)
+
+
+report_worst_slack -min -digits 3
+worst slack 0.484
+report_worst_slack -max -digits 3
+worst slack -0.633
+report_tns -digits 3
+tns -15.580
+report_check_types -max_slew -max_capacitance -max_fanout -violators -digits 3
+report_clock_skew -digits 3
+Clock core_clock
+Latency      CRPR       Skew
+_420_/CLK ^
+  0.398
+_433_/CLK ^
+  0.387     0.000      0.011
+
+report_power -corner $power_corner
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.51e-04   5.58e-05   2.96e-10   4.07e-04  42.1%
+Combinational          2.09e-04   3.51e-04   6.98e-10   5.60e-04  57.9%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.60e-04   4.07e-04   9.94e-10   9.67e-04 100.0%
+                          57.9%      42.1%       0.0%
+report_floating_nets -verbose
+report_design_area
+Design area 3846 u^2 5% utilization.
+utl::metric "DRT::worst_slack_min" [sta::worst_slack -min]
+utl::metric "DRT::worst_slack_max" [sta::worst_slack -max]
+utl::metric "DRT::tns_max" [sta::total_negative_slack -max]
+utl::metric "DRT::clock_skew" [sta::worst_clock_skew -setup]
+# slew/cap/fanout slack/limit
+utl::metric "DRT::max_slew_slack" [expr [sta::max_slew_check_slack_limit] * 100]
+utl::metric "DRT::max_fanout_slack" [expr [sta::max_fanout_check_slack_limit] * 100]
+utl::metric "DRT::max_capacitance_slack" [expr [sta::max_capacitance_check_slack_limit] * 100];
+# report clock period as a metric for updating limits
+utl::metric "DRT::clock_period" [get_property [lindex [all_clocks] 0] period]
+# not really useful without pad locations
+#set_pdnsim_net_voltage -net $vdd_net_name -voltage $vdd_voltage
+#analyze_power_grid -net $vdd_net_name
+EDA_RUN_DONE

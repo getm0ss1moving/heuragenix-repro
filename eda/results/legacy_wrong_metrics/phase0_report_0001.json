@@ -1,0 +1,270 @@
+{
+  "sweep_id": "phase0_sweep_0001",
+  "baseline": "phase0_sweep_0001_base",
+  "deltas": [
+    {
+      "run_id": "phase0_sweep_0001_base",
+      "variant": "base",
+      "gate_ok": true,
+      "hpwl_pct": 0.0,
+      "wirelength_pct": 0.0,
+      "vias_pct": 0.0,
+      "tns_pct": -0.0,
+      "wns_min_pct": 0.0,
+      "power_pct": 0.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_density_025",
+      "variant": "density_025",
+      "gate_ok": true,
+      "hpwl_pct": 9.763767716081945,
+      "wirelength_pct": 3.6828478964401294,
+      "vias_pct": 2.3329798515376456,
+      "tns_pct": -31.766088517401023,
+      "wns_min_pct": 1.773006388179343,
+      "power_pct": 2.688728024819026
+    },
+    {
+      "run_id": "phase0_sweep_0001_density_035",
+      "variant": "density_035",
+      "gate_ok": true,
+      "hpwl_pct": -8.97463027598381,
+      "wirelength_pct": -3.4563106796116503,
+      "vias_pct": 0.689289501590668,
+      "tns_pct": -5.882150401506058,
+      "wns_min_pct": 0.7785278296240937,
+      "power_pct": -2.58531540847983
+    },
+    {
+      "run_id": "phase0_sweep_0001_density_040",
+      "variant": "density_040",
+      "gate_ok": true,
+      "hpwl_pct": -14.306531411473838,
+      "wirelength_pct": -5.495145631067961,
+      "vias_pct": 1.696712619300106,
+      "tns_pct": -4.258328833644057,
+      "wns_min_pct": 2.0354353638235443,
+      "power_pct": -0.10341261633919589
+    },
+    {
+      "run_id": "phase0_sweep_0001_pad_2",
+      "variant": "pad_2",
+      "gate_ok": true,
+      "hpwl_pct": -15.562561776925364,
+      "wirelength_pct": -6.0129449838187705,
+      "vias_pct": -0.47720042417815484,
+      "tns_pct": -4.537602200712899,
+      "wns_min_pct": 3.0308654997042033,
+      "power_pct": -0.41365046535677236
+    },
+    {
+      "run_id": "phase0_sweep_0001_pad_6",
+      "variant": "pad_6",
+      "gate_ok": true,
+      "hpwl_pct": 1.7746217042261443,
+      "wirelength_pct": -0.42071197411003236,
+      "vias_pct": 0.848356309650053,
+      "tns_pct": -13.697027559988763,
+      "wns_min_pct": 3.9686277567080457,
+      "power_pct": -2.1716649431230577
+    },
+    {
+      "run_id": "phase0_sweep_0001_grt_50",
+      "variant": "grt_50",
+      "gate_ok": true,
+      "hpwl_pct": 0.0,
+      "wirelength_pct": 0.0,
+      "vias_pct": 0.0,
+      "tns_pct": -0.0,
+      "wns_min_pct": 0.0,
+      "power_pct": 0.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_grt_200",
+      "variant": "grt_200",
+      "gate_ok": true,
+      "hpwl_pct": 0.0,
+      "wirelength_pct": 0.0,
+      "vias_pct": 0.0,
+      "tns_pct": -0.0,
+      "wns_min_pct": 0.0,
+      "power_pct": 0.0
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "phase0_sweep_0001_base",
+      "variant": "base",
+      "overrides": {},
+      "returncode": 0,
+      "duration_s": 14.18,
+      "gate_ok": true,
+      "hpwl_route_um": 7466.38,
+      "wirelength_um": 15450.0,
+      "vias": 1886.0,
+      "wns_min_ps": 0.4841882587472532,
+      "wns_max_ps": -0.6332932135728321,
+      "tns_ps": -15.580383646458793,
+      "clock_skew_ps": 0.010956513784140885,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000967,
+      "instance_count": 250.0,
+      "design_area_um2": 3846.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_density_025",
+      "variant": "density_025",
+      "overrides": {
+        "global_place_density": 0.25
+      },
+      "returncode": 0,
+      "duration_s": 12.26,
+      "gate_ok": true,
+      "hpwl_route_um": 8195.38,
+      "wirelength_um": 16019.0,
+      "vias": 1930.0,
+      "wns_min_ps": 0.4927729475056563,
+      "wns_max_ps": -0.5940255122596936,
+      "tns_ps": -10.63110518597402,
+      "clock_skew_ps": 0.032826325919966905,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000993,
+      "instance_count": 250.0,
+      "design_area_um2": 3959.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_density_035",
+      "variant": "density_035",
+      "overrides": {
+        "global_place_density": 0.35
+      },
+      "returncode": 0,
+      "duration_s": 15.01,
+      "gate_ok": true,
+      "hpwl_route_um": 6796.3,
+      "wirelength_um": 14916.0,
+      "vias": 1899.0,
+      "wns_min_ps": 0.48795779908937287,
+      "wns_max_ps": -0.5530867032026271,
+      "tns_ps": -14.663922047242433,
+      "clock_skew_ps": 0.025512037648996098,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000942,
+      "instance_count": 250.0,
+      "design_area_um2": 3796.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_density_040",
+      "variant": "density_040",
+      "overrides": {
+        "global_place_density": 0.4
+      },
+      "returncode": 0,
+      "duration_s": 16.87,
+      "gate_ok": true,
+      "hpwl_route_um": 6398.2,
+      "wirelength_um": 14601.0,
+      "vias": 1918.0,
+      "wns_min_ps": 0.4940435977932762,
+      "wns_max_ps": -0.5864728868541708,
+      "tns_ps": -14.916919677249275,
+      "clock_skew_ps": 0.027784775266983665,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000966,
+      "instance_count": 250.0,
+      "design_area_um2": 3864.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_pad_2",
+      "variant": "pad_2",
+      "overrides": {
+        "global_place_pad": 2
+      },
+      "returncode": 0,
+      "duration_s": 15.65,
+      "gate_ok": true,
+      "hpwl_route_um": 6304.42,
+      "wirelength_um": 14521.0,
+      "vias": 1877.0,
+      "wns_min_ps": 0.4988633536352422,
+      "wns_max_ps": -0.6088949516936397,
+      "tns_ps": -14.873407815237567,
+      "clock_skew_ps": 0.02049582783726661,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000963,
+      "instance_count": 250.0,
+      "design_area_um2": 3831.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_pad_6",
+      "variant": "pad_6",
+      "overrides": {
+        "global_place_pad": 6
+      },
+      "returncode": 0,
+      "duration_s": 11.05,
+      "gate_ok": true,
+      "hpwl_route_um": 7598.88,
+      "wirelength_um": 15385.0,
+      "vias": 1902.0,
+      "wns_min_ps": 0.503403888378618,
+      "wns_max_ps": -0.6565193019494739,
+      "tns_ps": -13.44633420445135,
+      "clock_skew_ps": 0.03438557869100039,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000946,
+      "instance_count": 250.0,
+      "design_area_um2": 3811.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_grt_50",
+      "variant": "grt_50",
+      "overrides": {
+        "global_route_congestion_iterations": 50
+      },
+      "returncode": 0,
+      "duration_s": 13.94,
+      "gate_ok": true,
+      "hpwl_route_um": 7466.38,
+      "wirelength_um": 15450.0,
+      "vias": 1886.0,
+      "wns_min_ps": 0.4841882587472532,
+      "wns_max_ps": -0.6332932135728321,
+      "tns_ps": -15.580383646458793,
+      "clock_skew_ps": 0.010956513784140885,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000967,
+      "instance_count": 250.0,
+      "design_area_um2": 3846.0
+    },
+    {
+      "run_id": "phase0_sweep_0001_grt_200",
+      "variant": "grt_200",
+      "overrides": {
+        "global_route_congestion_iterations": 200
+      },
+      "returncode": 0,
+      "duration_s": 14.05,
+      "gate_ok": true,
+      "hpwl_route_um": 7466.38,
+      "wirelength_um": 15450.0,
+      "vias": 1886.0,
+      "wns_min_ps": 0.4841882587472532,
+      "wns_max_ps": -0.6332932135728321,
+      "tns_ps": -15.580383646458793,
+      "clock_skew_ps": 0.010956513784140885,
+      "drc": 0.0,
+      "antenna": 0.0,
+      "total_power_w": 0.000967,
+      "instance_count": 250.0,
+      "design_area_um2": 3846.0
+    }
+  ]
+}

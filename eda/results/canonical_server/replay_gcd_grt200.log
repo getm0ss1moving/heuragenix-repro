@@ -1,0 +1,35 @@
+{
+  "run_id": "replay_gcd_pgp_grt200",
+  "design": "gcd",
+  "stage": "post_global_place",
+  "checkpoint_def": "/data/dzy/heura_repr/eda/runs/phase0_sweep_0002_base/results/gcd_sky130hd_global_place.def",
+  "action": {
+    "global_route_congestion_iterations": 200
+  },
+  "returncode": 0,
+  "duration_s": 15.625,
+  "gate_ok": true,
+  "metrics": {
+    "design": "gcd",
+    "setup_wns_ns": -0.6416438673110253,
+    "hold_wns_ns": 0.4803460543061167,
+    "setup_tns_ns": -17.019394375543385,
+    "hold_tns_ns": null,
+    "drc_violations": 0.0,
+    "vias": 1920.0,
+    "wirelength_um": 15554.0,
+    "instance_count": null,
+    "hpwl_um": 13117.7,
+    "hpwl_no_ports_um": 7580.985,
+    "hpwl_origin_um": 13171.51,
+    "route_def": "/data/dzy/heura_repr/eda/runs_replay/replay_gcd_pgp_grt200/results/gcd_sky130hd_route.def",
+    "metric_convention_version": "metrics_v2_2026-09-22",
+    "timing_convention": "setup_hold_v1_2026-09-22",
+    "internal_power_w": 0.00056,
+    "switching_power_w": 0.000411,
+    "leakage_power_w": 9.94e-10,
+    "total_power_w": 0.000971,
+    "power_source": "OpenSTA rcx_sta Total line (W)"
+  },
+  "artifact_dir": "/data/dzy/heura_repr/eda/runs_replay/replay_gcd_pgp_grt200"
+}

@@ -1,0 +1,60 @@
+{
+  "run_id": "aes_baseline_0001",
+  "design": "aes",
+  "overrides": {},
+  "threads": 8,
+  "returncode": 0,
+  "duration_s": 306.23,
+  "openroad_sha256": "9f55a2374783f0323b43f8aa9794de71318cd9f2607eb07991ce786b278f3353",
+  "flow_param_sha256": "d6f4a19cb00e10de91d6076c3371e90dd1d2ef2b574cfdd6f514cf9898c454f4",
+  "artifacts": {
+    "flow.log": {
+      "size": 43088,
+      "sha256": "b6cc05de36040c8ab9391246d2040dc0becaa9193227b25574cc9f8cb6c3b573"
+    },
+    "metrics_raw.json": {
+      "size": 995,
+      "sha256": "1807356a3c2e91a63a6d389cf293f3a02056030fce69104a71ff3c08b54c10fd"
+    },
+    "metrics.json": {
+      "size": 3862,
+      "sha256": "1c798c123979260d77766f7267e25d3be0dcb91e0fbc6cca031056c29930de9f"
+    },
+    "results/aes_sky130hd.route_guide": {
+      "size": 6205694,
+      "sha256": "4cb85b7d6f4155bfea6c453e1d17f1ffccc949dd4f2ee83e5dad43f6542d8386"
+    },
+    "results/aes_sky130hd.spef": {
+      "size": 31284027,
+      "sha256": "ca31a186ac9716275cd340972d88fe4cafcf5d01908134d7960d613320571e8d"
+    },
+    "results/aes_sky130hd.v": {
+      "size": 19486325,
+      "sha256": "8952e39224c0301edfb5721f5b9f5bbbf43af6b082cda600e1218a94878005d4"
+    },
+    "results/aes_sky130hd_ant.log": {
+      "size": 200,
+      "sha256": "8831fb6d9d046f0a4fd2abe9fb8eb061c87fe60c38fa75f965090380a65ebbc6"
+    },
+    "results/aes_sky130hd_cts.def": {
+      "size": 22554862,
+      "sha256": "5d906520e6d5aa36434eeffab4cd3de0e39ef6a5b18c0c9d925ba427eb4e1edc"
+    },
+    "results/aes_sky130hd_global_place.def": {
+      "size": 22462214,
+      "sha256": "48a7afe1e9d9c3bfc9ca5a9eedb05aefefd1d5b44a782c0d13ca05d8a04dcb07"
+    },
+    "results/aes_sky130hd_output_guide.mod": {
+      "size": 5458294,
+      "sha256": "9c0c64107e095c06ffda2bb382b0512be98f2213db43adade15c8a4d926238f5"
+    },
+    "results/aes_sky130hd_route.def": {
+      "size": 70404179,
+      "sha256": "29bcab2ce316cf4c4332f80e654be3aecb417477224edd8982a830b2ae2d65c1"
+    },
+    "results/aes_sky130hd_route_drc.rpt": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "def": "/data/dzy/heura_repr/eda/runs/ibex_pad_2/results/ibex_sky130hd_route.def",
+  "design": "ibex",
+  "verdict": true,
+  "checks": {
+    "components": 1188949,
+    "nets": 16542,
+    "overlap_pairs": 0,
+    "overlap_examples": [],
+    "overlap_status": "ok",
+    "row_violations": 0,
+    "die_boundary_violations": 0,
+    "core_boundary_violations": 0,
+    "net_violations": 0,
+    "die_area_um": [
+      0.0,
+      0.0,
+      3000.08,
+      2999.8
+    ],
+    "core_area_um": null,
+    "fixed_changed": null,
+    "netlist_sha256": "691b73ca8b8aaf78ade522627f1181b642867f3ec03d65a86f8ed8d3629d9ff1"
+  }
+}

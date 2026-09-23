@@ -1,0 +1,530 @@
+{
+  "paper": {
+    "title": "HeurAgenix: Leveraging LLMs for Solving Complex Combinatorial Optimization Challenges",
+    "authors": "Xianliang Yang, Ling Zhang, Haolong Qian, Lei Song, Jiang Bian",
+    "affiliations": "Microsoft Research Asia; Tsinghua University",
+    "arxiv": "arXiv:2506.15196v2 [cs.AI] 24 Jun 2025",
+    "code": "https://github.com/microsoft/HeurAgenix",
+    "dataset_hf": "VictorYXL/HeurAgenixDataset",
+    "dataset_revision": "6008adba8895821ad09b8a649ef2e74be67f725a"
+  },
+  "code_snapshots": {
+    "paper_core": {
+      "commit": "f9ec60f",
+      "date": "2025-06-26",
+      "note": "code state after paper v2, evolved heuristics identical to de8a9cf (2025-06-24)"
+    },
+    "alternative_core": {
+      "commit": "de8a9cf",
+      "date": "2025-06-24",
+      "note": "same day as arXiv v2"
+    },
+    "training_code_recovered": {
+      "commit": "6e4fc66",
+      "date": "2025-06-06",
+      "note": "src/training/* + collect_heuristic_selection_data.py; matches Appendix E training hyper-parameters"
+    },
+    "analysis_upper_bounds": {
+      "commit": "8251fbe^",
+      "date": "2025-06-23",
+      "note": "analysis.py total_experiments upper bounds"
+    }
+  },
+  "fine_tuning_params": {
+    "base_model": "Qwen/Qwen2.5-7B-Instruct-1M",
+    "lora_rank_alpha": 32,
+    "optimizer": "paged_adamw_8bit",
+    "lr": 1e-06,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.99,
+    "weight_decay": 0.1,
+    "lr_scheduler": "cosine",
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 0.1,
+    "precision": "bf16 if supported else fp16",
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "num_train_epochs": 1,
+    "max_steps": -1,
+    "use_vllm": true,
+    "num_generations": 12,
+    "max_prompt_length": 2048,
+    "max_completion_length": 768,
+    "max_seq_length_6e4fc66": 3584,
+    "note_nadro_branch_differs": {
+      "num_train_epochs": 3,
+      "gradient_accumulation_steps": 5,
+      "max_completion_length": 4096,
+      "max_seq_length": 8192
+    }
+  },
+  "solving_params": {
+    "M_steps_per_selection": 5,
+    "monte_carlo_search_times": 10,
+    "problem_state_context_length": 1000,
+    "time_limit_per_instance_hours": 2,
+    "code_iterations_scale_factor": 2.0,
+    "paper_llm_selector_api_calls_formula": "ceil(N/M)+2"
+  },
+  "evolution_params": {
+    "train_size": 20,
+    "validation_size": 7,
+    "max_api_calls": 2000,
+    "max_perturbation_trials_P": 1000,
+    "perturbation_ratio": 0.1,
+    "max_refinement_iterations_T": 5,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_tokens": 1600
+  },
+  "paper_splits_and_ref_values": {
+    "tsp": {
+      "train": [
+        "train_case_0.tsp",
+        "train_case_1.tsp",
+        "train_case_2.tsp",
+        "train_case_3.tsp",
+        "train_case_4.tsp",
+        "train_case_5.tsp",
+        "train_case_6.tsp",
+        "train_case_7.tsp",
+        "train_case_8.tsp",
+        "train_case_9.tsp",
+        "train_case_10.tsp",
+        "train_case_11.tsp",
+        "train_case_12.tsp",
+        "train_case_13.tsp",
+        "train_case_14.tsp",
+        "train_case_15.tsp",
+        "train_case_16.tsp",
+        "train_case_17.tsp",
+        "train_case_18.tsp",
+        "train_case_19.tsp"
+      ],
+      "validation": [
+        "brg180.tsp",
+        "eil101.tsp",
+        "gr202.tsp",
+        "pr124.tsp",
+        "pr152.tsp",
+        "rd100.tsp",
+        "u159.tsp"
+      ],
+      "test": [
+        "kroA100.tsp",
+        "kroA150.tsp",
+        "kroB100.tsp",
+        "kroB200.tsp",
+        "kroC100.tsp",
+        "bier127.tsp",
+        "tsp225.tsp",
+        "a280.tsp",
+        "pcb442.tsp",
+        "gr666.tsp",
+        "pr1002.tsp",
+        "pr2392.tsp"
+      ],
+      "paper_upper_bound_test_same_order": [
+        21282,
+        26524,
+        22141,
+        29437,
+        20749,
+        118282,
+        3919,
+        2579,
+        50788,
+        294358,
+        259045,
+        378032
+      ]
+    },
+    "cvrp": {
+      "train": [
+        "train_case_1.vrp",
+        "train_case_2.vrp",
+        "train_case_3.vrp",
+        "train_case_4.vrp",
+        "train_case_5.vrp",
+        "train_case_6.vrp",
+        "train_case_7.vrp",
+        "train_case_8.vrp",
+        "train_case_9.vrp",
+        "train_case_10.vrp",
+        "train_case_11.vrp",
+        "train_case_12.vrp",
+        "train_case_13.vrp",
+        "train_case_14.vrp",
+        "train_case_15.vrp",
+        "train_case_16.vrp",
+        "train_case_17.vrp",
+        "train_case_18.vrp",
+        "train_case_19.vrp",
+        "train_case_20.vrp"
+      ],
+      "validation": [
+        "A-n63-k10.vrp",
+        "B-n67-k10.vrp",
+        "E-n76-k10.vrp",
+        "F-n45-k4.vrp",
+        "M-n101-k10.vrp",
+        "P-n70-k10.vrp",
+        "X-n101-k25.vrp"
+      ],
+      "test": [
+        "A-n80-k10.vrp",
+        "B-n78-k10.vrp",
+        "E-n101-k14.vrp",
+        "F-n135-k7.vrp",
+        "M-n200-k17.vrp",
+        "P-n101-k4.vrp"
+      ],
+      "paper_upper_bound_test_same_order": [
+        1762,
+        1221,
+        1067,
+        1162,
+        1275,
+        681
+      ]
+    },
+    "mkp": {
+      "train": [
+        "train_case_1.mkp",
+        "train_case_2.mkp",
+        "train_case_3.mkp",
+        "train_case_4.mkp",
+        "train_case_5.mkp",
+        "train_case_6.mkp",
+        "train_case_7.mkp",
+        "train_case_8.mkp",
+        "train_case_9.mkp",
+        "train_case_10.mkp",
+        "train_case_11.mkp",
+        "train_case_12.mkp",
+        "train_case_13.mkp",
+        "train_case_14.mkp",
+        "train_case_15.mkp",
+        "train_case_16.mkp",
+        "train_case_17.mkp",
+        "train_case_18.mkp",
+        "train_case_19.mkp",
+        "train_case_20.mkp"
+      ],
+      "validation": [
+        "mknap1_1.mkp",
+        "mknap1_2.mkp",
+        "mknap1_3.mkp",
+        "mknap1_4.mkp",
+        "mknap1_5.mkp",
+        "mknap1_6.mkp",
+        "mknap1_7.mkp"
+      ],
+      "test": [
+        "mknapcb1_1.mkp",
+        "mknapcb1_2.mkp",
+        "mknapcb1_3.mkp",
+        "mknapcb1_4.mkp",
+        "mknapcb1_5.mkp",
+        "mknapcb4_1.mkp",
+        "mknapcb4_2.mkp",
+        "mknapcb4_3.mkp",
+        "mknapcb4_4.mkp",
+        "mknapcb4_5.mkp"
+      ],
+      "paper_upper_bound_test_same_order": [
+        24381,
+        24274,
+        23551,
+        23534,
+        23991,
+        23064,
+        22801,
+        22131,
+        22772,
+        22571
+      ]
+    },
+    "jssp": {
+      "train": [
+        "train_case_1.jssp",
+        "train_case_2.jssp",
+        "train_case_3.jssp",
+        "train_case_4.jssp",
+        "train_case_5.jssp",
+        "train_case_6.jssp",
+        "train_case_7.jssp",
+        "train_case_8.jssp",
+        "train_case_9.jssp",
+        "train_case_10.jssp",
+        "train_case_11.jssp",
+        "train_case_12.jssp",
+        "train_case_13.jssp",
+        "train_case_14.jssp",
+        "train_case_15.jssp",
+        "train_case_16.jssp",
+        "train_case_17.jssp",
+        "train_case_18.jssp",
+        "train_case_19.jssp",
+        "train_case_20.jssp"
+      ],
+      "validation": [
+        "LA21.jssp",
+        "LA22.jssp",
+        "LA23.jssp",
+        "LA24.jssp",
+        "LA25.jssp",
+        "LA26.jssp",
+        "LA27.jssp",
+        "LA28.jssp",
+        "LA29.jssp",
+        "LA30.jssp"
+      ],
+      "test": [
+        "LA01.jssp",
+        "LA02.jssp",
+        "LA03.jssp",
+        "LA04.jssp",
+        "LA05.jssp",
+        "LA06.jssp",
+        "LA07.jssp",
+        "LA08.jssp",
+        "LA09.jssp",
+        "LA10.jssp",
+        "LA11.jssp",
+        "LA12.jssp",
+        "LA13.jssp",
+        "LA14.jssp",
+        "LA15.jssp",
+        "LA16.jssp",
+        "LA17.jssp",
+        "LA18.jssp",
+        "LA19.jssp",
+        "LA20.jssp"
+      ],
+      "paper_upper_bound_test_same_order": [
+        666,
+        655,
+        597,
+        590,
+        593,
+        926,
+        890,
+        863,
+        951,
+        958,
+        1222,
+        1039,
+        1150,
+        1292,
+        1207,
+        945,
+        784,
+        848,
+        842,
+        902
+      ]
+    },
+    "max_cut": {
+      "train": [
+        "train_case_1.mc",
+        "train_case_2.mc",
+        "train_case_3.mc",
+        "train_case_4.mc",
+        "train_case_5.mc",
+        "train_case_6.mc",
+        "train_case_7.mc",
+        "train_case_8.mc",
+        "train_case_9.mc",
+        "train_case_10.mc",
+        "train_case_11.mc",
+        "train_case_12.mc",
+        "train_case_13.mc",
+        "train_case_14.mc",
+        "train_case_15.mc",
+        "train_case_16.mc",
+        "train_case_17.mc",
+        "train_case_18.mc",
+        "train_case_19.mc",
+        "train_case_20.mc"
+      ],
+      "validation": [
+        "g11.mc",
+        "g12.mc",
+        "g13.mc",
+        "g14.mc",
+        "g15.mc",
+        "g16.mc",
+        "g17.mc",
+        "g18.mc",
+        "g19.mc",
+        "g20.mc"
+      ],
+      "test": [
+        "g1.mc",
+        "g2.mc",
+        "g3.mc",
+        "g4.mc",
+        "g5.mc",
+        "g6.mc",
+        "g7.mc",
+        "g8.mc",
+        "g9.mc",
+        "g10.mc"
+      ],
+      "paper_upper_bound_test_same_order": [
+        11624,
+        11620,
+        11622,
+        11646,
+        11631,
+        2178,
+        2006,
+        2006,
+        2054,
+        2000
+      ]
+    }
+  },
+  "evolution_seed_to_evolved": {
+    "tsp": [
+      [
+        "cheapest_insertion_605f",
+        "cheapest_insertion_7a30"
+      ],
+      [
+        "farthest_insertion_b6d3",
+        "farthest_insertion_54db"
+      ],
+      [
+        "nearest_neighbor_f91d",
+        "nearest_neighbor_e8a4"
+      ]
+    ],
+    "cvrp": [
+      [
+        "min_cost_insertion_048f",
+        "min_cost_insertion_3b2b"
+      ],
+      [
+        "farthest_insertion_4e1d",
+        "farthest_insertion_6308"
+      ],
+      [
+        "nearest_neighbor_99ba",
+        "nearest_neighbor_54a9"
+      ]
+    ],
+    "mkp": [
+      [
+        "greedy_by_profit_8df3",
+        "greedy_by_profit_1597"
+      ],
+      [
+        "greedy_by_weight_ece2",
+        "greedy_by_weight_e7f9"
+      ],
+      [
+        "greedy_by_density_9e8d",
+        "greedy_by_density_bb0a"
+      ]
+    ],
+    "jssp": [
+      [
+        "most_work_remaining_930e",
+        "most_work_remaining_df20"
+      ],
+      [
+        "first_come_first_served_6c4f",
+        "first_come_first_served_af26"
+      ],
+      [
+        "shortest_processing_time_first_c374",
+        "shortest_processing_time_first_d471"
+      ]
+    ],
+    "max_cut": [
+      [
+        "most_weight_neighbors_320c",
+        "most_weight_neighbors_d31b"
+      ],
+      [
+        "highest_weight_edge_eb0c",
+        "highest_weight_edge_ca02"
+      ],
+      [
+        "balanced_cut_21d5",
+        "balanced_cut_c0e6"
+      ]
+    ]
+  },
+  "appendix_E_deterministic_basic_heuristics_for_pool": {
+    "tsp": [
+      "cheapest_insertion_605f",
+      "farthest_insertion_b6d3",
+      "greedy_algorithm_3ca7",
+      "greedy_randomized_adaptive_search_procedure_grasp_5a6a",
+      "insertion_heuristics_050b",
+      "nearest_insertion_c1f0",
+      "nearest_neighbor_f91d",
+      "random_pairwise_insertion_7493",
+      "_2opt_89aa",
+      "_3opt_e75b"
+    ],
+    "cvrp": [
+      "farthest_insertion_4e1d",
+      "greedy_f4c4",
+      "min_cost_insertion_048f",
+      "nearest_neighbor_99ba",
+      "node_shift_between_routes_7b8a",
+      "petal_algorithm_b384",
+      "saving_algorithm_710e",
+      "two_opt_0554",
+      "three_opt_e8d7"
+    ],
+    "mkp": [
+      "block_flip_d4f4",
+      "greedy_by_cost_benefit_fd45",
+      "greedy_by_density_9e8d",
+      "greedy_by_least_remaining_capacity_05f2",
+      "greedy_by_profitto_weight_ratio_3aad",
+      "greedy_by_profit_8df3",
+      "greedy_by_resource_balance_52f0",
+      "greedy_by_weight_ece2",
+      "greedy_improvement_ccbf",
+      "k_flip_2f3e",
+      "single_swap_heuristic_b3d6",
+      "two_opt_8049"
+    ],
+    "jssp": [
+      "first_come_first_served_6c4f",
+      "least_work_remaining_66c9",
+      "longest_job_next_2e23",
+      "longest_processing_time_first_9dc9",
+      "most_work_remaining_930e",
+      "shift_operator_109f",
+      "shortest_job_next_5b42",
+      "shortest_processing_time_first_c374",
+      "_2opt_f9c1",
+      "_3opt_6ee0"
+    ],
+    "max_cut": [
+      "balanced_cut_21d5",
+      "greedy_swap_5bb5",
+      "highest_delta_edge_9f66",
+      "highest_delta_node_b31b",
+      "highest_weight_edge_eb0c",
+      "most_weight_neighbors_320c",
+      "multi_swap_2_dbfe",
+      "simulated_annealing_ed14"
+    ]
+  },
+  "references": {
+    "bilingual_pdf": "/Users/duanzeyu/Desktop/文献/_bilingual/out/heuragenix_中英对照.pdf",
+    "original_pdf": "/Users/duanzeyu/Desktop/文献/自进化算法相关/2/2506.15196v2.pdf",
+    "local_text_dump": "/Users/duanzeyu/Desktop/文献/heuragenix_en.md",
+    "hf_data_clone": "/tmp/heura_data",
+    "code_clone": "/tmp/heura_check"
+  },
+  "created_by": "local paper/checklist prep, no server action"
+}

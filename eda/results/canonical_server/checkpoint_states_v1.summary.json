@@ -1,0 +1,19 @@
+{
+  "n_records": 69,
+  "n_designs": 4,
+  "by_design_stage": {
+    "aes/post_cts": 5,
+    "aes/post_global_place": 5,
+    "aes/post_route": 5,
+    "gcd/post_cts": 11,
+    "gcd/post_global_place": 11,
+    "gcd/post_route": 11,
+    "ibex/post_cts": 3,
+    "ibex/post_global_place": 3,
+    "ibex/post_route": 3,
+    "jpeg/post_cts": 4,
+    "jpeg/post_global_place": 4,
+    "jpeg/post_route": 4
+  },
+  "note": "unlabeled checkpoint state cards; action labels require checkpoint replay"
+}

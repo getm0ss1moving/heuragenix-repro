@@ -1,0 +1,50 @@
+{
+  "records": 222,
+  "plan_tasks": 222,
+  "missing_tasks": 0,
+  "missing_task_ids_first10": [],
+  "replayable_checkpoints": 46,
+  "control_coverage": "46/46",
+  "missing_controls": [],
+  "duplicate_run_ids": [],
+  "returncode_bad": 0,
+  "returncode_fail_rate": 0.0,
+  "gate_ok": 222,
+  "pool_failure_ids": [],
+  "pool_failure_count": 0,
+  "pool_failure_ids_raw": [
+    "replay_aes_baseline_0001_pgp_control"
+  ],
+  "retried_ok_ids": [
+    "replay_aes_baseline_0001_pgp_control"
+  ],
+  "by_design_stage": {
+    "aes/post_cts": 25,
+    "aes/post_global_place": 25,
+    "gcd/post_cts": 44,
+    "gcd/post_global_place": 44,
+    "ibex/post_cts": 18,
+    "ibex/post_global_place": 18,
+    "jpeg/post_cts": 24,
+    "jpeg/post_global_place": 24
+  },
+  "by_action": {
+    "control": 46,
+    "layeradj_std": 46,
+    "grt50": 46,
+    "grt200": 46,
+    "cap0": 14,
+    "slew0": 24
+  },
+  "power_coverage": "222/222",
+  "hold_wns_coverage": "222/222",
+  "actions_per_checkpoint": [
+    4,
+    5,
+    6
+  ],
+  "n_errors": 0,
+  "n_warnings": 0,
+  "errors": [],
+  "warnings": []
+}

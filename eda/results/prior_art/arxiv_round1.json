@@ -1,0 +1,330 @@
+{
+ "A. EDA/PD flow tuning": [
+  {
+   "title": "Intelligent Circuit Design and Implementation with Machine Learning",
+   "id": "http://arxiv.org/abs/2206.03032v1",
+   "year": "2022",
+   "abstract": "The stagnation of EDA technologies roots from insufficient knowledge reuse. In practice, very similar simulation or optimization results may need to be repeatedly constructed from scratch. This motivates my research on introducing more 'intelligence' to EDA wi"
+  }
+ ],
+ "B. LLM hyper-heuristic EDA": [],
+ "C. LLM for physical design": [
+  {
+   "title": "Multimodal Chip Physical Design Engineer Assistant",
+   "id": "http://arxiv.org/abs/2510.15872v1",
+   "year": "2025",
+   "abstract": "Modern chip physical design relies heavily on Electronic Design Automation (EDA) tools, which often struggle to provide interpretable feedback or actionable guidance for improving routing congestion. In this work, we introduce a Multimodal Large Language Model"
+  },
+  {
+   "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM/VLM Agents for VLSI Physical Design",
+   "id": "http://arxiv.org/abs/2606.17253v6",
+   "year": "2026",
+   "abstract": "Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of"
+  },
+  {
+   "title": "iScript: A Domain-Adapted Large Language Model and Benchmark for Physical Design Tcl Script Generation",
+   "id": "http://arxiv.org/abs/2603.04476v1",
+   "year": "2026",
+   "abstract": "Modern EDA flows rely heavily on Tcl scripting, yet general LLMs perform poorly in this domain due to extreme data scarcity, domain-specific semantics, and the high reliability required in physical design. We present iScript, a domain-adapted Qwen3-8B model fo"
+  },
+  {
+   "title": "LLM4EDA: Emerging Progress in Large Language Models for Electronic Design Automation",
+   "id": "http://arxiv.org/abs/2401.12224v1",
+   "year": "2023",
+   "abstract": "Driven by Moore's Law, the complexity and scale of modern chip design are increasing rapidly. Electronic Design Automation (EDA) has been widely applied to address the challenges encountered in the full chip design process. However, the evolution of very large"
+  },
+  {
+   "title": "AnalogMaster: Large Language Model-based Automated Analog IC Design Framework from Image to Layout",
+   "id": "http://arxiv.org/abs/2604.20916v1",
+   "year": "2026",
+   "abstract": "Design automation has the potential to substantially improve the efficiency of analog integrated circuit (IC) design. However, existing algorithms and tools typically focus on individual stages, such as device sizing, placement, or routing, and still require s"
+  },
+  {
+   "title": "ChipXplore: Natural Language Exploration of Hardware Designs and Libraries",
+   "id": "http://arxiv.org/abs/2407.12749v3",
+   "year": "2024",
+   "abstract": "Hardware design workflows rely on Process Design Kits (PDKs) from different fabrication nodes, each containing standard cell libraries optimized for speed, power, or density. Engineers typically navigate between the design and target PDK to make informed decis"
+  },
+  {
+   "title": "Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows",
+   "id": "http://arxiv.org/abs/2607.17528v3",
+   "year": "2026",
+   "abstract": "Large language model (LLM) agents are extending electronic design automation (EDA) beyond static RTL generation toward long-horizon, tool-interactive workflows. Yet it remains unclear whether general-purpose coding agents, even with domain-specific EDA skills,"
+  },
+  {
+   "title": "DRC-Coder: Automated DRC Checker Code Generation Using LLM Autonomous Agent",
+   "id": "http://arxiv.org/abs/2412.05311v1",
+   "year": "2024",
+   "abstract": "In the advanced technology nodes, the integrated design rule checker (DRC) is often utilized in place and route tools for fast optimization loops for power-performance-area. Implementing integrated DRC checkers to meet the standard of commercial DRC tools dema"
+  }
+ ],
+ "D. checkpoint/intermediate flow decisions": [
+  {
+   "title": "On Joint Learning for Solving Placement and Routing in Chip Design",
+   "id": "http://arxiv.org/abs/2111.00234v2",
+   "year": "2021",
+   "abstract": "For its advantage in GPU acceleration and less dependency on human experts, machine learning has been an emerging tool for solving the placement and routing problems, as two critical steps in modern chip design flow. Being still in its early stage, there are f"
+  }
+ ],
+ "E. RL placement/routing": [
+  {
+   "title": "The Road Less Traveled: Congestion-Aware NoC Placement and Packet Routing for FPGAs",
+   "id": "http://arxiv.org/abs/2608.17266v1",
+   "year": "2026",
+   "abstract": "To help scale to ever-larger and more complex designs, recent FPGA architectures now integrate network-on-chips (NoCs). NoCs help transfer high-bandwidth data over long distances within the chip without using scarce low-delay long routing wire segments. While "
+  },
+  {
+   "title": "Multi-Agent Deep Reinforcement Learning for Cost- and Delay-Sensitive Virtual Network Function Placement and Routing",
+   "id": "http://arxiv.org/abs/2206.12146v1",
+   "year": "2022",
+   "abstract": "This paper proposes an effective and novel multiagent deep reinforcement learning (MADRL)-based method for solving the joint virtual network function (VNF) placement and routing (P&R), where multiple service requests with differentiated demands are delivered a"
+  },
+  {
+   "title": "On Joint Learning for Solving Placement and Routing in Chip Design",
+   "id": "http://arxiv.org/abs/2111.00234v2",
+   "year": "2021",
+   "abstract": "For its advantage in GPU acceleration and less dependency on human experts, machine learning has been an emerging tool for solving the placement and routing problems, as two critical steps in modern chip design flow. Being still in its early stage, there are f"
+  },
+  {
+   "title": "Routing and Placement of Macros using Deep Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2205.09289v1",
+   "year": "2022",
+   "abstract": "Chip placement has been one of the most time consuming task in any semi conductor area, Due to this negligence, many projects are pushed and chips availability in real markets get delayed. An engineer placing macros on a chip also needs to place it optimally t"
+  },
+  {
+   "title": "Non-Overlapping Placement of Macro Cells based on Reinforcement Learning in Chip Design",
+   "id": "http://arxiv.org/abs/2407.18499v3",
+   "year": "2024",
+   "abstract": "Due to the increasing complexity of chip design, existing placement methods still have many shortcomings in dealing with macro cells coverage and optimization efficiency. Aiming at the problems of layout overlap, inferior performance, and low optimization effi"
+  },
+  {
+   "title": "Routing Dense Layouts with History-Aware Offline Reinforcement Learning using LSTM",
+   "id": "http://arxiv.org/abs/2609.08232v1",
+   "year": "2026",
+   "abstract": "Detailed routing remains a dominant runtime bottleneck in physical design due to increasing complexity of design rules. Modern routers can struggle to resolve persistent violations under dense operating conditions. While recent work leverages reinforcement lea"
+  },
+  {
+   "title": "An Updated Assessment of Reinforcement Learning for Macro Placement",
+   "id": "http://arxiv.org/abs/2302.11014v3",
+   "year": "2023",
+   "abstract": "We provide an improved assessment of Google Brain's deep reinforcement learning approach to macro placement and its updated Circuit Training (CT) implementation in GitHub. A stronger simulated annealing (SA) baseline leverages the \"go-with-the-winners\" metaheu"
+  },
+  {
+   "title": "NVCell: Standard Cell Layout in Advanced Technology Nodes with Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2107.07044v1",
+   "year": "2021",
+   "abstract": "High quality standard cell layout automation in advanced technology nodes is still challenging in the industry today because of complex design rules. In this paper we introduce an automatic standard cell layout generator called NVCell that can generate layouts"
+  }
+ ],
+ "F. timing-driven placement WL tradeoff": [
+  {
+   "title": "STAIRoute: Early Global Routing using Monotone Staircases for Congestion Reduction",
+   "id": "http://arxiv.org/abs/1810.10412v2",
+   "year": "2018",
+   "abstract": "With aggressively shrinking process nodes, physical design methods face severe challenges due to poor convergence and uncertainty in getting an optimal solution. An early detection of potential failures is thus mandated. This has encouraged to devise a feedbac"
+  }
+ ],
+ "G. multiobjective PPA tuning": [
+  {
+   "title": "POET: Power-Oriented Evolutionary Tuning for LLM-Based RTL PPA Optimization",
+   "id": "http://arxiv.org/abs/2603.19333v1",
+   "year": "2026",
+   "abstract": "Applying large language models (LLMs) to RTL code optimization for improved power, performance, and area (PPA) faces two key challenges: ensuring functional correctness of optimized designs despite LLM hallucination, and systematically prioritizing power reduc"
+  },
+  {
+   "title": "COEVO: Co-Evolutionary Framework for Joint Functional Correctness and PPA Optimization in LLM-Based RTL Generation",
+   "id": "http://arxiv.org/abs/2604.15001v2",
+   "year": "2026",
+   "abstract": "LLM-based RTL code generation methods increasingly target both functional correctness and PPA quality, yet existing approaches universally decouple the two objectives, optimizing PPA only after correctness is fully achieved. Whether through sequential multi-ag"
+  },
+  {
+   "title": "OpenACMv2: An Accuracy-Constrained Co-Optimization Framework for Approximate DCiM",
+   "id": "http://arxiv.org/abs/2603.13042v2",
+   "year": "2026",
+   "abstract": "Digital Compute-in-Memory (DCiM) accelerates neural networks by reducing data movement. Approximate DCiM can further improve power-performance-area (PPA), but demands accuracy-constrained co-optimization across coupled architecture and transistor-level choices"
+  },
+  {
+   "title": "General parameterized proximal point algorithm with applications in statistical learning",
+   "id": "http://arxiv.org/abs/1812.03763v1",
+   "year": "2018",
+   "abstract": "In the literature, there are a few researches to design some parameters in the Proximal Point Algorithm (PPA), especially for the multi-objective convex optimizations. Introducing some parameters to PPA can make it more flexible and attractive. Mainly motivate"
+  },
+  {
+   "title": "AxOCS: Scaling FPGA-based Approximate Operators using Configuration Supersampling",
+   "id": "http://arxiv.org/abs/2309.12830v1",
+   "year": "2023",
+   "abstract": "The rising usage of AI and ML-based processing across application domains has exacerbated the need for low-cost ML implementation, specifically for resource-constrained embedded systems. To this end, approximate computing, an approach that explores the power, "
+  },
+  {
+   "title": "MicroEvo: Knowledge-Guided LLM Sampling for Efficient Microarchitecture Design Space Exploration",
+   "id": "http://arxiv.org/abs/2608.06183v2",
+   "year": "2026",
+   "abstract": "Microarchitecture design space exploration suffers from expansive search spaces and expensive PPA evaluation, leaving only a small simulation budget for design decision-making. Existing methods perform blind search without considering microarchitectural depend"
+  }
+ ],
+ "H. Bayesian optimization EDA flow": [
+  {
+   "title": "CAD Tool Design Space Exploration via Bayesian Optimization",
+   "id": "http://arxiv.org/abs/1912.06460v1",
+   "year": "2019",
+   "abstract": "The design complexity is increasing as the technology node keeps scaling down. As a result, the electronic design automation (EDA) tools also become more and more complex. There are lots of parameters involved in EDA tools, which results in a huge design space"
+  },
+  {
+   "title": "StateTune: Transforming LLM-Assisted EDA Flow Tuning into a Stateful, Closed-Loop Process",
+   "id": "http://arxiv.org/abs/2608.23601v1",
+   "year": "2026",
+   "abstract": "EDA flow parameter tuning is critical for quality-of-results~(QoR), yet the parameter space is large, tightly coupled, and full evaluations are prohibitively expensive. Prior LLM-assisted tuners mainly use the LLM as an external proposer with transient working"
+  },
+  {
+   "title": "Scalability of using Restricted Boltzmann Machines for Combinatorial Optimization",
+   "id": "http://arxiv.org/abs/1411.7542v1",
+   "year": "2014",
+   "abstract": "Estimation of Distribution Algorithms (EDAs) require flexible probability models that can be efficiently learned and sampled. Restricted Boltzmann Machines (RBMs) are generative neural networks with these desired properties. We integrate an RBM into an EDA and"
+  },
+  {
+   "title": "Denoising Autoencoders for fast Combinatorial Black Box Optimization",
+   "id": "http://arxiv.org/abs/1503.01954v2",
+   "year": "2015",
+   "abstract": "Estimation of Distribution Algorithms (EDAs) require flexible probability models that can be efficiently learned and sampled. Autoencoders (AE) are generative stochastic networks with these desired properties. We integrate a special type of AE, the Denoising A"
+  },
+  {
+   "title": "Deep Boltzmann Machines in Estimation of Distribution Algorithms for Combinatorial Optimization",
+   "id": "http://arxiv.org/abs/1509.06535v2",
+   "year": "2015",
+   "abstract": "Estimation of Distribution Algorithms (EDAs) require flexible probability models that can be efficiently learned and sampled. Deep Boltzmann Machines (DBMs) are generative neural networks with these desired properties. We integrate a DBM into an EDA and evalua"
+  },
+  {
+   "title": "Distributionally Robust Circuit Design Optimization under Variation Shifts",
+   "id": "http://arxiv.org/abs/2308.08111v1",
+   "year": "2023",
+   "abstract": "Due to the significant process variations, designers have to optimize the statistical performance distribution of nano-scale IC design in most cases. This problem has been investigated for decades under the formulation of stochastic optimization, which minimiz"
+  },
+  {
+   "title": "Optimization of chemical mixers design via tensor trains and quantum computing",
+   "id": "http://arxiv.org/abs/2304.12307v1",
+   "year": "2023",
+   "abstract": "Chemical component design is a computationally challenging procedure that often entails iterative numerical modeling and authentic experimental testing. We demonstrate a novel optimization method, Tensor train Optimization (TetraOpt), for the shape optimizatio"
+  },
+  {
+   "title": "AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing",
+   "id": "http://arxiv.org/abs/2511.03697v1",
+   "year": "2025",
+   "abstract": "Analog/mixed-signal circuits are key for interfacing electronics with the physical world. Their design, however, remains a largely handcrafted process, resulting in long and error-prone design cycles. While the recent rise of AI-based reinforcement learning an"
+  }
+ ],
+ "I. mode/preference conditioned RL": [
+  {
+   "title": "Controllability in preference-conditioned multi-objective reinforcement learning",
+   "id": "http://arxiv.org/abs/2605.10585v1",
+   "year": "2026",
+   "abstract": "Multi-objective reinforcement learning (MORL) allows a user to express preference over outcomes in terms of the relative importance of the objectives, but standard metrics cannot capture whether changes in preference reliably change the agent's behavior in the"
+  },
+  {
+   "title": "PCHC: Enabling Preference Conditioned Humanoid Control via Multi-Objective Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2603.24047v1",
+   "year": "2026",
+   "abstract": "Humanoid robots often need to balance competing objectives, such as maximizing speed while minimizing energy consumption. While current reinforcement learning (RL) methods can master complex skills like fall recovery and perceptive locomotion, they are constra"
+  },
+  {
+   "title": "Hindsight Preference Replay Improves Preference-Conditioned Multi-Objective Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2601.11604v1",
+   "year": "2026",
+   "abstract": "Multi-objective reinforcement learning (MORL) enables agents to optimize vector-valued rewards while respecting user preferences. CAPQL, a preference-conditioned actor-critic method, achieves this by conditioning on weight vectors w and restricts data usage to"
+  },
+  {
+   "title": "Preference-Conditioned Reinforcement Learning for Space-Time Efficient Online 3D Bin Packing",
+   "id": "http://arxiv.org/abs/2603.07800v1",
+   "year": "2026",
+   "abstract": "Robotic bin packing is widely deployed in warehouse automation, with current systems achieving robust performance through heuristic and learning-based strategies. These systems must balance compact placement with rapid execution, where selecting alternative it"
+  },
+  {
+   "title": "Forty Shades of Blue: Quality-Diversity Alignment via Mode-Conditioned Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2609.14896v1",
+   "year": "2026",
+   "abstract": "A notable byproduct of LLM alignment training is mode collapse: the progressive loss of output diversity that narrows a model's expressivity at inference time. This degradation is especially limiting for applications requiring open-ended exploration and plural"
+  },
+  {
+   "title": "Preference Conditioned Multi-Objective Reinforcement Learning: Decomposed, Diversity-Driven Policy Optimization",
+   "id": "http://arxiv.org/abs/2602.07764v2",
+   "year": "2026",
+   "abstract": "Multi-objective reinforcement learning (MORL) seeks to train agents capable of balancing conflicting objectives. While single preference-conditioned policies offer a highly scalable solution, existing approaches remain brittle in practice, frequently failing t"
+  },
+  {
+   "title": "Preference-Conditioned Multi-Objective Reinforcement Learning for Runtime-Tunable Transit Signal Priority",
+   "id": "http://arxiv.org/abs/2607.18286v1",
+   "year": "2026",
+   "abstract": "Transit signal priority (TSP) requires balancing competing objectives: reducing bus delay while limiting adverse impacts on non-bus traffic and avoiding extreme waits for a subset of vehicles. Existing reinforcement-learning (RL) approaches to TSP typically en"
+  },
+  {
+   "title": "A Single Deep Preference-Conditioned Policy for Learning Pareto Coverage Sets",
+   "id": "http://arxiv.org/abs/2605.08946v1",
+   "year": "2026",
+   "abstract": "Preference-conditioned multi-objective reinforcement learning aims to learn a single policy that captures trade-offs across preferences, but under nonlinear scalarization the uniqueness and continuity of the preference-to-solution correspondence remain unclear"
+  }
+ ],
+ "J. ECO LLM/ML": [
+  {
+   "title": "IR-Aware ECO Timing Optimization Using Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2402.07781v2",
+   "year": "2024",
+   "abstract": "Engineering change orders (ECOs) in late stages make minimal design fixes to recover from timing shifts due to excessive IR drops. This paper integrates IR-drop-aware timing analysis and ECO timing optimization using reinforcement learning (RL). The method ope"
+  },
+  {
+   "title": "Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows",
+   "id": "http://arxiv.org/abs/2607.17528v3",
+   "year": "2026",
+   "abstract": "Large language model (LLM) agents are extending electronic design automation (EDA) beyond static RTL generation toward long-horizon, tool-interactive workflows. Yet it remains unclear whether general-purpose coding agents, even with domain-specific EDA skills,"
+  }
+ ],
+ "K. constrained MDP EDA": [],
+ "L. OpenROAD flow parameter": [
+  {
+   "title": "ORAssistant: A Custom RAG-based Conversational Assistant for OpenROAD",
+   "id": "http://arxiv.org/abs/2410.03845v2",
+   "year": "2024",
+   "abstract": "Open-source Electronic Design Automation (EDA) tools are rapidly transforming chip design by addressing key barriers of commercial EDA tools such as complexity, costs, and access. Recent advancements in Large Language Models (LLMs) have further enhanced effici"
+  },
+  {
+   "title": "ORRAM: An OpenROAD-Integrated RAM Generator Using Standard Cells",
+   "id": "http://arxiv.org/abs/2607.12244v1",
+   "year": "2026",
+   "abstract": "Memory inference remains a significant challenge in turnkey ASIC design flows. Inferring flip-flops from RTL can create thousands of densely interconnected instances which dramatically slow down design flows and impede performance. Memory compilers address thi"
+  },
+  {
+   "title": "FlowPlace: Flow Matching for Chip Placement",
+   "id": "http://arxiv.org/abs/2604.23658v2",
+   "year": "2026",
+   "abstract": "Chip placement plays an important role in physical design. While generative models like diffusion models offer promising learning-based solutions, current methods have the following limitations: they use random synthetic data for pre-training, require long sam"
+  },
+  {
+   "title": "An Open-Source Flow for Single-Phase, Edge-Triggered to Two-Phase, Non-Overlapping Clocking Conversion",
+   "id": "http://arxiv.org/abs/2605.05374v1",
+   "year": "2026",
+   "abstract": "Two-phase clocking offers significant advantages in timing margin and clock flexibility, yet its adoption remains limited due to the absence of automation in modern design flows. Managing strict non-overlap and 180$^\\circ$ phase separation introduces complexit"
+  },
+  {
+   "title": "Recursive Learning-Based Virtual Buffering for Analytical Global Placement",
+   "id": "http://arxiv.org/abs/2506.17247v2",
+   "year": "2025",
+   "abstract": "Due to the skewed scaling of interconnect versus cell delay in modern technology nodes, placement with buffer porosity (i.e., cell density) awareness is essential for timing closure in physical synthesis flows. However, existing approaches face two key challen"
+  },
+  {
+   "title": "ConSmax: Hardware-Friendly Alternative Softmax with Learnable Parameters",
+   "id": "http://arxiv.org/abs/2402.10930v3",
+   "year": "2024",
+   "abstract": "The self-attention mechanism distinguishes transformer-based large language models (LLMs) apart from convolutional and recurrent neural networks. Despite the performance improvement, achieving real-time LLM inference on silicon remains challenging due to the e"
+  },
+  {
+   "title": "Physically Aware Synthesis Revisited: Guiding Technology Mapping with Primitive Logic Gate Placement",
+   "id": "http://arxiv.org/abs/2408.07886v1",
+   "year": "2024",
+   "abstract": "A typical VLSI design flow is divided into separated front-end logic synthesis and back-end physical design (PD) stages, which often require costly iterations between these stages to achieve design closure. Existing approaches face significant challenges, nota"
+  },
+  {
+   "title": "Customized Retrieval Augmented Generation and Benchmarking for EDA Tool Documentation QA",
+   "id": "http://arxiv.org/abs/2407.15353v2",
+   "year": "2024",
+   "abstract": "Retrieval augmented generation (RAG) enhances the accuracy and reliability of generative AI models by sourcing factual information from external databases, which is extensively employed in document-grounded question-answering (QA) tasks. Off-the-shelf RAG flow"
+  }
+ ]
+}

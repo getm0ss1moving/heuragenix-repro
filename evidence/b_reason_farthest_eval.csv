@@ -1,0 +1,14 @@
+group,path,instance,value,gap,seconds,error
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,kroA100.tsp,22401.0,5.257964477022837,4.9,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,kroA150.tsp,29523.0,11.306741064696125,22.93,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,kroB100.tsp,23629.0,6.72056366017795,4.77,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,kroB200.tsp,32603.0,10.755172062370486,68.99,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,kroC100.tsp,21452.0,3.3881150898838497,4.55,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,bier127.tsp,129638.0,9.600784565698923,12.29,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,tsp225.tsp,4436.0,13.19214085225823,109.07,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,a280.tsp,,,180.0,INCOMPLETE steps=1
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,pcb442.tsp,,,180.0,INCOMPLETE steps=1
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,gr666.tsp,,,180.0,INCOMPLETE steps=1
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,pr152.tsp,76694.0,4.0878369208219105,23.25,
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,pr1002.tsp,,,180.0,INCOMPLETE steps=1
+reason_farthest,/data/dzy/heura_repr/repo/HeurAgenix_reason/output/tsp/evolution_result/farthest_insertion_b6d3.evolution/train_case_4.tsp/farthest_insertion_e604.py,pr2392.tsp,,,180.0,INCOMPLETE steps=1

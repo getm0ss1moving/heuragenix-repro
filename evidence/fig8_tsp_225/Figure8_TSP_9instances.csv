@@ -1,0 +1,10 @@
+instance,value,upper_bound,gap_percent,source,result_dir
+kroA100.tsp,21828.0,21282,2.565548,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroA100.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_021029
+kroA150.tsp,27873.0,26524,5.085960,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroA150.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_022552
+kroB100.tsp,22236.0,22141,0.429068,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroB100.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_021029
+kroB200.tsp,30412.0,29437,3.312158,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroB200.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_041211
+kroC100.tsp,21714.0,20749,4.650827,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroC100.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_021029
+bier127.tsp,125358.0,118282,5.982313,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/bier127.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_022412
+tsp225.tsp,4295.0,3919,9.594284,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/tsp225.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_024413
+a280.tsp,2790.0,2579,8.181466,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/a280.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_024856
+pr152.tsp,74866.0,73682,1.606905,result.txt,/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/pr152.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_022759

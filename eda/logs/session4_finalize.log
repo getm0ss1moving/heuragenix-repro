@@ -1,0 +1,152 @@
+=== retry/compact pass 2026-09-22T17:54:39Z ===
+[pool] plan_rows=222 unique_tasks=222 done_seed_out_parts=222 merged_into_out=0 pending=0 jobs=8
+[pool] nothing to do; all planned run_ids already present
+[pool] DONE ok=0 fail=0 elapsed=0s avg_run=0.0s out=results/canonical_server/checkpoint_replay_v2.jsonl failures=results/canonical_server/replay_batch_v2_failures.tsv
+=== validator 2026-09-22T17:54:39Z ===
+{
+  "records": 222,
+  "plan_tasks": 222,
+  "missing_tasks": 0,
+  "missing_task_ids_first10": [],
+  "replayable_checkpoints": 46,
+  "control_coverage": "46/46",
+  "missing_controls": [],
+  "duplicate_run_ids": [],
+  "returncode_bad": 0,
+  "returncode_fail_rate": 0.0,
+  "gate_ok": 222,
+  "pool_failure_ids": [],
+  "pool_failure_count": 0,
+  "pool_failure_ids_raw": [
+    "replay_aes_baseline_0001_pgp_control"
+  ],
+  "retried_ok_ids": [
+    "replay_aes_baseline_0001_pgp_control"
+  ],
+  "by_design_stage": {
+    "aes/post_cts": 25,
+    "aes/post_global_place": 25,
+    "gcd/post_cts": 44,
+    "gcd/post_global_place": 44,
+    "ibex/post_cts": 18,
+    "ibex/post_global_place": 18,
+    "jpeg/post_cts": 24,
+    "jpeg/post_global_place": 24
+  },
+  "by_action": {
+    "control": 46,
+    "layeradj_std": 46,
+    "grt50": 46,
+    "grt200": 46,
+    "cap0": 14,
+    "slew0": 24
+  },
+  "power_coverage": "222/222",
+  "hold_wns_coverage": "222/222",
+  "actions_per_checkpoint": [
+    4,
+    5,
+    6
+  ],
+  "n_errors": 0,
+  "n_warnings": 0,
+  "errors": [],
+  "warnings": []
+}
+VALIDATE_REPLAY_V2_PASS
+=== dataset v5 2026-09-22T17:54:39Z ===
+{
+  "version": "selector_dataset_v5_checkpoint_2026-09-22",
+  "n_states_total": 69,
+  "n_states_replayable": 46,
+  "n_decisions": 46,
+  "n_controls": 46,
+  "n_action_samples": 176,
+  "n_sft": 46,
+  "n_preferences": 46,
+  "by_design": {
+    "gcd": 66,
+    "jpeg": 40,
+    "aes": 40,
+    "ibex": 30
+  },
+  "by_stage": {
+    "post_global_place": 88,
+    "post_cts": 88
+  },
+  "by_action": {
+    "grt200": 46,
+    "grt50": 46,
+    "layeradj_std": 46,
+    "cap0": 14,
+    "slew0": 24
+  },
+  "gate_ok_by_action": {
+    "cap0": "14/14",
+    "grt200": "46/46",
+    "grt50": "46/46",
+    "layeradj_std": "33/46",
+    "slew0": "18/24"
+  },
+  "gate_ok_rate": 0.8920454545454546,
+  "oracle_action_distribution": {
+    "layeradj_std": 29,
+    "grt200": 12,
+    "cap0": 5
+  },
+  "hold_wns_coverage": 1.0,
+  "power_coverage": 1.0,
+  "no_oracle_decisions": [],
+  "missing_controls": [],
+  "n_validation_errors": 0,
+  "n_warnings": 0,
+  "errors": [],
+  "warnings": [],
+  "utility_spec": "timing_gate_first: setup_wns_ns >= base_setup_wns_ns - 0.02 ns and hold_wns_ns >= base_hold_wns_ns - 0.02 ns; if base is nonnegative, candidate must stay nonnegative; then U = 0.5*d_HPWL + 0.4*d_abs_TNS + 0.1*d_power",
+  "gate_spec": "setup/hold >= control - 0.020 ns; control nonnegative implies candidate nonnegative; DRC not increased"
+}
+=== replay summary 2026-09-22T17:54:39Z ===
+{
+  "records": 222,
+  "decisions": 46,
+  "effect_rows": 34
+}
+SUMMARY_WRITTEN results/canonical_server/PHASE0_REPLAY_V2_SUMMARY.json results/canonical_server/PHASE0_REPLAY_V2_SUMMARY.md
+=== session_status 2026-09-22T17:54:39Z ===
+==================================================================
+HA-PR EDA session status (offline)
+==================================================================
+canonical dir: /data/dzy/heura_repr/eda/results/canonical_server
+  [ok] PHASE0_STATS_4designs_server.json
+  [ok] PHASE0_SELECTOR_4designs_server.json
+  [ok] PHASE0_SELECTOR_4designs_server_api.json
+  [ok] selector_dataset_v4.jsonl
+  [ok] checkpoint_states_v1.jsonl
+  [ok] checkpoint_replay_v1.jsonl
+------------------------------------------------------------------
+states: 69 total, 46 replayable (post-GP/post-CTS)
+  aes   post_cts           5
+  aes   post_global_place  5
+  gcd   post_cts           11
+  gcd   post_global_place  11
+  ibex  post_cts           3
+  ibex  post_global_place  3
+  jpeg  post_cts           4
+  jpeg  post_global_place  4
+replay labels: v1=5, v2=222
+  v1 by design/stage: {('gcd', 'post_global_place'): 3, ('gcd', 'post_cts'): 2}
+  v1 gate_ok=5 failed_rc=0 controls=2
+  v2 by design/stage: {('gcd', 'post_global_place'): 44, ('jpeg', 'post_global_place'): 24, ('gcd', 'post_cts'): 44, ('jpeg', 'post_cts'): 24, ('aes', 'post_global_place'): 25, ('aes', 'post_cts'): 25, ('ibex', 'post_global_place'): 18, ('ibex', 'post_cts'): 18}
+  v2 gate_ok=222 failed_rc=0 controls=46
+control coverage: 46/46 replayable checkpoints
+------------------------------------------------------------------
+plan v2: 222 tasks, status={'planned': 222}
+  planned by action: {'control': 46, 'layeradj_std': 46, 'grt50': 46, 'grt200': 46, 'slew0': 24, 'cap0': 14}
+  planned by design: {'gcd': 88, 'jpeg': 48, 'aes': 50, 'ibex': 36}
+------------------------------------------------------------------
+next:
+  1) python3 harness/smoke_test.py
+  2) python3 harness/plan_replay_batch.py --design gcd --action-ids control,layeradj_std,grt200 --limit 6   --plan-out results/canonical_server/replay_batch_plan_smoke.jsonl
+  3) read HANDOFF_SESSION3_NEXT.md then run a server smoke batch under tmux
+handoff: /data/dzy/heura_repr/eda/HANDOFF_SESSION3_NEXT.md
+FINALIZE_DONE 2026-09-22T17:54:39Z

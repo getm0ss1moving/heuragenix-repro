@@ -1,0 +1,43 @@
+{
+  "seed": 0,
+  "designs": [
+    {
+      "design": "aes",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2"
+      ],
+      "random_mean_regret": 0.11252151647411261,
+      "rule": "pad_2",
+      "llm": null,
+      "llm_error": "HTTP Error 401: Authorization Required",
+      "rule_regret": 0.0,
+      "llm_regret": null,
+      "oracle_regret": 0.0
+    },
+    {
+      "design": "gcd",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_025",
+        "density_035",
+        "density_040",
+        "pad_2",
+        "pad_6",
+        "grt_50",
+        "grt_200"
+      ],
+      "random_mean_regret": 0.11264481999974893,
+      "rule": "pad_2",
+      "llm": null,
+      "llm_error": "HTTP Error 401: Authorization Required",
+      "rule_regret": 0.0,
+      "llm_regret": null,
+      "oracle_regret": 0.0
+    }
+  ],
+  "key_found": true
+}

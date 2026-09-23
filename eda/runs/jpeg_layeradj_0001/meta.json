@@ -1,0 +1,62 @@
+{
+  "run_id": "jpeg_layeradj_0001",
+  "design": "jpeg",
+  "overrides": {
+    "global_routing_layer_adjustments": "{{ met1 0.4 } { met2 0.4 } { met3 0.3 } { met4 0.3 } { met5 0.2 }}"
+  },
+  "threads": 16,
+  "returncode": 0,
+  "duration_s": 308.2,
+  "openroad_sha256": "9f55a2374783f0323b43f8aa9794de71318cd9f2607eb07991ce786b278f3353",
+  "flow_param_sha256": "d6f4a19cb00e10de91d6076c3371e90dd1d2ef2b574cfdd6f514cf9898c454f4",
+  "artifacts": {
+    "flow.log": {
+      "size": 66860,
+      "sha256": "f64db802331cb0a77e30b7d3699f29f534a9b8fcce8e9627a296d59999683e70"
+    },
+    "metrics_raw.json": {
+      "size": 996,
+      "sha256": "ff28781b1d5fad656bbeee6273ee9c5eb76a5395ccee00a0d83f9d34b5fff806"
+    },
+    "metrics.json": {
+      "size": 2927,
+      "sha256": "f65afa10a7b59b3dd3c551ae17ee0916b76ddb3672092cd2a9cc589dd600b9f6"
+    },
+    "results/jpeg_sky130hd.route_guide": {
+      "size": 13445903,
+      "sha256": "062e3de295c8fac630b1e2d0a448aa01b0853319a74d103302d477802abf4efc"
+    },
+    "results/jpeg_sky130hd.spef": {
+      "size": 65281940,
+      "sha256": "f6b64ec32fd73baa8cbcab9143d09bc1c43e5beaefcf9c6c96b08d474e668b48"
+    },
+    "results/jpeg_sky130hd.v": {
+      "size": 58092335,
+      "sha256": "0a5f882651f7cbec351c230d6765c1c2543c3b8aa296bb6dbb5c2ed6b7e19085"
+    },
+    "results/jpeg_sky130hd_ant.log": {
+      "size": 200,
+      "sha256": "ce16223c42aec85f555faafe009dae47b2ef3bbfee13bc285ba13616d38fefe1"
+    },
+    "results/jpeg_sky130hd_cts.def": {
+      "size": 66507531,
+      "sha256": "8e29ebafd107285c7ce126e3782ca0fd0c9deac39a599335e05269aada5a6a8a"
+    },
+    "results/jpeg_sky130hd_global_place.def": {
+      "size": 66259457,
+      "sha256": "aed07cd34114a569367bbef87198ce98476df646c7a2e76062ad8aba3b1a8b54"
+    },
+    "results/jpeg_sky130hd_output_guide.mod": {
+      "size": 11872883,
+      "sha256": "427320fc7dc97368d986ae9016d7afdee6f75448a3ee511c4df7434ad5099ea2"
+    },
+    "results/jpeg_sky130hd_route.def": {
+      "size": 191945742,
+      "sha256": "bd2775e3451ce69492ae768804fb134691fa7886dbe34c3460f9bbf77455e163"
+    },
+    "results/jpeg_sky130hd_route_drc.rpt": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

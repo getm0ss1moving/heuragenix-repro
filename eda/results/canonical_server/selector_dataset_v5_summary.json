@@ -1,0 +1,50 @@
+{
+  "version": "selector_dataset_v5_checkpoint_2026-09-22",
+  "n_states_total": 69,
+  "n_states_replayable": 46,
+  "n_decisions": 46,
+  "n_controls": 46,
+  "n_action_samples": 176,
+  "n_sft": 46,
+  "n_preferences": 46,
+  "by_design": {
+    "gcd": 66,
+    "jpeg": 40,
+    "aes": 40,
+    "ibex": 30
+  },
+  "by_stage": {
+    "post_global_place": 88,
+    "post_cts": 88
+  },
+  "by_action": {
+    "grt200": 46,
+    "grt50": 46,
+    "layeradj_std": 46,
+    "cap0": 14,
+    "slew0": 24
+  },
+  "gate_ok_by_action": {
+    "cap0": "14/14",
+    "grt200": "46/46",
+    "grt50": "46/46",
+    "layeradj_std": "33/46",
+    "slew0": "18/24"
+  },
+  "gate_ok_rate": 0.8920454545454546,
+  "oracle_action_distribution": {
+    "layeradj_std": 29,
+    "grt200": 12,
+    "cap0": 5
+  },
+  "hold_wns_coverage": 1.0,
+  "power_coverage": 1.0,
+  "no_oracle_decisions": [],
+  "missing_controls": [],
+  "n_validation_errors": 0,
+  "n_warnings": 0,
+  "errors": [],
+  "warnings": [],
+  "utility_spec": "timing_gate_first: setup_wns_ns >= base_setup_wns_ns - 0.02 ns and hold_wns_ns >= base_hold_wns_ns - 0.02 ns; if base is nonnegative, candidate must stay nonnegative; then U = 0.5*d_HPWL + 0.4*d_abs_TNS + 0.1*d_power",
+  "gate_spec": "setup/hold >= control - 0.020 ns; control nonnegative implies candidate nonnegative; DRC not increased"
+}

@@ -1,0 +1,108 @@
+{
+  "seed": 0,
+  "designs": [
+    {
+      "design": "aes",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2",
+        "grt_200",
+        "density_040_pad_2"
+      ],
+      "random_mean_regret": 0.26985832500833257,
+      "rule": "pad_2",
+      "llm": null,
+      "llm_error": "skipped_by_flag",
+      "rule_regret": 0.0,
+      "llm_regret": null,
+      "oracle_regret": 0.0,
+      "guard_notes": {
+        "base": "setup=ok(ok), hold=ok(ok)",
+        "density_040": "setup=ok(ok), hold=ok(ok)",
+        "pad_2": "setup=ok(ok), hold=ok(ok)",
+        "grt_200": "setup=ok(ok), hold=ok(ok)",
+        "density_040_pad_2": "setup=ok(ok), hold=FAIL(degrades_more_than_guard)"
+      }
+    },
+    {
+      "design": "gcd",
+      "oracle": "density_025",
+      "candidates": [
+        "base",
+        "density_025",
+        "density_035",
+        "density_040",
+        "pad_2",
+        "pad_6",
+        "grt_200",
+        "layeradj"
+      ],
+      "random_mean_regret": 0.19126631238750844,
+      "rule": "pad_2",
+      "llm": null,
+      "llm_error": "skipped_by_flag",
+      "rule_regret": 0.057051532624248176,
+      "llm_regret": null,
+      "oracle_regret": 0.0,
+      "guard_notes": {
+        "base": "setup=ok(ok), hold=ok(ok)",
+        "density_025": "setup=ok(ok), hold=ok(ok)",
+        "density_035": "setup=ok(ok), hold=ok(ok)",
+        "density_040": "setup=ok(ok), hold=ok(ok)",
+        "pad_2": "setup=ok(ok), hold=ok(ok)",
+        "pad_6": "setup=FAIL(degrades_more_than_guard), hold=ok(ok)",
+        "grt_200": "setup=ok(ok), hold=ok(ok)",
+        "layeradj": "setup=ok(ok), hold=ok(ok)"
+      }
+    },
+    {
+      "design": "ibex",
+      "oracle": "pad_2",
+      "candidates": [
+        "base",
+        "density_040",
+        "pad_2"
+      ],
+      "random_mean_regret": 0.36841814032329473,
+      "rule": "pad_2",
+      "llm": null,
+      "llm_error": "skipped_by_flag",
+      "rule_regret": 0.0,
+      "llm_regret": null,
+      "oracle_regret": 0.0,
+      "guard_notes": {
+        "base": "setup=ok(ok), hold=ok(ok)",
+        "density_040": "setup=ok(ok), hold=FAIL(degrades_more_than_guard)",
+        "pad_2": "setup=ok(ok), hold=ok(ok)"
+      }
+    },
+    {
+      "design": "jpeg",
+      "oracle": "layeradj",
+      "candidates": [
+        "base",
+        "layeradj",
+        "pad_2",
+        "density_040"
+      ],
+      "random_mean_regret": 0.3848931037105548,
+      "rule": "pad_2",
+      "llm": null,
+      "llm_error": "skipped_by_flag",
+      "rule_regret": 0.7904072832558121,
+      "llm_regret": null,
+      "oracle_regret": 0.0,
+      "guard_notes": {
+        "base": "setup=ok(ok), hold=ok(ok)",
+        "layeradj": "setup=ok(ok), hold=ok(ok)",
+        "pad_2": "setup=ok(ok), hold=FAIL(new_violation_from_met_baseline)",
+        "density_040": "setup=ok(ok), hold=FAIL(new_violation_from_met_baseline)"
+      }
+    }
+  ],
+  "key_found": false,
+  "timing_convention": "setup_hold_v1_2026-09-22",
+  "utility_spec": "timing_gate_first: setup_wns_ns >= base_setup_wns_ns - 0.02 ns and hold_wns_ns >= base_hold_wns_ns - 0.02 ns; if base is nonnegative, candidate must stay nonnegative; then U = 0.5*d_HPWL + 0.4*d_abs_TNS + 0.1*d_power"
+}

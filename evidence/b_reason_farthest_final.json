@@ -1,0 +1,9 @@
+{
+  "reasoning_farthest_avg": 8.038664836616288,
+  "reasoning_farthest_n": 8,
+  "released_evolved_farthest_avg": 8.282902219898483,
+  "released_n": 12,
+  "deepseek_chat_farthest_avg": 9.360672472433393,
+  "chat_n": 12,
+  "verdict": "reasoning_better_than_released"
+}

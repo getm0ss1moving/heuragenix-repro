@@ -1,0 +1,60 @@
+{
+  "run_id": "phase0_sweep_0002_base",
+  "design": "gcd",
+  "overrides": {},
+  "threads": 8,
+  "returncode": 0,
+  "duration_s": 13.84,
+  "openroad_sha256": "9f55a2374783f0323b43f8aa9794de71318cd9f2607eb07991ce786b278f3353",
+  "flow_param_sha256": "d6f4a19cb00e10de91d6076c3371e90dd1d2ef2b574cfdd6f514cf9898c454f4",
+  "artifacts": {
+    "flow.log": {
+      "size": 30930,
+      "sha256": "6fbdccd484fb58b4327acd6a99c751c80dca99bde9659f09febc10770ffa54bf"
+    },
+    "metrics_raw.json": {
+      "size": 984,
+      "sha256": "4b3126e7768ef5884cb35da38eaefa523a888261d5fb06c178cdce9115b358d5"
+    },
+    "metrics.json": {
+      "size": 3798,
+      "sha256": "bb68ceea0d1c7ba463e3881f59251b8fc6a9f0bc4f3c906dafcc1e514592d74f"
+    },
+    "results/gcd_sky130hd.route_guide": {
+      "size": 72799,
+      "sha256": "9d709e9beecd0ed6dc57d6bb52bc4a72f7b4c2b63d66c30ec1a56ca7e2a1f4a0"
+    },
+    "results/gcd_sky130hd.spef": {
+      "size": 404231,
+      "sha256": "4344a2b9a3af3f64c4f7d3d481cfaa679b93e1fe3d72cc1d92a4793107b9994f"
+    },
+    "results/gcd_sky130hd.v": {
+      "size": 472353,
+      "sha256": "a36259a7a95d8940d757b91475b3a64d16d137539a6a47997708421067ade535"
+    },
+    "results/gcd_sky130hd_ant.log": {
+      "size": 198,
+      "sha256": "04a9612d88127693b1cb887bba0017a1a9db2da85277ab108a03ebe7313713ca"
+    },
+    "results/gcd_sky130hd_cts.def": {
+      "size": 552641,
+      "sha256": "a56edba4aeb9123517d640d8ea0593dd0750bc229c7b19099e16c732ffdf60c2"
+    },
+    "results/gcd_sky130hd_global_place.def": {
+      "size": 551611,
+      "sha256": "876e4cffd6538430a094e9003bd5d86a25fbd2ee58d7d871b649dc2c2b0f09a1"
+    },
+    "results/gcd_sky130hd_output_guide.mod": {
+      "size": 61109,
+      "sha256": "c13b85005aec2792e2b4f4d959cd62a8844770907be63e6f7bd873e272fe7d96"
+    },
+    "results/gcd_sky130hd_route.def": {
+      "size": 1561589,
+      "sha256": "cc670988f1c9ccb2a1e57f9c8342caf9fb1cceddc23e983d3c332cd0b0cb485a"
+    },
+    "results/gcd_sky130hd_route_drc.rpt": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

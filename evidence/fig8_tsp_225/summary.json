@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "instance": "kroA100.tsp",
+      "value": 21828.0,
+      "gap": 2.565548350718917,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroA100.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_021029"
+    },
+    {
+      "instance": "kroA150.tsp",
+      "value": 27873.0,
+      "gap": 5.08595988538682,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroA150.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_022552"
+    },
+    {
+      "instance": "kroB100.tsp",
+      "value": 22236.0,
+      "gap": 0.4290682444334041,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroB100.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_021029"
+    },
+    {
+      "instance": "kroB200.tsp",
+      "value": 30412.0,
+      "gap": 3.312158168291606,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroB200.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_041211"
+    },
+    {
+      "instance": "kroC100.tsp",
+      "value": 21714.0,
+      "gap": 4.6508265458576314,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/kroC100.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_021029"
+    },
+    {
+      "instance": "bier127.tsp",
+      "value": 125358.0,
+      "gap": 5.982313454287212,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/bier127.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_022412"
+    },
+    {
+      "instance": "tsp225.tsp",
+      "value": 4295.0,
+      "gap": 9.594284256187803,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/tsp225.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_024413"
+    },
+    {
+      "instance": "a280.tsp",
+      "value": 2790.0,
+      "gap": 8.181465684373789,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/a280.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_024856"
+    },
+    {
+      "instance": "pcb442.tsp",
+      "value": 54527.0,
+      "gap": 7.3619752697487595,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/pcb442.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_025846"
+    },
+    {
+      "instance": "gr666.tsp",
+      "value": null,
+      "gap": null,
+      "source": "none",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/gr666.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_033613"
+    },
+    {
+      "instance": "pr152.tsp",
+      "value": 74866.0,
+      "gap": 1.6069053500176436,
+      "source": "result.txt",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/pr152.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_022759"
+    },
+    {
+      "instance": "pr1002.tsp",
+      "value": null,
+      "gap": null,
+      "source": "none",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/pr1002.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_045326"
+    },
+    {
+      "instance": "pr2392.tsp",
+      "value": null,
+      "gap": null,
+      "source": "none",
+      "result_dir": "/data/dzy/heura_repr/repo/HeurAgenix_paper/output/tsp/result/pr2392.tsp/llm_hh.pool_fig8.deepseek_flash_reason.n2.0m5c3b10.20260923_050346"
+    }
+  ],
+  "avg_gap": 4.877050520930359,
+  "n": 10,
+  "baselines": {
+    "paper_HeurAgenix_TSP": 0.5,
+    "GLS": 3.93,
+    "EoH+GLS": 1.93,
+    "ReEvo+GLS": 0.98
+  }
+}

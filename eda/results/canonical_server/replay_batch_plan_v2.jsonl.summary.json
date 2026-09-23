@@ -1,0 +1,11 @@
+{
+  "states_total": 69,
+  "states_replayable": 46,
+  "existing_output_records": 0,
+  "skipped_design_default": 54,
+  "planned": 222,
+  "skip_done": 0,
+  "action_catalog": "replay_actions_v1_2026-09-22",
+  "out_jsonl": "/data/dzy/heura_repr/eda/results/canonical_server/checkpoint_replay_v2.jsonl",
+  "note": "recommended first pass (session-3 handoff): 222 tasks, actions=control,layeradj_std,grt50,grt200,slew0,cap0"
+}

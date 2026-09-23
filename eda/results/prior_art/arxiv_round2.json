@@ -1,0 +1,275 @@
+{
+ "M. flow tuning OpenROAD": [
+  {
+   "title": "Intelligent Circuit Design and Implementation with Machine Learning",
+   "id": "http://arxiv.org/abs/2206.03032v1",
+   "year": "2022",
+   "abstract": "The stagnation of EDA technologies roots from insufficient knowledge reuse. In practice, very similar simulation or optimization results may need to be repeatedly constructed from scratch. This motivates my research on introducing more 'intelligence' to EDA with machine learning "
+  },
+  {
+   "title": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+   "id": "http://arxiv.org/abs/2604.15082v1",
+   "year": "2026",
+   "abstract": "This paper introduces the first \\emph{self-evolving} logic synthesis framework, which leverages Large Language Model (LLM) agents to autonomously improve the source code of \\textsc{ABC}, the widely adopted logic synthesis system. Our framework operates on the \\emph{entire integra"
+  }
+ ],
+ "N. hyper-heuristic chip/EDA": [],
+ "O. checkpoint/snapshot design flow": [
+  {
+   "title": "Topology optimization for particle flow problems using Eulerian-Eulerian model with a finite difference method",
+   "id": "http://arxiv.org/abs/2412.19619v1",
+   "year": "2024",
+   "abstract": "Particle flow processing is widely employed across various industrial applications and technologies. Due to the complex interactions between particles and fluids, designing effective devices for particle flow processing is challenging. In this study, we propose a topology optimiz"
+  },
+  {
+   "title": "ORFS-agent: Tool-Using Agents for Chip Design Optimization",
+   "id": "http://arxiv.org/abs/2506.08332v3",
+   "year": "2025",
+   "abstract": "Machine learning has been widely used to optimize complex engineering workflows across numerous domains. In integrated circuit design, modern flows (e.g., register-transfer level to physical layout) involve extensive configuration via thousands of parameters, and small changes ca"
+  },
+  {
+   "title": "AgenticPD: A Stage-Aware Agentic Framework for Physical Design QoR Optimization",
+   "id": "http://arxiv.org/abs/2607.04758v2",
+   "year": "2026",
+   "abstract": "Physical design quality-of-results~(QoR) optimization is hard and expensive. Choices made at one stage can help or hurt later stages. Each evaluation requires a costly EDA run through the full flow. While existing methods still treat optimization as flat parameter tuning or a LLM"
+  }
+ ],
+ "P. multiobjective RL physical design": [
+  {
+   "title": "Multi-objective application placement in fog computing using graph neural network-based reinforcement learning",
+   "id": "http://arxiv.org/abs/2605.14649v1",
+   "year": "2026",
+   "abstract": "We propose a framework designed to tackle a multi-objective optimization challenge related to the placement of applications in fog computing, employing a deep reinforcement learning (DRL) approach. Unlike other optimization techniques, such as integer linear programming or geneti"
+  },
+  {
+   "title": "Multi-Objective Deep Reinforcement Learning for 5G Base Station Placement to Support Localisation for Future Sustainable Traffic",
+   "id": "http://arxiv.org/abs/2404.14954v1",
+   "year": "2024",
+   "abstract": "Millimeter-wave (mmWave) is a key enabler for next-generation transportation systems. However, in an urban city scenario, mmWave is highly susceptible to blockages and shadowing. Therefore, base station (BS) placement is a crucial task in the infrastructure design where coverage "
+  },
+  {
+   "title": "Multi-Objective Reinforcement Learning for Large-Scale Mixed Traffic Control",
+   "id": "http://arxiv.org/abs/2512.11247v1",
+   "year": "2025",
+   "abstract": "Effective mixed traffic control requires balancing efficiency, fairness, and safety. Existing approaches excel at optimizing efficiency and enforcing safety constraints but lack mechanisms to ensure equitable service, resulting in systematic starvation of vehicles on low-demand a"
+  },
+  {
+   "title": "Multi-Objective Reinforcement Learning for Automated Resilient Cyber Defence",
+   "id": "http://arxiv.org/abs/2411.17585v2",
+   "year": "2024",
+   "abstract": "Cyber-attacks pose a security threat to military command and control networks, Intelligence, Surveillance, and Reconnaissance (ISR) systems, and civilian critical national infrastructure. The use of artificial intelligence and autonomous agents in these attacks increases the scal"
+  },
+  {
+   "title": "Hybridization of evolutionary algorithm and deep reinforcement learning for multi-objective orienteering optimization",
+   "id": "http://arxiv.org/abs/2206.10464v1",
+   "year": "2022",
+   "abstract": "Multi-objective orienteering problems (MO-OPs) are classical multi-objective routing problems and have received a lot of attention in the past decades. This study seeks to solve MO-OPs through a problem-decomposition framework, that is, a MO-OP is decomposed into a multi-objectiv"
+  },
+  {
+   "title": "TDPNavigator-Placer: Thermal- and Wirelength-Aware Chiplet Placement in 2.5D Systems Through Multi-Agent Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2602.11187v1",
+   "year": "2026",
+   "abstract": "The rapid growth of electronics has accelerated the adoption of 2.5D integrated circuits, where effective automated chiplet placement is essential as systems scale to larger and more heterogeneous chiplet assemblies. Existing placement methods typically focus on minimizing wirele"
+  },
+  {
+   "title": "Compact Multi-Object Placement Using Adjacency-Aware Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2404.10632v3",
+   "year": "2024",
+   "abstract": "Close and precise placement of irregularly shaped objects requires a skilled robotic system. The manipulation of objects that have sensitive top surfaces and a fixed set of neighbors is particularly challenging. To avoid damaging the surface, the robot has to grasp them from the "
+  },
+  {
+   "title": "Reinforcement Learning for Multi-Objective Multi-Echelon Supply Chain Optimisation",
+   "id": "http://arxiv.org/abs/2507.19788v1",
+   "year": "2025",
+   "abstract": "This study develops a generalised multi-objective, multi-echelon supply chain optimisation model with non-stationary markets based on a Markov decision process, incorporating economic, environmental, and social considerations. The model is evaluated using a multi-objective reinfo"
+  }
+ ],
+ "Q. constrained RL EDA": [
+  {
+   "title": "RL-based Network Slice Embedding over Space Division Multiplexed Elastic Optical Networks",
+   "id": "http://arxiv.org/abs/2608.29444v1",
+   "year": "2026",
+   "abstract": "Network slicing over space-division-multiplexed elastic optical networks (SDM-EONs) requires jointly managing spectrum, spatial cores, and compute resources, a coupling that many existing studies ignore by treating compute placement independently from routing and spectrum decisio"
+  }
+ ],
+ "R. LLM tool selection optimization": [
+  {
+   "title": "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+   "id": "http://arxiv.org/abs/2607.05441v1",
+   "year": "2026",
+   "abstract": "Integrating external tools with Large Language Models (LLMs) has emerged as a promising paradigm for accomplishing complex tasks. Since LLMs still struggle to effectively manage large tool collections, researchers have begun exploring retrieval-based methods to pre-select the mos"
+  },
+  {
+   "title": "RaTA-Tool: Retrieval-based Tool Selection with Multimodal Large Language Models",
+   "id": "http://arxiv.org/abs/2604.14951v1",
+   "year": "2026",
+   "abstract": "Tool learning with foundation models aims to endow AI systems with the ability to invoke external resources -- such as APIs, computational utilities, and specialized models -- to solve complex tasks beyond the reach of standalone language generation. While recent advances in Larg"
+  },
+  {
+   "title": "AutoTool: Dynamic Tool Selection and Integration for Agentic Reasoning",
+   "id": "http://arxiv.org/abs/2512.13278v2",
+   "year": "2025",
+   "abstract": "Agentic reinforcement learning has advanced large language models (LLMs) to reason through long chain-of-thought trajectories while interleaving external tool use. Existing approaches assume a fixed inventory of tools, which limits the adaptability of LLM agents to new or evolvin"
+  },
+  {
+   "title": "Meta-Reasoning Improves Tool Use in Large Language Models",
+   "id": "http://arxiv.org/abs/2411.04535v2",
+   "year": "2024",
+   "abstract": "External tools help large language models succeed at tasks where they would otherwise typically fail. In existing frameworks, choosing tools at test time relies on naive greedy decoding, regardless of whether the model has been fine-tuned on tool-annotated data or prompted with i"
+  },
+  {
+   "title": "AutoSAT: Automatically Optimize SAT Solvers via Large Language Models",
+   "id": "http://arxiv.org/abs/2402.10705v3",
+   "year": "2024",
+   "abstract": "Conflict-Driven Clause Learning (CDCL) is the mainstream framework for solving the Satisfiability problem (SAT), and CDCL solvers typically rely on various heuristics, which have a significant impact on their performance. Modern CDCL solvers, such as MiniSat and Kissat, commonly "
+  },
+  {
+   "title": "Knowledge Graph Fusion with Large Language Models for Accurate, Explainable Manufacturing Process Planning",
+   "id": "http://arxiv.org/abs/2506.13026v1",
+   "year": "2025",
+   "abstract": "Precision process planning in Computer Numerical Control (CNC) machining demands rapid, context-aware decisions on tool selection, feed-speed pairs, and multi-axis routing, placing immense cognitive and procedural burdens on engineers from design specification through final part "
+  },
+  {
+   "title": "CarbonCall: Sustainability-Aware Function Calling for Large Language Models on Edge Devices",
+   "id": "http://arxiv.org/abs/2504.20348v2",
+   "year": "2025",
+   "abstract": "Large Language Models (LLMs) enable real-time function calling in edge AI systems but introduce significant computational overhead, leading to high power consumption and carbon emissions. Existing methods optimize for performance while neglecting sustainability, making them ineff"
+  },
+  {
+   "title": "GraphChain: Large Language Models for Large-scale Graph Analysis via Tool Chaining",
+   "id": "http://arxiv.org/abs/2511.00457v2",
+   "year": "2025",
+   "abstract": "Large Language Models (LLMs) face significant limitations when applied to large-scale graphs, struggling with context constraints and inflexible reasoning. We present GraphChain, a framework that enables LLMs to analyze complex graphs through dynamic sequences of specialized tool"
+  }
+ ],
+ "S. timing guardband optimization": [
+  {
+   "title": "The Quest for Reliable AI Accelerators: Cross-Layer Evaluation and Design Optimization",
+   "id": "http://arxiv.org/abs/2601.14148v1",
+   "year": "2026",
+   "abstract": "As the CMOS technology pushes to the nanoscale, aging effects and process variations have become increasingly pronounced, posing significant reliability challenges for AI accelerators. Traditional guardband-based design approaches, which rely on pessimistic timing margin, sacrifi"
+  },
+  {
+   "title": "Variability-Aware Approximate Circuit Synthesis via Genetic Optimization",
+   "id": "http://arxiv.org/abs/2404.04258v1",
+   "year": "2023",
+   "abstract": "One of the major barriers that CMOS devices face at nanometer scale is increasing parameter variation due to manufacturing imperfections. Process variations severely inhibit the reliable operation of circuits, as the operational frequency at the nominal process corner is insuffic"
+  },
+  {
+   "title": "Automated Design Approximation to Overcome Circuit Aging",
+   "id": "http://arxiv.org/abs/2203.07962v1",
+   "year": "2022",
+   "abstract": "Transistor aging phenomena manifest themselves as degradations in the main electrical characteristics of transistors. Over time, they result in a significant increase of cell propagation delay, leading to errors due to timing violations, since the operating frequency becomes unsu"
+  },
+  {
+   "title": "System-Technology Co-Evaluation of A7 CFET and A10 NSFET Technologies from Cell Parasitics to Chip Reliability",
+   "id": "http://arxiv.org/abs/2609.15326v1",
+   "year": "2026",
+   "abstract": "Complementary FETs (CFETs) extend nanosheet FET (NSFET) scaling by vertically stacking n- and p-type gate-all-around (GAA) devices, thereby shrinking standard-cell area. The performance gain, however, cannot be assessed from device metrics alone, as CFET layouts also introduce la"
+  },
+  {
+   "title": "qPRO-AQFP: Post-Routing Optimization of AQFP Circuits with Delay Line Clocking",
+   "id": "http://arxiv.org/abs/2604.08705v1",
+   "year": "2026",
+   "abstract": "Adiabatic Quantum-Flux-Parametron (AQFP) logic is an ultra-low-power superconducting logic family with energy consumption approaching the Shannon limit, making it attractive for quantum computing control and cryogenic computing systems. Traditional AQFP designs face significant p"
+  },
+  {
+   "title": "An Experimental Study of Reduced-Voltage Operation in Modern FPGAs for Neural Network Acceleration",
+   "id": "http://arxiv.org/abs/2005.03451v2",
+   "year": "2020",
+   "abstract": "We empirically evaluate an undervolting technique, i.e., underscaling the circuit supply voltage below the nominal level, to improve the power-efficiency of Convolutional Neural Network (CNN) accelerators mapped to Field Programmable Gate Arrays (FPGAs). Undervolting below a safe"
+  },
+  {
+   "title": "Modeling and Predicting Transistor Aging under Workload Dependency using Machine Learning",
+   "id": "http://arxiv.org/abs/2207.04134v1",
+   "year": "2022",
+   "abstract": "The pivotal issue of reliability is one of colossal concern for circuit designers. The driving force is transistor aging, dependent on operating voltage and workload. At the design time, it is difficult to estimate close-to-the-edge guardbands that keep aging effects during the l"
+  },
+  {
+   "title": "Adaptive-Latency DRAM: Reducing DRAM Latency by Exploiting Timing Margins",
+   "id": "http://arxiv.org/abs/1805.03047v1",
+   "year": "2018",
+   "abstract": "This paper summarizes the idea of Adaptive-Latency DRAM (AL-DRAM), which was published in HPCA 2015, and examines the work's significance and future potential. AL-DRAM is a mechanism that optimizes DRAM latency based on the DRAM module and the operating temperature, by exploiting"
+  }
+ ],
+ "T. design space exploration PD": [
+  {
+   "title": "DRiLLS: Deep Reinforcement Learning for Logic Synthesis",
+   "id": "http://arxiv.org/abs/1911.04021v2",
+   "year": "2019",
+   "abstract": "Logic synthesis requires extensive tuning of the synthesis optimization flow where the quality of results (QoR) depends on the sequence of optimizations used. Efficient design space exploration is challenging due to the exponential number of possible optimization permutations. Th"
+  },
+  {
+   "title": "UDO: Universal Database Optimization using Reinforcement Learning",
+   "id": "http://arxiv.org/abs/2104.01744v2",
+   "year": "2021",
+   "abstract": "UDO is a versatile tool for offline tuning of database systems for specific workloads. UDO can consider a variety of tuning choices, reaching from picking transaction code variants over index selections up to database system parameter tuning. UDO uses reinforcement learning to co"
+  },
+  {
+   "title": "AutoPilot: Automating SoC Design Space Exploration for SWaP Constrained Autonomous UAVs",
+   "id": "http://arxiv.org/abs/2102.02988v3",
+   "year": "2021",
+   "abstract": "Building domain-specific accelerators for autonomous unmanned aerial vehicles (UAVs) is challenging due to a lack of systematic methodology for designing onboard compute. Balancing a computing system for a UAV requires considering both the cyber (e.g., sensor rate, compute perfor"
+  }
+ ],
+ "U. OpenROAD parameter tuning": [
+  {
+   "title": "MCP4EDA: LLM-Powered Model Context Protocol RTL-to-GDSII Automation with Backend Aware Synthesis Optimization",
+   "id": "http://arxiv.org/abs/2507.19570v1",
+   "year": "2025",
+   "abstract": "This paper presents MCP4EDA, the first Model Context Protocol server that enables Large Language Models (LLMs) to control and optimize the complete open-source RTL-to-GDSII design flow through natural language interaction. The system integrates Yosys synthesis, Icarus Verilog sim"
+  }
+ ],
+ "V. gate-aware/timing-aware RL": [
+  {
+   "title": "Preference-Conditioned Reinforcement Learning for Space-Time Efficient Online 3D Bin Packing",
+   "id": "http://arxiv.org/abs/2603.07800v1",
+   "year": "2026",
+   "abstract": "Robotic bin packing is widely deployed in warehouse automation, with current systems achieving robust performance through heuristic and learning-based strategies. These systems must balance compact placement with rapid execution, where selecting alternative items or reorienting t"
+  },
+  {
+   "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
+   "id": "http://arxiv.org/abs/2608.11152v1",
+   "year": "2026",
+   "abstract": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms. Prefix-aware routing improves inference efficiency through cache reuse and load balancing, but it doe"
+  }
+ ],
+ "_details": [
+  {
+   "id": "2608.23601",
+   "title": "StateTune: Transforming LLM-Assisted EDA Flow Tuning into a Stateful, Closed-Loop Process",
+   "year": "2026",
+   "abstract": "EDA flow parameter tuning is critical for quality-of-results~(QoR), yet the parameter space is large, tightly coupled, and full evaluations are prohibitively expensive. Prior LLM-assisted tuners mainly use the LLM as an external proposer with transient working context; we instead present \\textbf{StateTune}, which reformulates LLM-assisted EDA tuning as a closed-loop, state-carrying process. Its optimizer state is a typed, evidence-gated \\emph{persistent optimization memory} that is updated by every evaluation and shared between candidate generation and budget allocation. On top of this optimizer state, an expected hypervolume improvement (EHVI)-guided, runtime-aware promotion policy ranks quick-stage candidates by expected Pareto frontier gain per unit of runtime cost. Evaluated on a Cadence industrial flow across six benchmark blocks (two technology nodes \\(\\times\\) three designs), against five baselines including LLM+retrieval-augmented generation (RAG) and preference-based Bayesian optimization (BO) tuners, StateTune achieves the strongest final hypervolume on all six benchmark blocks, showing a stable improvement in frontier quality across the full matrix; it also matches or surpasses the strongest baselines on worst negative slack (WNS), area, and power across the same set. Ablation shows persistent memory is the largest contributor: removing it costs 58.5\\% of the hypervolume. Dedicated analyses of evidence-gating sensitivity, memory poisoning, cross-design transfer, and three-seed reproducibility (CV\\,\\(<\\)\\,7\\% on five of six blocks) further validate the memory design."
+  },
+  {
+   "id": "2402.07781",
+   "title": "IR-Aware ECO Timing Optimization Using Reinforcement Learning",
+   "year": "2024",
+   "abstract": "Engineering change orders (ECOs) in late stages make minimal design fixes to recover from timing shifts due to excessive IR drops. This paper integrates IR-drop-aware timing analysis and ECO timing optimization using reinforcement learning (RL). The method operates after physical design and power grid synthesis, and rectifies IR-drop-induced timing degradation through gate sizing. It incorporates the Lagrangian relaxation (LR) technique into a novel RL framework, which trains a relational graph convolutional network (R-GCN) agent to sequentially size gates to fix timing violations. The R-GCN agent outperforms a classical LR-only algorithm: in an open 45nm technology, it (a) moves the Pareto front of the delay-power tradeoff curve to the left (b) saves runtime over the prior approaches by running fast inference using trained models, and (c) reduces the perturbation to placement by sizing fewer cells. The RL model is transferable across timing specifications and to unseen designs with fine tuning."
+  },
+  {
+   "id": "2603.19333",
+   "title": "POET: Power-Oriented Evolutionary Tuning for LLM-Based RTL PPA Optimization",
+   "year": "2026",
+   "abstract": "Applying large language models (LLMs) to RTL code optimization for improved power, performance, and area (PPA) faces two key challenges: ensuring functional correctness of optimized designs despite LLM hallucination, and systematically prioritizing power reduction within the multi-objective PPA trade-off space. We propose POET (Power-Oriented Evolutionary Tuning), a framework that addresses both challenges. For functional correctness, POET introduces a differential-testing-based testbench generation pipeline that treats the original design as a functional oracle, using deterministic simulation to produce golden references and eliminating LLM hallucination from the verification process. For PPA optimization, POET employs an LLM-driven evolutionary mechanism with non-dominated sorting, power-first intra-level ranking, and proportional survivor selection to steer the search toward the low-power region of the Pareto front without manual weight tuning. Evaluated on the RTL-OPT benchmark across 40 diverse RTL designs, POET achieves 100% functional correctness, the best power on all 40 designs, and competitive area and delay improvements."
+  },
+  {
+   "id": "1912.06460",
+   "title": "CAD Tool Design Space Exploration via Bayesian Optimization",
+   "year": "2019",
+   "abstract": "The design complexity is increasing as the technology node keeps scaling down. As a result, the electronic design automation (EDA) tools also become more and more complex. There are lots of parameters involved in EDA tools, which results in a huge design space. What's worse, the runtime cost of the EDA flow also goes up as the complexity increases, thus exhaustive exploration is prohibitive for modern designs. Therefore, an efficient design space exploration methodology is of great importance in advanced designs. In this paper we target at an automatic flow for reducing manual tuning efforts to achieve high quality circuits synthesis outcomes. It is based on Bayesian optimization which is a promising technique for optimizing black-box functions that are expensive to evaluate. Gaussian process regression is leveraged as the surrogate model in Bayesian optimization framework. In this work, we use 64-bit prefix adder design as a case study. We demonstrate that the Bayesian optimization is efficient and effective for performing design space exploration on EDA tool parameters, which has great potential for accelerating the design flow in advanced technology nodes."
+  },
+  {
+   "id": "2206.03032",
+   "title": "Intelligent Circuit Design and Implementation with Machine Learning",
+   "year": "2022",
+   "abstract": "The stagnation of EDA technologies roots from insufficient knowledge reuse. In practice, very similar simulation or optimization results may need to be repeatedly constructed from scratch. This motivates my research on introducing more 'intelligence' to EDA with machine learning (ML), which explores complex correlations in design flows based on prior data. Besides design time, I also propose ML solutions to boost IC performance by assisting the circuit management at runtime. In this dissertation, I present multiple fast yet accurate ML models covering a wide range of chip design stages from the register-transfer level (RTL) to sign-off, solving primary chip-design problems about power, timing, interconnect, IR drop, routability, and design flow tuning. Targeting the RTL stage, I present APOLLO, a fully automated power modeling framework. It constructs an accurate per-cycle power model by extracting the most power-correlated signals. The model can be further implemented on chip for runtime power management with unprecedented low hardware costs. Targeting gate-level netlist, I present Net2 for early estimations on post-placement wirelength. It further enables more accurate timing analysis without actual physical design information. Targeting circuit layout, I present RouteNet for early routability prediction. As the first deep learning-based routability estimator, some feature-extraction and model-design principles proposed in it are widely adopted by later works. I also present PowerNet for fast IR drop estimation. It captures spatial and temporal information about power distribution with a customized CNN architecture. Last, besides targeting a single design step, I present FIST to efficiently tune design flow parameters during both logic synthesis and physical design."
+  },
+  {
+   "id": "2607.17528",
+   "title": "Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows",
+   "year": "2026",
+   "abstract": "Large language model (LLM) agents are extending electronic design automation (EDA) beyond static RTL generation toward long-horizon, tool-interactive workflows. Yet it remains unclear whether general-purpose coding agents, even with domain-specific EDA skills, can reliably execute an end-to-end RTL-to-GDS flow encompassing synthesis, physical implementation, and engineering change order (ECO) optimization. We evaluate AI agents on a PicoRV32 RTL-to-GDS flow using commercial EDA tools under two timing targets. Their performance is assessed using end-to-end design score, stage completion, and Token ROI, a cost-efficiency metric relating design quality to runtime and cost. Comparing three agent architectures and four foundation models, we derive three practical lessons. First, domain-specific skills improve agents' understanding of individual subtasks but do not ensure reliable completion of a long-horizon EDA flow. Second, agents that achieve similar design progress can still differ by up to 141 times in Token ROI, revealing substantial differences in runtime and cost efficiency. Third, low-level tool-interface mismatches are a major source of physical design failures, particularly when Tcl commands depend on the tool version or execution mode. These results suggest that robust Agentic EDA requires not only stronger models but also structured tool interfaces, persistent design context, controlled execution, and process-level evaluation."
+  }
+ ]
+}

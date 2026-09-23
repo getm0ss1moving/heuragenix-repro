@@ -1,0 +1,18 @@
+%%{init: {'theme':'base', 'themeVariables': {'primaryTextColor':'#000000','secondaryTextColor':'#000000','tertiaryTextColor':'#000000','textColor':'#000000','lineColor':'#333333','fontFamily':'trebuchet ms,verdana,arial,sans-serif'}}}%%
+flowchart LR
+    classDef default color:#000000,fill:#ffffff,stroke:#333333;
+    A[当前状态 z] --> B[Step 1 LLM filter<br/>H' = LLM_filter z, H]
+    B --> C[Step 2 MC 估值<br/>对每个 H ∈ H'：先连续执行 M 次<br/>再从中间状态随机选启发式完成 T 条轨迹<br/>Q̂_H = 平均终点代价]
+    C --> D[Step 3 选择 Ĥ = argmin Q̂_H]
+    D --> E[连续执行 Ĥ M=5 步]
+    E --> F{完整解 or 无提升?}
+    F -- 否 --> A
+    F -- 是 --> G[返回解]
+    style A color:#000000;
+    style B color:#000000;
+    style C color:#000000;
+    style D color:#000000;
+    style E color:#000000;
+    style F color:#000000;
+    style G color:#000000;
+
