@@ -1,5 +1,7 @@
 # HeurAgenix 复现工作区
 
+> GitHub：https://github.com/getm0ss1moving/heuragenix-repro
+
 - `01_文献阅读报告_HeurAgenix.md`：论文精读报告，含方法流程图、实验设计、数据库/大模型/训练方法、论文与代码差异。
 - `02_复现清单_HeurAgenix.md`：可执行清单，含服务器选卡、代码 freeze、数据 curation、Table 5 复现、离线数据构建、GRPO+POR/CPR 训练、Table 3/4/Figure 9 评测、可选 B/C 档。
 - `04_EDA迁移与Skill自进化设计建议.md`：把 HeurAgenix 的演化+选择迁移到 EDA 布局布线：契约化 Skill、守卫/回滚、多保真验证、dsv4-flash 选择与演化、skill 成效量化协议、EDA 突破方向与落地路线。
